@@ -86,7 +86,7 @@
       "id": "projects",
       "title": "Proyectos Destacados",
       "icon": "folder",
-      "isVisible": true,
+      "isVisible": false,
       "items": [
         {
           "title": "Plataforma de Analítica en Tiempo Real",
@@ -529,25 +529,76 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Premio a la Innovación Tecnológica",
-          "org": "Telefónica",
+          "title": "Beca AWS de IA y ML",
+          "org": "AWS",
+          "startDate": "2025",
+          "isVisible": true,
+          "summary": "Seleccionado como uno de los 1,500 beneficiarios globales del Programa de Becas AWS de IA y ML, recibiendo tutoría y patrocinio completo para un Nanogrado en Aprendizaje Automático.",
+          "notes": "TODO: confirmar nombre exacto del programa/nanogrado y entidad asociada (p. ej., Udacity) si aplica"
+        },
+        {
+          "title": "Primer puesto - Graduados de MBA a tiempo completo",
+          "org": "ESAN Graduate School of Business",
+          "startDate": "2024",
+          "isVisible": true,
+          "summary": "Reconocimiento por obtener el primer puesto entre los graduados de MBA a tiempo completo.",
+          "notes": "TODO: el dato original indica 'Dic. 2024'; agrega mes si tu JSON lo soporta (p. ej., 2024-12)"
+        },
+        {
+          "title": "Beca - Reconocimiento a la excelencia académica",
+          "org": "ESAN Graduate School of Business",
           "startDate": "2023",
           "isVisible": true,
-          "summary": "Reconocimiento por el diseño de la plataforma de analítica en tiempo real."
+          "summary": "Beneficio que cubre el 75% del costo total del MBA.",
+          "notes": "TODO: el dato original indica 'Abr. 2023'; agrega mes si tu JSON lo soporta (p. ej., 2023-04)"
         },
         {
-          "title": "Hackathon Google Cloud – 1er lugar",
-          "org": "Google Cloud Spain",
+          "title": "Segundo puesto - Programa de especialización en patentes",
+          "org": "Escuela Nacional - INDECOPI",
           "startDate": "2022",
           "isVisible": true,
-          "summary": "Desarrollo de solución de NLP para accesibilidad web en 48 horas."
+          "summary": "Reconocimiento por obtener el segundo puesto en el Programa de especialización en patentes.",
+          "notes": "TODO: el dato original indica 'Dic. 2022'; agrega mes si tu JSON lo soporta (p. ej., 2022-12)"
         },
         {
-          "title": "Beca de Excelencia Académica",
-          "org": "Universidad Politécnica de Madrid",
-          "startDate": "2015",
+          "title": "Primer puesto - Graduados en Ingeniería Mecánica Eléctrica",
+          "org": "Universidad Nacional de Ingeniería (UNI) - Facultad de Ingeniería Mecánica",
+          "startDate": "2020",
           "isVisible": true,
-          "summary": "Beca completa para el Máster en Ciencia de Datos por expediente académico sobresaliente."
+          "summary": "Reconocimiento por obtener el primer puesto entre los graduados en Ingeniería Mecánica Eléctrica.",
+          "notes": "TODO: confirmar si corresponde a promoción/semestre específico"
+        },
+        {
+          "title": "Ganador - Proyecto para pasantía de investigación en Reino Unido",
+          "org": "FONDECYT - PROCIENCIA",
+          "startDate": "2019",
+          "isVisible": true,
+          "summary": "Apoyo financiero para visita de investigación al Reino Unido, valorada en 6,900 USD (concurso: Movilización en ciencia, tecnología e innovación tecnológica - Pasantías).",
+          "notes": "TODO: el periodo original es 'Nov. 2019 - Ene. 2020'; si tu JSON lo permite, agregar endDate=2020-01"
+        },
+        {
+          "title": "Primer puesto - Graduados del Doctorado en Energética",
+          "org": "Universidad Nacional de Ingeniería (UNI) - Facultad de Ingeniería Mecánica",
+          "startDate": "2018",
+          "isVisible": true,
+          "summary": "Reconocimiento por obtener el primer puesto entre los graduados del Doctorado en Energética.",
+          "notes": "TODO: confirmar promoción/semestre específico"
+        },
+        {
+          "title": "Beca - Estudios avanzados de lengua y cultura italiana",
+          "org": "MAECI — Università per Stranieri di Perugia",
+          "startDate": "2017",
+          "isVisible": true,
+          "summary": "Beca para estudios avanzados de lengua y cultura italiana.",
+          "notes": "TODO: el periodo original indica 'Ene - Mar 2017'; si tu JSON lo permite, usar startDate=2017-01 y endDate=2017-03"
+        },
+        {
+          "title": "Beca completa - Estudios de doctorado",
+          "org": "FONDECYT - CONCYTEC",
+          "startDate": "2016",
+          "isVisible": true,
+          "summary": "Subvención para estudios de doctorado valorada en aproximadamente 37,000 USD, para cubrir costos académicos, obtención del grado y estipendio mensual.",
+          "notes": "TODO: el periodo original es 'Abr. 2016 - Abr. 2019'; si tu JSON lo permite, agregar endDate=2019-04"
         }
       ]
     },
