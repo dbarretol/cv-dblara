@@ -197,66 +197,110 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Google Associate Cloud Engineer",
-          "org": "Google Cloud",
-          "startDate": "2023",
+          "title": "Programa Nanodegree - Futuro Ingeniero de IA de AWS",
+          "org": "Udacity",
+          "startDate": "2025",
           "isVisible": true,
-          "image": "https://images.credly.com/size/340x340/images/08096465-cbfc-4c3e-93e5-93c5aa61f23e/image.png",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
           "tags": [
-            "GCP"
+            "AWS",
+            "AI"
           ]
         },
         {
-          "title": "Azure AI Engineer Associate (AI-102)",
-          "org": "Microsoft",
-          "startDate": "2023",
+          "title": "Introducción a la IA generativa con AWS",
+          "org": "Udacity",
+          "startDate": "2025",
           "isVisible": true,
-          "image": "https://images.credly.com/size/340x340/images/61f56aa4-16fd-403c-90bc-1d90dba1fa99/image.png",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "tags": [
+            "AWS",
+            "Generative AI"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+          "org": "Microsoft",
+          "startDate": "2024",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
           "tags": [
             "Azure",
             "AI"
           ]
         },
         {
-          "title": "Azure Data Scientist Associate (DP-100)",
+          "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
           "org": "Microsoft",
-          "startDate": "2022",
+          "startDate": "2024",
           "isVisible": true,
-          "image": "https://images.credly.com/size/340x340/images/5c8fca38-b0d2-49e5-9ad2-f3f8e79b327f/image.png",
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
           "tags": [
             "Azure",
-            "ML"
+            "Data Science"
           ]
         },
         {
-          "title": "Azure Database Administrator Associate (DP-300)",
-          "org": "Microsoft",
-          "startDate": "2022",
+          "title": "Associate Cloud Engineer",
+          "org": "Google Cloud",
+          "startDate": "2024",
           "isVisible": true,
-          "image": "https://images.credly.com/size/340x340/images/edc0b0d8-55ec-4cc4-9571-e656dae69c09/image.png",
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/ACE_Google.png",
+          "tags": [
+            "GCP"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
+          "org": "Microsoft",
+          "startDate": "2024",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP300.png",
           "tags": [
             "Azure",
             "Databases"
           ]
         },
         {
-          "title": "AWS Solutions Architect – Associate",
-          "org": "Amazon Web Services",
-          "startDate": "2021",
+          "title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+          "org": "Microsoft",
+          "startDate": "2024",
           "isVisible": true,
-          "image": "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_PL300.png",
           "tags": [
-            "AWS"
+            "Power BI",
+            "Data Analytics"
           ]
         },
         {
-          "title": "Terraform Associate",
-          "org": "HashiCorp",
-          "startDate": "2021",
+          "title": "Certified Associate in Project Management (CAPM)",
+          "org": "PMI",
+          "startDate": "2014",
           "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/CAPM_PMI.png",
           "tags": [
-            "IaC",
-            "Terraform"
+            "Project Management"
+          ]
+        },
+        {
+          "title": "Investigador RENACYT - Nivel VII",
+          "org": "CONCYTEC",
+          "startDate": "2023",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/RENACYT_CONCYTEC.png",
+          "tags": [
+            "Research"
+          ]
+        },
+        {
+          "title": "GitHub Foundations",
+          "org": "GitHub",
+          "startDate": "2024",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/GITHUB_GITHUB.png",
+          "tags": [
+            "GitHub",
+            "Version Control"
           ]
         }
       ]
