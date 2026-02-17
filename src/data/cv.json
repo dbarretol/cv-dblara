@@ -584,55 +584,488 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Machine Learning Engineering for Production (MLOps)",
-          "org": "DeepLearning.AI – Coursera",
-          "startDate": "2023",
+          "title": "Programa de Especialización en Ingeniería de IA",
+          "org": "DSRP (Investigación en Ciencia de Datos Perú)",
+          "startDate": "2024",
           "isVisible": true,
           "tags": [
-            "MLOps",
-            "TensorFlow"
-          ]
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Deep Learning",
+            "Model Deployment",
+            "MLOps"
+          ],
+          "notes": "TODO: precisar mes de inicio (Nov 2024) y si deseas agregar endDate/status"
         },
         {
-          "title": "Data Engineering with Google Cloud",
-          "org": "Google Cloud – Coursera",
-          "startDate": "2022",
+          "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
+          "org": "Instituto Nacional de Salud del Niño - San Borja",
+          "startDate": "2024",
           "isVisible": true,
           "tags": [
-            "GCP",
-            "BigQuery",
-            "Dataflow"
-          ]
+            "AI in Healthcare",
+            "Medical Data",
+            "Machine Learning",
+            "Predictive Modeling"
+          ],
+          "notes": "TODO: precisar rango exacto (sep–nov 2024)"
         },
         {
-          "title": "Advanced Terraform",
-          "org": "HashiCorp Learn",
-          "startDate": "2021",
-          "isVisible": true,
-          "tags": [
-            "Terraform",
-            "IaC"
-          ]
-        },
-        {
-          "title": "Apache Kafka for Data Engineers",
-          "org": "Confluent Training",
-          "startDate": "2021",
-          "isVisible": true,
-          "tags": [
-            "Kafka",
-            "Streaming"
-          ]
-        },
-        {
-          "title": "Deep Learning Specialization",
-          "org": "DeepLearning.AI – Coursera",
-          "startDate": "2020",
+          "title": "Programa de Especialización en Deep Learning",
+          "org": "Universidad Ricardo Palma",
+          "startDate": "2024",
           "isVisible": true,
           "tags": [
             "Deep Learning",
+            "Neural Networks",
+            "TensorFlow",
+            "PyTorch"
+          ],
+          "notes": "TODO: precisar rango exacto (feb–jun 2024) y confirmar frameworks (TensorFlow/PyTorch) si aplica"
+        },
+        {
+          "title": "Google Cloud para Big Data y Analítica",
+          "org": "Universidad Ricardo Palma",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Google Cloud Platform",
+            "BigQuery",
+            "Data Engineering",
+            "Cloud Architecture"
+          ],
+          "notes": "TODO: precisar rango exacto (feb–mar 2024) y servicios GCP exactos"
+        },
+        {
+          "title": "Análisis y automatización de datos con Python",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Python",
+            "Data Automation",
+            "Data Analysis"
+          ]
+        },
+        {
+          "title": "Programación y optimización de datos con SQL",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "SQL",
+            "Query Optimization",
+            "Databases"
+          ]
+        },
+        {
+          "title": "Análisis de datos y creación de dashboards",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Data Analysis",
+            "Dashboards",
+            "Business Intelligence"
+          ]
+        },
+        {
+          "title": "Creación de dashboards y Business Intelligence con Power BI",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Power BI",
+            "Business Intelligence",
+            "Dashboards",
+            "Data Visualization"
+          ]
+        },
+        {
+          "title": "Ciencia de datos con Excel y Power Query",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Excel",
+            "Power Query",
+            "Data Cleaning",
+            "Data Analysis"
+          ]
+        },
+        {
+          "title": "Macros y funciones avanzadas en Excel",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Excel",
+            "Excel VBA",
+            "Advanced Functions",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Macros en Excel para la gestión empresarial",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Excel VBA",
+            "Business Automation",
+            "Process Optimization"
+          ]
+        },
+        {
+          "title": "Gestión financiera básica de negocios con Excel",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Financial Analysis",
+            "Excel",
+            "Business Finance"
+          ]
+        },
+        {
+          "title": "Automatización de tareas con Power Apps y Power Automate",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Power Apps",
+            "Power Automate",
+            "Workflow Automation",
+            "Low-Code"
+          ]
+        },
+        {
+          "title": "Aplicaciones frontend con React",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "React",
+            "Frontend",
+            "JavaScript",
+            "Web Development"
+          ]
+        },
+        {
+          "title": "Diseño web con WordPress",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "WordPress",
+            "Web Development",
+            "CMS"
+          ]
+        },
+        {
+          "title": "Ecommerce con WordPress",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "WordPress",
+            "Ecommerce",
+            "WooCommerce"
+          ]
+        },
+        {
+          "title": "Aplicaciones móviles con Flutter",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Flutter",
+            "Mobile Development",
+            "Dart"
+          ]
+        },
+        {
+          "title": "Diseño UX/UI con Figma",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Figma",
+            "UX Design",
+            "UI Design",
+            "Prototyping"
+          ]
+        },
+        {
+          "title": "Ley de contrataciones del Estado",
+          "org": "CEPS UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Public Procurement",
+            "Government Regulation",
+            "Compliance"
+          ]
+        },
+        {
+          "title": "Fundamentos de inteligencia artificial",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Artificial Intelligence",
+            "AI Fundamentals"
+          ]
+        },
+        {
+          "title": "Machine learning con Python",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Machine Learning",
+            "Python",
+            "Data Science"
+          ]
+        },
+        {
+          "title": "Deep learning con Python",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Deep Learning",
+            "Python",
             "Neural Networks"
           ]
+        },
+        {
+          "title": "Linux",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Linux",
+            "Command Line",
+            "Operating Systems"
+          ]
+        },
+        {
+          "title": "Gestión de proyectos con MS Project",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Project Management",
+            "MS Project",
+            "Planning"
+          ]
+        },
+        {
+          "title": "Inteligencia de negocios con Excel",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Business Intelligence",
+            "Excel",
+            "Data Analysis"
+          ]
+        },
+        {
+          "title": "Fundamentos de Blockchain",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Blockchain",
+            "Distributed Systems",
+            "Cryptography"
+          ]
+        },
+        {
+          "title": "SQL Server (BD 1 y 2)",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "SQL Server",
+            "Database Administration",
+            "T-SQL"
+          ]
+        },
+        {
+          "title": "Cloud computing (AWS – Azure – Google Cloud)",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Cloud Computing",
+            "AWS",
+            "Azure",
+            "Google Cloud Platform"
+          ]
+        },
+        {
+          "title": "Aplicaciones de IA para universitarios",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Artificial Intelligence",
+            "Applied AI",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Gestión de proyectos – SCRUM",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "SCRUM",
+            "Agile",
+            "Project Management"
+          ]
+        },
+        {
+          "title": "Power BI (básico e intermedio)",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Power BI",
+            "Business Intelligence",
+            "Dashboards",
+            "Data Visualization"
+          ]
+        },
+        {
+          "title": "Transformación digital",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Digital Transformation",
+            "Innovation Strategy",
+            "Technology Management"
+          ]
+        },
+        {
+          "title": "Exploratory Data Analysis",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "EDA",
+            "Data Analysis",
+            "Python"
+          ]
+        },
+        {
+          "title": "Geoinformática y teledetección",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "GIS",
+            "Remote Sensing",
+            "Geospatial Analysis"
+          ]
+        },
+        {
+          "title": "Ciberseguridad: Pentesting web",
+          "org": "OTI UNI",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "Cybersecurity",
+            "Penetration Testing",
+            "Web Security"
+          ]
+        },
+        {
+          "title": "Programa de Especialización en Patentes",
+          "org": "INDECOPI",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Patents",
+            "Intellectual Property"
+          ],
+          "notes": "TODO: precisar rango exacto (jul–nov 2022) y/o horas (215 horas lectivas)"
+        },
+        {
+          "title": "Applied Machine Learning in Python",
+          "org": "University of Michigan – Coursera",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Machine Learning",
+            "Python",
+            "Applied ML"
+          ],
+          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+        },
+        {
+          "title": "Wind Energy",
+          "org": "Technical University of Denmark – Coursera",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Renewable Energy",
+            "Wind Power",
+            "Energy Systems"
+          ],
+          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+        },
+        {
+          "title": "Wind Resources for Renewable Energies",
+          "org": "École Polytechnique – Coursera",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Renewable Energy",
+            "Wind Resource Assessment",
+            "Sustainability"
+          ],
+          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+        },
+        {
+          "title": "Practical Time Series Analysis",
+          "org": "The State University of New York – Coursera",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Time Series",
+            "Forecasting",
+            "Data Analysis"
+          ],
+          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+        },
+        {
+          "title": "Stochastic Processes",
+          "org": "National Research University – Coursera",
+          "startDate": "2022",
+          "isVisible": true,
+          "tags": [
+            "Stochastic Processes",
+            "Probability",
+            "Mathematics"
+          ],
+          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+        },
+        {
+          "title": "Corso Avanzato di Lingua e Cultura Italiana",
+          "org": "Università per Stranieri di Perugia",
+          "startDate": "2017",
+          "isVisible": true,
+          "tags": [
+            "Italian",
+            "Language",
+            "Culture"
+          ],
+          "notes": "TODO: precisar rango exacto (ene–mar 2017) y estado (Becario del gobierno italiano)"
         }
       ]
     }
