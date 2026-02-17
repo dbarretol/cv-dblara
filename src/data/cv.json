@@ -404,28 +404,119 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Optimización de pipelines de datos en entornos multi-cloud",
-          "org": "IEEE Cloud Computing Magazine",
-          "startDate": "2023",
+          "title": "Estudio exploratorio del desarrollo de parques eólicos offshore en Perú",
+          "org": "ESAN Graduate School of Business",
+          "startDate": "2024",
           "isVisible": true,
-          "summary": "Artículo revisado por pares sobre estrategias de optimización para pipelines ETL distribuidos.",
+          "summary": "Tesis de MBA. Autor: Barreto, David.",
           "links": [
             {
-              "label": "DOI",
-              "url": "#"
+              "label": "Documento",
+              "url": "https://hdl.handle.net/20.500.12640/4263"
             }
           ]
         },
         {
-          "title": "Detección de anomalías en redes de telecomunicaciones con Deep Learning",
-          "org": "Conferencia CEDI 2022",
-          "startDate": "2022",
+          "title": "Análisis de la influencia del comportamiento estocástico del viento en las respuestas dinámicas extremas de largo plazo de una turbina eólica onshore de 5 MW",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2023",
           "isVisible": true,
-          "summary": "Presentación de un framework para detección en tiempo real de anomalías de tráfico.",
+          "summary": "Tesis de titulación. Autor: Barreto, David.",
           "links": [
             {
-              "label": "Paper",
-              "url": "#"
+              "label": "Documento",
+              "url": "http://hdl.handle.net/20.500.14076/26965"
+            }
+          ]
+        },
+        {
+          "title": "Implied safety level in design codes for monopile offshore wind turbines - Parametric study on the effect of partial safety factors",
+          "org": "CRC Press - Advances in the Analysis and Design of Marine Structures",
+          "startDate": "2023",
+          "isVisible": true,
+          "summary": "Libro/capítulo. Autores: Amlashi, Hadi; Karimirad, Madjid & Barreto, David. Páginas 223-233.",
+          "links": [
+            {
+              "label": "DOI / Editorial",
+              "url": "https://doi.org/10.1201/9781003399759-25"
+            }
+          ]
+        },
+        {
+          "title": "Dynamic response assessment of an offshore wind turbine under Peruvian environmental conditions",
+          "org": "Journal of Physics: Conference Series",
+          "startDate": "2023",
+          "isVisible": true,
+          "summary": "Artículo científico. Autores: Barreto, David & Ortega, Arturo. Vol. 2538(1), 012006.",
+          "links": [
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1088/1742-6596/2538/1/012006"
+            }
+          ]
+        },
+        {
+          "title": "Effects of Simulation Length and Flexible Foundation on Long-Term Response Extrapolation of a Bottom-Fixed Offshore Wind Turbine",
+          "org": "Journal of Offshore Mechanics and Arctic Engineering",
+          "startDate": "2021",
+          "isVisible": true,
+          "summary": "Artículo científico. Autores: Barreto, David; Karimirad, Madjid & Ortega, Arturo. Vol. 144(3).",
+          "links": [
+            {
+              "label": "DOI",
+              "url": "https://doi.org/10.1115/1.4053030"
+            }
+          ]
+        },
+        {
+          "title": "Uncertainty quantification in structural responses of offshore monopile wind turbines",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2020",
+          "isVisible": true,
+          "summary": "Tesis de doctorado. Autor: Barreto, David.",
+          "links": [
+            {
+              "label": "Documento",
+              "url": "http://hdl.handle.net/20.500.14076/22175"
+            }
+          ]
+        },
+        {
+          "title": "Influence of Wind Shear Uncertainty in Long-Term Extreme Responses of an Offshore Monopile Wind Turbine",
+          "org": "ASME 2020 39th International Conference on Ocean, Offshore and Arctic Engineering",
+          "startDate": "2020",
+          "isVisible": true,
+          "summary": "Proceedings. Autores: Barreto, David; Karimirad, Madjid & Ortega Malca, Arturo. Volume 2A: Structures, Safety, and Reliability, V02AT02A061.",
+          "links": [
+            {
+              "label": "DOI / ASME",
+              "url": "https://doi.org/10.1115/OMAE2020-18506"
+            }
+          ]
+        },
+        {
+          "title": "Sensitivity Analysis of a Bottom Fixed Offshore Wind Turbine Using the Environmental Contour Method",
+          "org": "ASME 2019 38th International Conference on Ocean, Offshore and Arctic Engineering",
+          "startDate": "2019",
+          "isVisible": true,
+          "summary": "Proceedings. Autores: Barreto, David; Moghtadaei, Abdolmajid; Karimirad, Madjid & Ortega, Arturo. Volume 3: Structures, Safety, and Reliability, V003T02A071.",
+          "links": [
+            {
+              "label": "DOI / ASME",
+              "url": "https://doi.org/10.1115/OMAE2019-95390"
+            }
+          ]
+        },
+        {
+          "title": "Modelos de control de inventarios para la reducción de costos de repuestos de mantenimiento en taladros de perforación offshore en la provincia de Tumbes",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2015",
+          "isVisible": true,
+          "summary": "Tesis de maestría. Autor: Barreto, David.",
+          "links": [
+            {
+              "label": "Documento",
+              "url": "https://cybertesis.uni.edu.pe/handle/20.500.14076/2533"
             }
           ]
         }
