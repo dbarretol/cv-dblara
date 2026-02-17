@@ -31,7 +31,13 @@
             "Implementación de modelos de ML en producción con MLflow y Azure ML.",
             "Mentoría a 5 ingenieros junior del equipo."
           ],
-          "tags": ["Azure", "Databricks", "Spark", "Python", "Terraform"]
+          "tags": [
+            "Azure",
+            "Databricks",
+            "Spark",
+            "Python",
+            "Terraform"
+          ]
         },
         {
           "title": "Cloud Engineer",
@@ -46,7 +52,13 @@
             "Automatización de infraestructura con Terraform y Ansible.",
             "Desarrollo de APIs REST con FastAPI y despliegue en Cloud Run."
           ],
-          "tags": ["GCP", "Kubernetes", "Terraform", "FastAPI", "Docker"]
+          "tags": [
+            "GCP",
+            "Kubernetes",
+            "Terraform",
+            "FastAPI",
+            "Docker"
+          ]
         },
         {
           "title": "Data Analyst",
@@ -60,7 +72,13 @@
             "Creación de procesos ETL con SQL Server Integration Services.",
             "Análisis de datos de comportamiento de clientes para campañas de marketing."
           ],
-          "tags": ["SQL", "Power BI", "Tableau", "SSIS", "Python"]
+          "tags": [
+            "SQL",
+            "Power BI",
+            "Tableau",
+            "SSIS",
+            "Python"
+          ]
         }
       ]
     },
@@ -81,8 +99,18 @@
             "Dashboards en tiempo real con Grafana.",
             "Reducción del tiempo de detección de anomalías de 2 horas a 5 minutos."
           ],
-          "tags": ["Kafka", "Spark Streaming", "Grafana", "Azure"],
-          "links": [{ "label": "Caso de estudio", "url": "#" }]
+          "tags": [
+            "Kafka",
+            "Spark Streaming",
+            "Grafana",
+            "Azure"
+          ],
+          "links": [
+            {
+              "label": "Caso de estudio",
+              "url": "#"
+            }
+          ]
         },
         {
           "title": "Motor de Recomendaciones ML",
@@ -95,10 +123,21 @@
             "API de inferencia serverless desplegada en GCP Cloud Functions.",
             "Precisión del modelo: 92% en métricas de ranking."
           ],
-          "tags": ["PyTorch", "GCP", "MLOps", "Python"],
+          "tags": [
+            "PyTorch",
+            "GCP",
+            "MLOps",
+            "Python"
+          ],
           "links": [
-            { "label": "GitHub", "url": "https://github.com" },
-            { "label": "Demo", "url": "#" }
+            {
+              "label": "GitHub",
+              "url": "https://github.com"
+            },
+            {
+              "label": "Demo",
+              "url": "#"
+            }
           ]
         }
       ]
@@ -110,24 +149,44 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Máster en Ciencia de Datos",
-          "org": "Universidad Politécnica de Madrid",
-          "startDate": "2015",
-          "endDate": "2016",
-          "location": "Madrid, España",
+          "title": "Maestría en Administración de Negocios (MBA)",
+          "org": "ESAN Graduate School of Business",
+          "startDate": "2023-09",
+          "endDate": "2024-10",
+          "location": "Lima, Perú",
           "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_UPM.svg/220px-Logo_UPM.svg.png",
-          "summary": "Especialización en machine learning, procesamiento de lenguaje natural y big data."
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/ESAN.png",
+          "summary": "Especialización en Finanzas corporativas. Primer puesto en graduados de MBA a tiempo completo."
         },
         {
-          "title": "Grado en Ingeniería Informática",
-          "org": "Universidad Complutense de Madrid",
-          "startDate": "2011",
-          "endDate": "2015",
-          "location": "Madrid, España",
+          "title": "Doctorado en Energética",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2016",
+          "endDate": "2018",
+          "location": "Lima, Perú",
           "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Escudo_de_la_Universidad_Complutense_de_Madrid.svg/200px-Escudo_de_la_Universidad_Complutense_de_Madrid.svg.png",
-          "summary": "Mención en Ingeniería del Software. Proyecto fin de grado: Sistema de detección de fraude con redes neuronales."
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
+          "summary": "Graduado en el 1er puesto. Becario del gobierno peruano."
+        },
+        {
+          "title": "Maestría en Gerencia e Ingeniería de Mantenimiento",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2013",
+          "endDate": "2015",
+          "location": "Lima, Perú",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
+          "summary": "Graduado en el 1er puesto. Premio a la mejor tesis."
+        },
+        {
+          "title": "Ingeniería Mecánica-Eléctrica / Naval",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2007",
+          "endDate": "2021",
+          "location": "Lima, Perú",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
+          "summary": "Ingeniero titulado y colegiado. Graduado en el 1er puesto en ambas carreras."
         }
       ]
     },
@@ -143,7 +202,9 @@
           "startDate": "2023",
           "isVisible": true,
           "image": "https://images.credly.com/size/340x340/images/08096465-cbfc-4c3e-93e5-93c5aa61f23e/image.png",
-          "tags": ["GCP"]
+          "tags": [
+            "GCP"
+          ]
         },
         {
           "title": "Azure AI Engineer Associate (AI-102)",
@@ -151,7 +212,10 @@
           "startDate": "2023",
           "isVisible": true,
           "image": "https://images.credly.com/size/340x340/images/61f56aa4-16fd-403c-90bc-1d90dba1fa99/image.png",
-          "tags": ["Azure", "AI"]
+          "tags": [
+            "Azure",
+            "AI"
+          ]
         },
         {
           "title": "Azure Data Scientist Associate (DP-100)",
@@ -159,7 +223,10 @@
           "startDate": "2022",
           "isVisible": true,
           "image": "https://images.credly.com/size/340x340/images/5c8fca38-b0d2-49e5-9ad2-f3f8e79b327f/image.png",
-          "tags": ["Azure", "ML"]
+          "tags": [
+            "Azure",
+            "ML"
+          ]
         },
         {
           "title": "Azure Database Administrator Associate (DP-300)",
@@ -167,7 +234,10 @@
           "startDate": "2022",
           "isVisible": true,
           "image": "https://images.credly.com/size/340x340/images/edc0b0d8-55ec-4cc4-9571-e656dae69c09/image.png",
-          "tags": ["Azure", "Databases"]
+          "tags": [
+            "Azure",
+            "Databases"
+          ]
         },
         {
           "title": "AWS Solutions Architect – Associate",
@@ -175,14 +245,19 @@
           "startDate": "2021",
           "isVisible": true,
           "image": "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
-          "tags": ["AWS"]
+          "tags": [
+            "AWS"
+          ]
         },
         {
           "title": "Terraform Associate",
           "org": "HashiCorp",
           "startDate": "2021",
           "isVisible": true,
-          "tags": ["IaC", "Terraform"]
+          "tags": [
+            "IaC",
+            "Terraform"
+          ]
         }
       ]
     },
@@ -195,27 +270,63 @@
         {
           "title": "Lenguajes de Programación",
           "isVisible": true,
-          "tags": ["Python", "SQL", "Scala", "TypeScript", "Bash", "R"]
+          "tags": [
+            "Python",
+            "SQL",
+            "Scala",
+            "TypeScript",
+            "Bash",
+            "R"
+          ]
         },
         {
           "title": "Cloud & DevOps",
           "isVisible": true,
-          "tags": ["Azure", "GCP", "AWS", "Terraform", "Docker", "Kubernetes", "CI/CD", "GitHub Actions"]
+          "tags": [
+            "Azure",
+            "GCP",
+            "AWS",
+            "Terraform",
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "GitHub Actions"
+          ]
         },
         {
           "title": "Data Engineering",
           "isVisible": true,
-          "tags": ["Apache Spark", "Kafka", "Airflow", "dbt", "Databricks", "BigQuery", "Snowflake"]
+          "tags": [
+            "Apache Spark",
+            "Kafka",
+            "Airflow",
+            "dbt",
+            "Databricks",
+            "BigQuery",
+            "Snowflake"
+          ]
         },
         {
           "title": "Machine Learning",
           "isVisible": true,
-          "tags": ["Scikit-learn", "PyTorch", "TensorFlow", "MLflow", "Hugging Face"]
+          "tags": [
+            "Scikit-learn",
+            "PyTorch",
+            "TensorFlow",
+            "MLflow",
+            "Hugging Face"
+          ]
         },
         {
           "title": "Bases de Datos",
           "isVisible": true,
-          "tags": ["PostgreSQL", "SQL Server", "MongoDB", "Redis", "CosmosDB"]
+          "tags": [
+            "PostgreSQL",
+            "SQL Server",
+            "MongoDB",
+            "Redis",
+            "CosmosDB"
+          ]
         }
       ]
     },
@@ -225,9 +336,21 @@
       "icon": "globe",
       "isVisible": true,
       "items": [
-        { "title": "Español", "isVisible": true, "summary": "Nativo" },
-        { "title": "Inglés", "isVisible": true, "summary": "C1 – Avanzado (Cambridge Advanced Certificate)" },
-        { "title": "Portugués", "isVisible": true, "summary": "B1 – Intermedio" }
+        {
+          "title": "Español",
+          "isVisible": true,
+          "summary": "Nativo"
+        },
+        {
+          "title": "Inglés",
+          "isVisible": true,
+          "summary": "C1 – Avanzado (Cambridge Advanced Certificate)"
+        },
+        {
+          "title": "Portugués",
+          "isVisible": true,
+          "summary": "B1 – Intermedio"
+        }
       ]
     },
     {
@@ -242,7 +365,12 @@
           "startDate": "2023",
           "isVisible": true,
           "summary": "Artículo revisado por pares sobre estrategias de optimización para pipelines ETL distribuidos.",
-          "links": [{ "label": "DOI", "url": "#" }]
+          "links": [
+            {
+              "label": "DOI",
+              "url": "#"
+            }
+          ]
         },
         {
           "title": "Detección de anomalías en redes de telecomunicaciones con Deep Learning",
@@ -250,7 +378,12 @@
           "startDate": "2022",
           "isVisible": true,
           "summary": "Presentación de un framework para detección en tiempo real de anomalías de tráfico.",
-          "links": [{ "label": "Paper", "url": "#" }]
+          "links": [
+            {
+              "label": "Paper",
+              "url": "#"
+            }
+          ]
         }
       ]
     },
@@ -320,35 +453,51 @@
           "org": "DeepLearning.AI – Coursera",
           "startDate": "2023",
           "isVisible": true,
-          "tags": ["MLOps", "TensorFlow"]
+          "tags": [
+            "MLOps",
+            "TensorFlow"
+          ]
         },
         {
           "title": "Data Engineering with Google Cloud",
           "org": "Google Cloud – Coursera",
           "startDate": "2022",
           "isVisible": true,
-          "tags": ["GCP", "BigQuery", "Dataflow"]
+          "tags": [
+            "GCP",
+            "BigQuery",
+            "Dataflow"
+          ]
         },
         {
           "title": "Advanced Terraform",
           "org": "HashiCorp Learn",
           "startDate": "2021",
           "isVisible": true,
-          "tags": ["Terraform", "IaC"]
+          "tags": [
+            "Terraform",
+            "IaC"
+          ]
         },
         {
           "title": "Apache Kafka for Data Engineers",
           "org": "Confluent Training",
           "startDate": "2021",
           "isVisible": true,
-          "tags": ["Kafka", "Streaming"]
+          "tags": [
+            "Kafka",
+            "Streaming"
+          ]
         },
         {
           "title": "Deep Learning Specialization",
           "org": "DeepLearning.AI – Coursera",
           "startDate": "2020",
           "isVisible": true,
-          "tags": ["Deep Learning", "Neural Networks"]
+          "tags": [
+            "Deep Learning",
+            "Neural Networks"
+          ]
         }
       ]
     }
