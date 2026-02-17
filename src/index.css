@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 351 69% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 15% 92%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 40 10% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 351 69% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 351 69% 40%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 220 20% 15%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 351 69% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 22%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 351 69% 50%;
+
+    --font-serif: 'Crimson Text', Georgia, serif;
+    --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 95%;
+    --card: 220 20% 13%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 20% 13%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 351 69% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 351 69% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 351 69% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .section-title {
+    @apply text-2xl font-bold text-primary border-b-2 border-primary pb-2 mb-6 tracking-wide uppercase;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    letter-spacing: 0.12em;
+  }
+
+  .cv-item-title {
+    @apply text-lg font-semibold text-foreground;
+    font-family: var(--font-serif);
+  }
+
+  .cv-item-org {
+    @apply text-base font-medium text-muted-foreground italic;
+    font-family: var(--font-serif);
+  }
+
+  .cv-item-date {
+    @apply text-sm text-muted-foreground font-medium;
+  }
+
+  .cv-tag {
+    @apply inline-flex items-center text-xs px-2 rounded-sm bg-secondary text-secondary-foreground border border-border mr-1 mb-1;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    line-height: 1.4;
+  }
+
+  .sidebar-link {
+    @apply block px-4 py-2 text-sm transition-colors duration-200 rounded-sm;
+    color: hsl(var(--sidebar-foreground));
+  }
+
+  .sidebar-link:hover {
+    background: hsl(var(--sidebar-accent));
+  }
+
+  .sidebar-link.active {
+    background: hsl(var(--sidebar-accent));
+    border-left: 3px solid hsl(var(--sidebar-primary));
+    color: hsl(var(--sidebar-primary));
+    font-weight: 600;
+  }
+}
+
+@media print {
+  /* Hide non-content UI */
+  #pdf-download-btn,
+  nav[aria-label="Navegación del CV"],
+  button[aria-label*="navegación"] {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Remove fixed positioning artifacts */
+  .fixed {
+    display: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 15mm 12mm;
+    size: A4;
+  }
+
+  /* Prevent breaks inside items */
+  article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep section title with content */
+  .section-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  section {
+    break-inside: auto;
+  }
+
+  /* Ensure colors print */
+  .section-title {
+    color: hsl(351 69% 40%) !important;
+    border-color: hsl(351 69% 40%) !important;
+  }
+
+  .cv-tag {
+    background: hsl(40 15% 92%) !important;
+    border-color: hsl(220 15% 85%) !important;
+  }
+
+  a {
+    color: hsl(351 69% 40%) !important;
+    text-decoration: none;
+  }
+
+  /* Clean up main container for print */
+  main#cv-content {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
