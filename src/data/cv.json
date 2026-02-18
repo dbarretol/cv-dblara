@@ -3,7 +3,7 @@
     "name": "Dr. David Barreto Lara",
     "title": "Senior Cloud & Data Engineer",
     "email": "dbarretol@outlook.com",
-    "phone": "+51 612 345 678",
+    "phone": "(Solicitar por correo electrónico)",
     "location": "Lima, Perú",
     "linkedin": "https://www.linkedin.com/in/dbarretol",
     "github": "https://github.com/dbarretol",
@@ -388,64 +388,92 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Lenguajes de Programación",
+          "title": "Programación y Análisis de Datos",
           "isVisible": true,
           "tags": [
             "Python",
             "SQL",
-            "Scala",
-            "TypeScript",
-            "Bash",
-            "R"
+            "Power BI",
+            "Power Query",
+            "Excel avanzado (Macros/VBA)"
           ]
         },
         {
-          "title": "Cloud & DevOps",
+          "title": "Cloud Computing e Inteligencia Artificial",
           "isVisible": true,
           "tags": [
-            "Azure",
-            "GCP",
+            "Google Cloud Platform",
             "AWS",
-            "Terraform",
-            "Docker",
-            "Kubernetes",
-            "CI/CD",
-            "GitHub Actions"
+            "Azure",
+            "Machine Learning",
+            "Deep Learning",
+            "IA Generativa",
+            "EDA (Exploratory Data Analysis)"
           ]
         },
         {
-          "title": "Data Engineering",
+          "title": "Ingeniería, Energía y Simulación",
           "isVisible": true,
           "tags": [
-            "Apache Spark",
-            "Kafka",
-            "Airflow",
-            "dbt",
-            "Databricks",
-            "BigQuery",
-            "Snowflake"
+            "Energía eólica offshore",
+            "Energías renovables",
+            "OpenFAST",
+            "TurbSim",
+            "Análisis estocástico",
+            "Estructuras marinas",
+            "Ingeniería de mantenimiento"
           ]
         },
         {
-          "title": "Machine Learning",
+          "title": "Gestión y Negocios",
           "isVisible": true,
           "tags": [
-            "Scikit-learn",
-            "PyTorch",
-            "TensorFlow",
-            "MLflow",
-            "Hugging Face"
+            "Finanzas corporativas",
+            "Gestión de proyectos (CAPM/SCRUM)",
+            "MS Project",
+            "Gestión de mantenimiento",
+            "Auditoría de mantenimiento",
+            "SAP",
+            "AMOS"
           ]
         },
         {
-          "title": "Bases de Datos",
+          "title": "Investigación y Docencia",
           "isVisible": true,
           "tags": [
-            "PostgreSQL",
-            "SQL Server",
-            "MongoDB",
-            "Redis",
-            "CosmosDB"
+            "Metodología de investigación",
+            "Estadística aplicada",
+            "Redacción científica",
+            "Publicaciones indexadas",
+            "Mentoría académica",
+            "Patentes (INDECOPI)"
+          ]
+        },
+        {
+          "title": "Desarrollo Web y Herramientas",
+          "isVisible": true,
+          "tags": [
+            "React",
+            "Flutter",
+            "WordPress",
+            "Figma (UX/UI)",
+            "GitHub",
+            "Linux",
+            "Docker"
+          ]
+        },
+        {
+          "title": "Habilidades Blandas",
+          "isVisible": true,
+          "tags": [
+            "Liderazgo",
+            "Pensamiento analítico",
+            "Resolución de problemas",
+            "Comunicación efectiva",
+            "Autogestión",
+            "Adaptabilidad",
+            "Trabajo bajo presión",
+            "Disciplina"
           ]
         }
       ]
@@ -460,25 +488,25 @@
           "title": "Español",
           "isVisible": true,
           "summary": "Nativo",
-          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/640px-Flag_of_Peru.svg.png"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/640px-Flag_of_Peru.svg.png"
         },
         {
           "title": "Inglés",
           "isVisible": true,
           "summary": "B2 – Avanzado",
-          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/640px-Flag_of_the_United_States.svg.png"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/640px-Flag_of_the_United_States.svg.png"
         },
         {
           "title": "Italiano",
           "isVisible": true,
           "summary": "C1 – Avanzado",
-          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/640px-Flag_of_Italy.svg.png"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/640px-Flag_of_Italy.svg.png"
         },
         {
           "title": "Francés",
           "isVisible": true,
           "summary": "A2 – Básico Superior",
-          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png"
         }
       ]
     },
