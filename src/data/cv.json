@@ -8,7 +8,7 @@
     "linkedin": "https://www.linkedin.com/in/dbarretol",
     "github": "https://github.com/dbarretol",
     "website": "https://dbarretol.github.io/cv-dblara",
-    "summary": "Maestro en administración (MBA) con especialización en finanzas corporativas e Ingeniero mecánico-electricista con doctorado en energía. Experiencia en investigación, docencia de posgrado y auditorías de gestión de mantenimiento en el sector energético. Certificado en gestión de proyectos (CAPM), soluciones en la nube (Google/Azure) y servicios de IA."
+    "summary": "Soy Maestro en administración (MBA) con especialización en finanzas corporativas e Ingeniero mecánico-electricista con doctorado en energía. Tengo experiencia en investigación y docencia a nivel de posgrado, así como en auditorías de gestión de mantenimiento en el sector energético. He liderado proyectos de optimización de procesos y poseo certificaciones en gestión de proyectos, soluciones en la nube y servicios de inteligencia artificial. Mis habilidades incluyen la orientación a resultados, pensamiento analítico, disciplina y autogestión. Además, tengo la capacidad de capacitar y formar a otros, contribuyendo al fortalecimiento de la gestión interna y al cumplimiento de los objetivos organizacionales."
   },
   "sections": [
     {
@@ -18,66 +18,142 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Senior Cloud Data Engineer",
-          "org": "Telefónica Digital",
-          "startDate": "2021",
+          "title": "Profesor a tiempo parcial",
+          "org": "Universidad Autónoma del Perú",
+          "startDate": "Abr 2025",
           "endDate": "Presente",
-          "location": "Madrid, España",
+          "location": "Lima, Perú",
           "isVisible": true,
-          "summary": "Liderazgo técnico del equipo de ingeniería de datos para la plataforma analítica corporativa.",
+          "summary": "Docencia de pregrado en la Facultad de Ingeniería Civil.",
           "bullets": [
-            "Diseño e implementación de pipelines ETL/ELT procesando +500M de registros diarios con Apache Spark y Databricks.",
-            "Migración de infraestructura on-premise a Azure, reduciendo costos operativos en un 40%.",
-            "Implementación de modelos de ML en producción con MLflow y Azure ML.",
-            "Mentoría a 5 ingenieros junior del equipo."
+            "Impartir cursos de pregrado para estudiantes de Ingeniería Civil.",
+            "Cursos: Métodos de investigación, Materiales de construcción, Estática."
           ],
           "tags": [
-            "Azure",
-            "Databricks",
-            "Spark",
+            "Docencia universitaria",
+            "Ingeniería Civil",
+            "Metodología de investigación",
+            "Estática",
+            "Materiales de construcción"
+          ]
+        },
+        {
+          "title": "Docente de posgrado",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "Oct 2021",
+          "endDate": "Dic 2024",
+          "location": "Rímac, Lima",
+          "isVisible": true,
+          "summary": "Dictado de cursos avanzados y orientación de investigación a nivel de maestría y doctorado en Ingeniería Ambiental y Energética.",
+          "bullets": [
+            "Dictado de cursos avanzados de investigación a nivel doctoral y de maestría en programas de Ingeniería Ambiental y Energética.",
+            "Orientación a estudiantes de posgrado en el desarrollo de planes de investigación, empleando metodologías científicas y fomentando sus habilidades analíticas y críticas.",
+            "Diseño y enseñanza de cursos sobre metodología de la investigación, estadística aplicada y seminarios de investigación.",
+            "Cursos dictados: Plan de investigación, Metodología de la investigación científica, Estadística aplicada, Investigación doctoral, Seminario de tesis."
+          ],
+          "tags": [
+            "Docencia de posgrado",
+            "Metodología de investigación",
+            "Estadística aplicada",
+            "Ingeniería Ambiental",
+            "Ingeniería Energética",
+            "Mentoría académica"
+          ]
+        },
+        {
+          "title": "Consultor independiente",
+          "org": "Independiente (Sector: Consultoría/Energía)",
+          "startDate": "Jul 2017",
+          "endDate": "Presente",
+          "location": "Perú",
+          "isVisible": true,
+          "summary": "Consultoría especializada en auditorías de gestión de mantenimiento para el sector energético, incluyendo centrales termoeléctricas de ciclo combinado de gas natural.",
+          "bullets": [
+            "Liderazgo de auditorías de gestión de mantenimiento en el sector energético, colaborando con una central termoeléctrica de gas natural de ciclo combinado.",
+            "Propuesta de mejoras para optimizar la eficiencia de los procesos y abordar riesgos, contribuyendo al cumplimiento de los objetivos organizacionales.",
+            "Consultoría externa para la empresa FÉNIX.",
+            "Proyectos clave: Auditoría de mantenimiento mayor (2023), Auditoría anual de gestión de paradas (2021), Auditorías de mantenimiento preventivo (2019, 2017)."
+          ],
+          "tags": [
+            "Auditoría de mantenimiento",
+            "Gestión de mantenimiento",
+            "Sector energético",
+            "Ciclo combinado",
+            "Gestión de riesgos",
+            "Optimización de procesos"
+          ]
+        },
+        {
+          "title": "Investigador asociado visitante",
+          "org": "Queen's University Belfast",
+          "startDate": "Nov 2019",
+          "endDate": "Ene 2020",
+          "location": "Belfast, UK",
+          "isVisible": true,
+          "summary": "Investigación sobre aerogeneradores offshore, análisis estocástico de estructuras marinas y publicación de artículos en revistas indexadas.",
+          "bullets": [
+            "Investigación exhaustiva sobre aerogeneradores offshore, evaluando la influencia del cizallamiento del viento, la longitud de simulación y la incertidumbre de la cimentación en las respuestas extremas a largo plazo.",
+            "Aplicación de métodos analíticos en el análisis estocástico de estructuras offshore.",
+            "Uso de infraestructura de computación de alto rendimiento (HPC) para simulaciones y análisis avanzados.",
+            "Generación de artículos de investigación sobre energía eólica publicados en revistas indexadas."
+          ],
+          "tags": [
+            "Energía eólica offshore",
+            "Análisis estocástico",
+            "HPC",
+            "Estructuras marinas",
+            "Investigación científica",
+            "Publicaciones indexadas"
+          ]
+        },
+        {
+          "title": "Doctorando a tiempo completo",
+          "org": "Independiente (Beca CONCYTEC)",
+          "startDate": "Abr 2016",
+          "endDate": "Oct 2020",
+          "location": "Perú / UK / Italia",
+          "isVisible": true,
+          "summary": "Estudios doctorales a tiempo completo en la Universidad Nacional de Ingeniería con financiamiento CONCYTEC y experiencia investigadora internacional.",
+          "bullets": [
+            "Dedicación a tiempo completo a estudios de doctorado en la Universidad Nacional de Ingeniería, financiados por beca CONCYTEC.",
+            "Experiencia internacional viviendo en el Reino Unido (3 meses) e Italia (3 meses), gracias a financiamiento gubernamental.",
+            "Desarrollo de habilidades de autogestión, disciplina y trabajo bajo presión en entornos con alta incertidumbre."
+          ],
+          "tags": [
+            "Doctorado",
+            "CONCYTEC",
             "Python",
-            "Terraform"
+            "OpenFAST",
+            "TurbSim",
+            "Investigación científica",
+            "Experiencia internacional"
           ]
         },
         {
-          "title": "Cloud Engineer",
-          "org": "Accenture Spain",
-          "startDate": "2018",
-          "endDate": "2021",
-          "location": "Barcelona, España",
+          "title": "Asistente de ingeniería de mantenimiento",
+          "org": "PETREX S. A.",
+          "startDate": "Set 2012",
+          "endDate": "Feb 2016",
+          "location": "San Isidro, Lima",
           "isVisible": true,
-          "summary": "Diseño de soluciones cloud para clientes del sector financiero y retail.",
+          "summary": "Gestión de mantenimiento de equipos de perforación y workover a nivel internacional en el sector de petróleo y gas.",
           "bullets": [
-            "Arquitectura e implementación de microservicios en GCP con Kubernetes.",
-            "Automatización de infraestructura con Terraform y Ansible.",
-            "Desarrollo de APIs REST con FastAPI y despliegue en Cloud Run."
+            "Gestión del mantenimiento de equipos de perforación y workover en Perú, Bolivia, Chile y Colombia.",
+            "Realización de auditorías internas del sistema de mantenimiento en lotes petroleros y elaboración de informes de cumplimiento.",
+            "Supervisión del plan preventivo y coordinación con personal de campo para completar las órdenes de mantenimiento.",
+            "Seguimiento de repuestos y servicios, colaborando con el área de compras.",
+            "Resolución de problemas con AMOS y SAP en colaboración con la oficina central en Italia.",
+            "Capacitación interna sobre el uso de SAP y AMOS al personal operativo.",
+            "Automatización de la generación de reportes y la obtención de historiales de mantenimiento."
           ],
           "tags": [
-            "GCP",
-            "Kubernetes",
-            "Terraform",
-            "FastAPI",
-            "Docker"
-          ]
-        },
-        {
-          "title": "Data Analyst",
-          "org": "BBVA Next Technologies",
-          "startDate": "2016",
-          "endDate": "2018",
-          "location": "Madrid, España",
-          "isVisible": true,
-          "bullets": [
-            "Desarrollo de dashboards analíticos con Power BI y Tableau.",
-            "Creación de procesos ETL con SQL Server Integration Services.",
-            "Análisis de datos de comportamiento de clientes para campañas de marketing."
-          ],
-          "tags": [
-            "SQL",
-            "Power BI",
-            "Tableau",
-            "SSIS",
-            "Python"
+            "SAP",
+            "AMOS",
+            "Mantenimiento preventivo",
+            "Petróleo y Gas",
+            "Auditoría interna",
+            "Gestión de mantenimiento",
+            "Perforación"
           ]
         }
       ]
