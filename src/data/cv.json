@@ -722,22 +722,55 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Speaker en conferencias tech",
-          "isVisible": true,
-          "summary": "Ponente habitual en meetups y conferencias sobre cloud computing y data engineering (PyConES, Google DevFest, Azure Community Day)."
-        },
-        {
-          "title": "Mentor en programas de diversidad tech",
-          "org": "Women in Tech Spain",
-          "startDate": "2021",
+          "title": "Miembro del Comité de Doctorado",
+          "org": "Escuela Central de Posgrado – Universidad Nacional de Ingeniería",
+          "startDate": "Dic 2022",
           "endDate": "Presente",
           "isVisible": true,
-          "summary": "Mentoría a mujeres en transición profesional hacia roles de ingeniería de datos."
+          "summary": "Miembro del Comité de Doctorado del Programa en Ciencias con mención en Energética."
         },
         {
-          "title": "Contribuidor Open Source",
+          "title": "Coordinador ejecutivo y Expositor invitado",
+          "org": "Instituto Peruano de Mantenimiento (IPEMAN)",
+          "startDate": "Nov 2024",
           "isVisible": true,
-          "summary": "Contribuciones activas a proyectos como Apache Airflow, dbt y varios paquetes de Python para data engineering."
+          "summary": "22° Congreso Peruano – Ingeniería de Mantenimiento (18 de noviembre de 2024).",
+          "bullets": [
+            "Coordinador ejecutivo del foro: \"Confiabilidad, Automatización y Mantenimiento 4.0\".",
+            "Expositor con el tema: \"Papel del Machine Learning en la Ingeniería de Mantenimiento\"."
+          ],
+          "tags": [
+            "Machine Learning",
+            "Ingeniería de Mantenimiento",
+            "Mantenimiento 4.0",
+            "Confiabilidad"
+          ]
+        },
+        {
+          "title": "Expositor",
+          "org": "Centro de Energías Renovables y Uso Racional de la Energía (CER UNI)",
+          "startDate": "May 2022",
+          "isVisible": true,
+          "summary": "Jornadas Peruanas de Energía Solar – JOPES 2022.",
+          "tags": [
+            "Energía solar",
+            "Energías renovables"
+          ]
+        },
+        {
+          "title": "Expositor invitado",
+          "org": "Instituto Peruano de Mantenimiento (IPEMAN)",
+          "startDate": "Oct 2021",
+          "isVisible": true,
+          "summary": "21° Congreso Bicentenario Peruano – Ingeniería de Mantenimiento (25 al 29 de octubre de 2021).",
+          "bullets": [
+            "Tema: \"Gemelos Digitales y su Importancia en la Era del Mantenimiento Inteligente\"."
+          ],
+          "tags": [
+            "Gemelos digitales",
+            "Mantenimiento inteligente",
+            "Ingeniería de Mantenimiento"
+          ]
         }
       ]
     },
