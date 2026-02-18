@@ -26,7 +26,7 @@ const ProfileHeader = ({ profile }: { profile: Profile }) => {
   ].filter((c) => c.value);
 
   return (
-    <header className="mb-10 pb-8 border-b-2 border-primary" itemScope itemType="https://schema.org/Person">
+    <header className="mb-10 pb-8 border-b-2 border-primary text-center" itemScope itemType="https://schema.org/Person">
       <h1
         className="text-4xl md:text-5xl font-bold text-primary tracking-tight mb-1"
         style={{ fontFamily: "var(--font-serif)" }}
@@ -73,7 +73,7 @@ const ProfileHeader = ({ profile }: { profile: Profile }) => {
       </address>
 
       {profile.summary && (
-        <p className="text-base leading-relaxed text-foreground max-w-3xl" itemProp="description">{profile.summary}</p>
+        <p className="text-base leading-relaxed text-foreground max-w-3xl mx-auto" itemProp="description">{profile.summary}</p>
       )}
     </header>
   );
