@@ -225,10 +225,43 @@
       "isVisible": true,
       "items": [
         {
+          "title": "Programa de Especialización en Ingeniería de IA",
+          "org": "DSRP (Data Science Research Peru)",
+          "startDate": "Nov 2025",
+          "endDate": "Mar 2026",
+          "location": "Lima, Perú",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/dsrp.png",
+          "summary": " Fundamentos de IA, LLM y RAG, Proyecto integrador",
+          "tags": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Deep Learning",
+            "Model Deployment",
+            "MLOps"
+          ]
+        },
+        {
+          "title": "Programa de Especialización en Deep Learning",
+          "org": "Universidad Ricardo Palma",
+          "startDate": "Feb 2024",
+          "endDate": "Jun 2024",
+          "location": null,
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/URP.png",
+          "summary": "Redes neuronales y machine learning; Deep learning y Natural Language Processing (NLP); Deep learning y Computer Vision",
+          "tags": [
+            "Deep Learning",
+            "Neural Networks",
+            "TensorFlow",
+            "PyTorch"
+          ]
+        },
+        {
           "title": "Maestría en Administración de Negocios (MBA)",
           "org": "ESAN Graduate School of Business",
-          "startDate": "2023-09",
-          "endDate": "2024-10",
+          "startDate": "Set 2023",
+          "endDate": "Octubre 2024",
           "location": "Lima, Perú",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/ESAN.png",
@@ -273,7 +306,7 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Programa Nanodegree - Futuro Ingeniero de IA de AWS",
+          "title": "Programa Nanodegree -  Future AWS AI Engineer",
           "org": "Udacity",
           "startDate": "2025",
           "isVisible": true,
@@ -779,20 +812,7 @@
       "title": "Cursos de Capacitación",
       "icon": "book",
       "isVisible": true,
-      "items": [
-        {
-          "title": "Programa de Especialización en Ingeniería de IA",
-          "org": "DSRP (Data Science Research Peru)",
-          "startDate": "Nov 2024 - presente",
-          "isVisible": true,
-          "tags": [
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Deep Learning",
-            "Model Deployment",
-            "MLOps"
-          ]
-        },
+      "items": [       
         {
           "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
           "org": "Instituto Nacional de Salud del Niño - San Borja",
@@ -805,18 +825,6 @@
             "Predictive Modeling"
           ],
           "notes": "TODO: precisar rango exacto (sep–nov 2024)"
-        },
-        {
-          "title": "Programa de Especialización en Deep Learning",
-          "org": "Universidad Ricardo Palma",
-          "startDate": "feb–jun 2024",
-          "isVisible": true,
-          "tags": [
-            "Deep Learning",
-            "Neural Networks",
-            "TensorFlow",
-            "PyTorch"
-          ]
         },
         {
           "title": "Google Cloud para Big Data y Analítica",
