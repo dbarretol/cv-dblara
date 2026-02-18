@@ -459,17 +459,26 @@
         {
           "title": "Español",
           "isVisible": true,
-          "summary": "Nativo"
+          "summary": "Nativo",
+          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/640px-Flag_of_Peru.svg.png"
         },
         {
           "title": "Inglés",
           "isVisible": true,
-          "summary": "C1 – Avanzado (Cambridge Advanced Certificate)"
+          "summary": "B2 – Avanzado",
+          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/640px-Flag_of_the_United_States.svg.png"
         },
         {
-          "title": "Portugués",
+          "title": "Italiano",
           "isVisible": true,
-          "summary": "B1 – Intermedio"
+          "summary": "C1 – Avanzado",
+          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/640px-Flag_of_Italy.svg.png"
+        },
+        {
+          "title": "Francés",
+          "isVisible": true,
+          "summary": "A2 – Básico Superior",
+          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png"
         }
       ]
     },
@@ -1172,7 +1181,8 @@
             "Stochastic Processes",
             "Probability",
             "Mathematics"
-          ]        },
+          ]
+        },
         {
           "title": "Corso Avanzato di Lingua e Cultura Italiana - Becario del gobierno italiano",
           "org": "Università per Stranieri di Perugia",
