@@ -1,8 +1,4 @@
-Perfecto, vamos paso a paso para que tu proyecto React + Vite se despliegue en GitHub Pages con la ruta **https://dbarretol.github.io/cv-dblara**.  
-
----
-
-## 🚀 Guía paso a paso
+## 🚀 Guía paso a paso para despliegue en Github pages
 
 ### 1. Prepara tu repositorio
 - Asegúrate de que tu proyecto esté en un repositorio en GitHub llamado **`cv-dblara`** (el nombre debe coincidir con la URL que quieres).
@@ -94,5 +90,3 @@ npm run deploy
 ```
 
 ---
-
-¿Quieres que te prepare un checklist rápido para que no olvides ningún paso la próxima vez que despliegues?
