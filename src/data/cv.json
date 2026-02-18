@@ -1,14 +1,14 @@
 {
   "profile": {
-    "name": "Alejandro García Martínez",
+    "name": "Dr. David Barreto Lara",
     "title": "Senior Cloud & Data Engineer",
-    "email": "alejandro.garcia@email.com",
-    "phone": "+34 612 345 678",
-    "location": "Madrid, España",
-    "linkedin": "https://linkedin.com/in/alejandrogarcia",
-    "github": "https://github.com/agarcia",
-    "website": "https://alejandrogarcia.dev",
-    "summary": "Ingeniero de datos y cloud con más de 8 años de experiencia diseñando arquitecturas escalables en entornos multi-cloud. Especializado en pipelines de datos, machine learning aplicado y administración de bases de datos en Azure y Google Cloud. Apasionado por la automatización, las buenas prácticas de ingeniería y la formación continua."
+    "email": "dbarretol@outlook.com",
+    "phone": "+51 612 345 678",
+    "location": "Lima, Perú",
+    "linkedin": "https://www.linkedin.com/in/dbarretol",
+    "github": "https://github.com/dbarretol",
+    "website": "https://dbarretol.github.io/cv-dblara",
+    "summary": "Maestro en administración (MBA) con especialización en finanzas corporativas e Ingeniero mecánico-electricista con doctorado en energía. Experiencia en investigación, docencia de posgrado y auditorías de gestión de mantenimiento en el sector energético. Certificado en gestión de proyectos (CAPM), soluciones en la nube (Google/Azure) y servicios de IA."
   },
   "sections": [
     {
