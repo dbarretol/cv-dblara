@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+Perfecto, vamos paso a paso para que tu proyecto React + Vite se despliegue en GitHub Pages con la ruta **https://dbarretol.github.io/cv-dblara**.  
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Guía paso a paso
 
-## How can I edit this code?
+### 1. Prepara tu repositorio
+- Asegúrate de que tu proyecto esté en un repositorio en GitHub llamado **`cv-dblara`** (el nombre debe coincidir con la URL que quieres).
+- Haz `git init` si aún no lo has inicializado y sube el código con:
+  ```bash
+  git remote add origin https://github.com/dbarretol/cv-dblara.git
+  git branch -M main
+  git push -u origin main
+  ```
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+### 2. Instala la dependencia `gh-pages`
+En tu proyecto, instala el paquete que se encargará de publicar el contenido en la rama `gh-pages`:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install gh-pages --save-dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Configura `vite.config.js`
+Agrega la propiedad `base` con el nombre de tu repositorio:
 
-**Use GitHub Codespaces**
+```js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+export default defineConfig(({ mode }) => ({
+  base: "/cv-dblara/",   // 👈 importante para GitHub Pages
+  server: {
+    host: "::",
+    port: 8080,
+    hmr: {
+      overlay: false,
+    },
+  },
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+### 4. Ajusta tu `package.json`
+Agrega los scripts de despliegue:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### 5. Despliega tu proyecto
+Ejecuta:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run deploy
+```
 
-Yes, you can!
+Esto creará la rama `gh-pages` en tu repo y subirá el contenido de `dist`.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 6. Configura GitHub Pages
+- Ve a tu repositorio en GitHub → **Settings** → **Pages**.  
+- En **Branch**, selecciona `gh-pages` y guarda.  
+- En unos minutos tu sitio estará disponible en:  
+  👉 **https://dbarretol.github.io/cv-dblara**
+
+---
+
+## 🔄 Actualizar tu sitio
+Cada vez que hagas cambios, solo necesitas correr:
+
+```bash
+npm run deploy
+```
+
+---
+
+¿Quieres que te prepare un checklist rápido para que no olvides ningún paso la próxima vez que despliegues?
