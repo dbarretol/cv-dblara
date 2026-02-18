@@ -712,8 +712,8 @@
       "items": [
         {
           "title": "Programa de Especialización en Ingeniería de IA",
-          "org": "DSRP (Investigación en Ciencia de Datos Perú)",
-          "startDate": "2024",
+          "org": "DSRP (Data Science Research Peru)",
+          "startDate": "Nov 2024 - presente",
           "isVisible": true,
           "tags": [
             "Artificial Intelligence",
@@ -721,8 +721,7 @@
             "Deep Learning",
             "Model Deployment",
             "MLOps"
-          ],
-          "notes": "TODO: precisar mes de inicio (Nov 2024) y si deseas agregar endDate/status"
+          ]
         },
         {
           "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
@@ -740,28 +739,27 @@
         {
           "title": "Programa de Especialización en Deep Learning",
           "org": "Universidad Ricardo Palma",
-          "startDate": "2024",
+          "startDate": "feb–jun 2024",
           "isVisible": true,
           "tags": [
             "Deep Learning",
             "Neural Networks",
             "TensorFlow",
             "PyTorch"
-          ],
-          "notes": "TODO: precisar rango exacto (feb–jun 2024) y confirmar frameworks (TensorFlow/PyTorch) si aplica"
+          ]
         },
         {
           "title": "Google Cloud para Big Data y Analítica",
           "org": "Universidad Ricardo Palma",
-          "startDate": "2024",
+          "startDate": "feb–mar 2024",
           "isVisible": true,
           "tags": [
             "Google Cloud Platform",
             "BigQuery",
+            "Cloud Run",
             "Data Engineering",
             "Cloud Architecture"
-          ],
-          "notes": "TODO: precisar rango exacto (feb–mar 2024) y servicios GCP exactos"
+          ]
         },
         {
           "title": "Análisis y automatización de datos con Python",
@@ -1112,87 +1110,79 @@
           ]
         },
         {
-          "title": "Programa de Especialización en Patentes",
+          "title": "Programa de Especialización en Patentes - 215 horas lectivas",
           "org": "INDECOPI",
-          "startDate": "2022",
+          "startDate": "jul–nov 2022",
           "isVisible": true,
           "tags": [
             "Patents",
             "Intellectual Property"
-          ],
-          "notes": "TODO: precisar rango exacto (jul–nov 2022) y/o horas (215 horas lectivas)"
+          ]
         },
         {
           "title": "Applied Machine Learning in Python",
           "org": "University of Michigan – Coursera",
-          "startDate": "2022",
+          "startDate": "oct–dic 2022",
           "isVisible": true,
           "tags": [
             "Machine Learning",
             "Python",
             "Applied ML"
-          ],
-          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+          ]
         },
         {
           "title": "Wind Energy",
           "org": "Technical University of Denmark – Coursera",
-          "startDate": "2022",
+          "startDate": "oct–dic 2022",
           "isVisible": true,
           "tags": [
             "Renewable Energy",
             "Wind Power",
             "Energy Systems"
-          ],
-          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+          ]
         },
         {
           "title": "Wind Resources for Renewable Energies",
           "org": "École Polytechnique – Coursera",
-          "startDate": "2022",
+          "startDate": "oct–dic 2022",
           "isVisible": true,
           "tags": [
             "Renewable Energy",
             "Wind Resource Assessment",
             "Sustainability"
-          ],
-          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+          ]
         },
         {
           "title": "Practical Time Series Analysis",
           "org": "The State University of New York – Coursera",
-          "startDate": "2022",
+          "startDate": "oct–dic 2022",
           "isVisible": true,
           "tags": [
             "Time Series",
             "Forecasting",
             "Data Analysis"
-          ],
-          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
+          ]
         },
         {
           "title": "Stochastic Processes",
           "org": "National Research University – Coursera",
-          "startDate": "2022",
+          "startDate": "oct–dic 2022",
           "isVisible": true,
           "tags": [
             "Stochastic Processes",
             "Probability",
             "Mathematics"
-          ],
-          "notes": "TODO: confirmar mes/rango (oct–dic 2022)"
-        },
+          ]        },
         {
-          "title": "Corso Avanzato di Lingua e Cultura Italiana",
+          "title": "Corso Avanzato di Lingua e Cultura Italiana - Becario del gobierno italiano",
           "org": "Università per Stranieri di Perugia",
-          "startDate": "2017",
+          "startDate": "ene–mar 2017",
           "isVisible": true,
           "tags": [
             "Italian",
             "Language",
             "Culture"
-          ],
-          "notes": "TODO: precisar rango exacto (ene–mar 2017) y estado (Becario del gobierno italiano)"
+          ]
         }
       ]
     }
