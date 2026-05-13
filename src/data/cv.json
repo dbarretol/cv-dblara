@@ -21,7 +21,7 @@
           "title": "Profesor a tiempo parcial",
           "org": "Universidad Autónoma del Perú",
           "startDate": "Abr 2025",
-          "endDate": "Presente",
+          "endDate": "Dic 2025",
           "location": "Lima, Perú",
           "isVisible": true,
           "summary": "Docencia de pregrado en la Facultad de Ingeniería Civil.",
@@ -175,12 +175,7 @@
             "Dashboards en tiempo real con Grafana.",
             "Reducción del tiempo de detección de anomalías de 2 horas a 5 minutos."
           ],
-          "tags": [
-            "Kafka",
-            "Spark Streaming",
-            "Grafana",
-            "Azure"
-          ],
+          "tags": ["Kafka", "Spark Streaming", "Grafana", "Azure"],
           "links": [
             {
               "label": "Caso de estudio",
@@ -199,12 +194,7 @@
             "API de inferencia serverless desplegada en GCP Cloud Functions.",
             "Precisión del modelo: 92% en métricas de ranking."
           ],
-          "tags": [
-            "PyTorch",
-            "GCP",
-            "MLOps",
-            "Python"
-          ],
+          "tags": ["PyTorch", "GCP", "MLOps", "Python"],
           "links": [
             {
               "label": "GitHub",
@@ -224,6 +214,23 @@
       "icon": "graduation-cap",
       "isVisible": true,
       "items": [
+        {
+          "title": "Programa de Especialización en IA Generativa y Machine Learning Ops",
+          "org": "Facultad de Ingeniería Económica, Estadística y Ciencias Sociales - Centro de Formación Continua",
+          "startDate": "Mar 2026",
+          "endDate": "Set 2026",
+          "location": "Lima, Perú",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
+          "summary": "Especialización en IA generativa y MLOps, con enfoque en despliegue de modelos y aplicaciones prácticas.",
+          "tags": [
+            "Generative AI",
+            "Machine Learning",
+            "MLOps",
+            "Model Deployment",
+            "Artificial Intelligence"
+          ]
+        },
         {
           "title": "Programa de Especialización en Ingeniería de IA",
           "org": "DSRP (Data Science Research Peru)",
@@ -250,12 +257,7 @@
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/URP.png",
           "summary": "Redes neuronales y machine learning; Deep learning y Natural Language Processing (NLP); Deep learning y Computer Vision",
-          "tags": [
-            "Deep Learning",
-            "Neural Networks",
-            "TensorFlow",
-            "PyTorch"
-          ]
+          "tags": ["Deep Learning", "Neural Networks", "TensorFlow", "PyTorch"]
         },
         {
           "title": "Maestría en Administración de Negocios (MBA)",
@@ -288,14 +290,24 @@
           "summary": "Graduado en el 1er puesto. Premio a la mejor tesis."
         },
         {
-          "title": "Ingeniería Mecánica-Eléctrica / Naval",
+          "title": "Ingeniería Mecánica-Eléctrica",
           "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2007",
-          "endDate": "2021",
+          "startDate": "2016",
+          "endDate": "2020",
           "location": "Lima, Perú",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Ingeniero titulado y colegiado. Graduado en el 1er puesto en ambas carreras."
+          "summary": "Ingeniero Mecánico-Eléctrico titulado y colegiado (CIP 330188). Graduado en el 1er puesto."
+        },
+        {
+          "title": "Ingeniería Naval",
+          "org": "Universidad Nacional de Ingeniería",
+          "startDate": "2007",
+          "endDate": "2011",
+          "location": "Lima, Perú",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
+          "summary": "Bachiller en Ingeniería Naval. Graduado en el 1er puesto."
         }
       ]
     },
@@ -311,10 +323,7 @@
           "startDate": "2025",
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": [
-            "AWS",
-            "AI"
-          ]
+          "tags": ["AWS", "AI"]
         },
         {
           "title": "Introducción a la IA generativa con AWS",
@@ -322,10 +331,7 @@
           "startDate": "2025",
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": [
-            "AWS",
-            "Generative AI"
-          ]
+          "tags": ["AWS", "Generative AI"]
         },
         {
           "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
@@ -333,10 +339,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
-          "tags": [
-            "Azure",
-            "AI"
-          ]
+          "tags": ["Azure", "AI"]
         },
         {
           "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
@@ -344,10 +347,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
-          "tags": [
-            "Azure",
-            "Data Science"
-          ]
+          "tags": ["Azure", "Data Science"]
         },
         {
           "title": "Associate Cloud Engineer",
@@ -355,9 +355,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/ACE_Google.png",
-          "tags": [
-            "GCP"
-          ]
+          "tags": ["GCP"]
         },
         {
           "title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
@@ -365,10 +363,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP300.png",
-          "tags": [
-            "Azure",
-            "Databases"
-          ]
+          "tags": ["Azure", "Databases"]
         },
         {
           "title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
@@ -376,10 +371,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_PL300.png",
-          "tags": [
-            "Power BI",
-            "Data Analytics"
-          ]
+          "tags": ["Power BI", "Data Analytics"]
         },
         {
           "title": "Certified Associate in Project Management (CAPM)",
@@ -387,9 +379,7 @@
           "startDate": "2014",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/CAPM_PMI.png",
-          "tags": [
-            "Project Management"
-          ]
+          "tags": ["Project Management"]
         },
         {
           "title": "Investigador RENACYT - Nivel VII",
@@ -397,9 +387,7 @@
           "startDate": "2023",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/RENACYT_CONCYTEC.png",
-          "tags": [
-            "Research"
-          ]
+          "tags": ["Research"]
         },
         {
           "title": "GitHub Foundations",
@@ -407,10 +395,7 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/GITHUB_GITHUB.png",
-          "tags": [
-            "GitHub",
-            "Version Control"
-          ]
+          "tags": ["GitHub", "Version Control"]
         }
       ]
     },
@@ -521,25 +506,25 @@
           "title": "Español",
           "isVisible": true,
           "summary": "Nativo",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/640px-Flag_of_Peru.svg.png"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/330px-Flag_of_Peru.svg.png"
         },
         {
           "title": "Inglés",
           "isVisible": true,
           "summary": "B2 – Avanzado",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/640px-Flag_of_the_United_States.svg.png"
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/usa.png"
         },
         {
           "title": "Italiano",
           "isVisible": true,
           "summary": "C1 – Avanzado",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/640px-Flag_of_Italy.svg.png"
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/italy.png"
         },
         {
           "title": "Francés",
           "isVisible": true,
           "summary": "A2 – Básico Superior",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png"
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/france.png"
         }
       ]
     },
@@ -785,10 +770,7 @@
           "startDate": "May 2022",
           "isVisible": true,
           "summary": "Jornadas Peruanas de Energía Solar – JOPES 2022.",
-          "tags": [
-            "Energía solar",
-            "Energías renovables"
-          ]
+          "tags": ["Energía solar", "Energías renovables"]
         },
         {
           "title": "Expositor invitado",
@@ -812,7 +794,7 @@
       "title": "Cursos de Capacitación",
       "icon": "book",
       "isVisible": true,
-      "items": [       
+      "items": [
         {
           "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
           "org": "Instituto Nacional de Salud del Niño - San Borja",
@@ -844,33 +826,21 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Python",
-            "Data Automation",
-            "Data Analysis"
-          ]
+          "tags": ["Python", "Data Automation", "Data Analysis"]
         },
         {
           "title": "Programación y optimización de datos con SQL",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "SQL",
-            "Query Optimization",
-            "Databases"
-          ]
+          "tags": ["SQL", "Query Optimization", "Databases"]
         },
         {
           "title": "Análisis de datos y creación de dashboards",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Data Analysis",
-            "Dashboards",
-            "Business Intelligence"
-          ]
+          "tags": ["Data Analysis", "Dashboards", "Business Intelligence"]
         },
         {
           "title": "Creación de dashboards y Business Intelligence con Power BI",
@@ -889,46 +859,28 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Excel",
-            "Power Query",
-            "Data Cleaning",
-            "Data Analysis"
-          ]
+          "tags": ["Excel", "Power Query", "Data Cleaning", "Data Analysis"]
         },
         {
           "title": "Macros y funciones avanzadas en Excel",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Excel",
-            "Excel VBA",
-            "Advanced Functions",
-            "Automation"
-          ]
+          "tags": ["Excel", "Excel VBA", "Advanced Functions", "Automation"]
         },
         {
           "title": "Macros en Excel para la gestión empresarial",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Excel VBA",
-            "Business Automation",
-            "Process Optimization"
-          ]
+          "tags": ["Excel VBA", "Business Automation", "Process Optimization"]
         },
         {
           "title": "Gestión financiera básica de negocios con Excel",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Financial Analysis",
-            "Excel",
-            "Business Finance"
-          ]
+          "tags": ["Financial Analysis", "Excel", "Business Finance"]
         },
         {
           "title": "Automatización de tareas con Power Apps y Power Automate",
@@ -947,189 +899,119 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "React",
-            "Frontend",
-            "JavaScript",
-            "Web Development"
-          ]
+          "tags": ["React", "Frontend", "JavaScript", "Web Development"]
         },
         {
           "title": "Diseño web con WordPress",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "WordPress",
-            "Web Development",
-            "CMS"
-          ]
+          "tags": ["WordPress", "Web Development", "CMS"]
         },
         {
           "title": "Ecommerce con WordPress",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "WordPress",
-            "Ecommerce",
-            "WooCommerce"
-          ]
+          "tags": ["WordPress", "Ecommerce", "WooCommerce"]
         },
         {
           "title": "Aplicaciones móviles con Flutter",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Flutter",
-            "Mobile Development",
-            "Dart"
-          ]
+          "tags": ["Flutter", "Mobile Development", "Dart"]
         },
         {
           "title": "Diseño UX/UI con Figma",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Figma",
-            "UX Design",
-            "UI Design",
-            "Prototyping"
-          ]
+          "tags": ["Figma", "UX Design", "UI Design", "Prototyping"]
         },
         {
           "title": "Ley de contrataciones del Estado",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Public Procurement",
-            "Government Regulation",
-            "Compliance"
-          ]
+          "tags": ["Public Procurement", "Government Regulation", "Compliance"]
         },
         {
           "title": "Fundamentos de inteligencia artificial",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Artificial Intelligence",
-            "AI Fundamentals"
-          ]
+          "tags": ["Artificial Intelligence", "AI Fundamentals"]
         },
         {
           "title": "Machine learning con Python",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Machine Learning",
-            "Python",
-            "Data Science"
-          ]
+          "tags": ["Machine Learning", "Python", "Data Science"]
         },
         {
           "title": "Deep learning con Python",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Deep Learning",
-            "Python",
-            "Neural Networks"
-          ]
+          "tags": ["Deep Learning", "Python", "Neural Networks"]
         },
         {
           "title": "Linux",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Linux",
-            "Command Line",
-            "Operating Systems"
-          ]
+          "tags": ["Linux", "Command Line", "Operating Systems"]
         },
         {
           "title": "Gestión de proyectos con MS Project",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Project Management",
-            "MS Project",
-            "Planning"
-          ]
+          "tags": ["Project Management", "MS Project", "Planning"]
         },
         {
           "title": "Inteligencia de negocios con Excel",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Business Intelligence",
-            "Excel",
-            "Data Analysis"
-          ]
+          "tags": ["Business Intelligence", "Excel", "Data Analysis"]
         },
         {
           "title": "Fundamentos de Blockchain",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Blockchain",
-            "Distributed Systems",
-            "Cryptography"
-          ]
+          "tags": ["Blockchain", "Distributed Systems", "Cryptography"]
         },
         {
           "title": "SQL Server (BD 1 y 2)",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "SQL Server",
-            "Database Administration",
-            "T-SQL"
-          ]
+          "tags": ["SQL Server", "Database Administration", "T-SQL"]
         },
         {
           "title": "Cloud computing (AWS – Azure – Google Cloud)",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Cloud Computing",
-            "AWS",
-            "Azure",
-            "Google Cloud Platform"
-          ]
+          "tags": ["Cloud Computing", "AWS", "Azure", "Google Cloud Platform"]
         },
         {
           "title": "Aplicaciones de IA para universitarios",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Artificial Intelligence",
-            "Applied AI",
-            "Automation"
-          ]
+          "tags": ["Artificial Intelligence", "Applied AI", "Automation"]
         },
         {
           "title": "Gestión de proyectos – SCRUM",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "SCRUM",
-            "Agile",
-            "Project Management"
-          ]
+          "tags": ["SCRUM", "Agile", "Project Management"]
         },
         {
           "title": "Power BI (básico e intermedio)",
@@ -1159,65 +1041,42 @@
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "EDA",
-            "Data Analysis",
-            "Python"
-          ]
+          "tags": ["EDA", "Data Analysis", "Python"]
         },
         {
           "title": "Geoinformática y teledetección",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "GIS",
-            "Remote Sensing",
-            "Geospatial Analysis"
-          ]
+          "tags": ["GIS", "Remote Sensing", "Geospatial Analysis"]
         },
         {
           "title": "Ciberseguridad: Pentesting web",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": [
-            "Cybersecurity",
-            "Penetration Testing",
-            "Web Security"
-          ]
+          "tags": ["Cybersecurity", "Penetration Testing", "Web Security"]
         },
         {
           "title": "Programa de Especialización en Patentes - 215 horas lectivas",
           "org": "INDECOPI",
           "startDate": "jul–nov 2022",
           "isVisible": true,
-          "tags": [
-            "Patents",
-            "Intellectual Property"
-          ]
+          "tags": ["Patents", "Intellectual Property"]
         },
         {
           "title": "Applied Machine Learning in Python",
           "org": "University of Michigan – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": [
-            "Machine Learning",
-            "Python",
-            "Applied ML"
-          ]
+          "tags": ["Machine Learning", "Python", "Applied ML"]
         },
         {
           "title": "Wind Energy",
           "org": "Technical University of Denmark – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": [
-            "Renewable Energy",
-            "Wind Power",
-            "Energy Systems"
-          ]
+          "tags": ["Renewable Energy", "Wind Power", "Energy Systems"]
         },
         {
           "title": "Wind Resources for Renewable Energies",
@@ -1235,33 +1094,21 @@
           "org": "The State University of New York – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": [
-            "Time Series",
-            "Forecasting",
-            "Data Analysis"
-          ]
+          "tags": ["Time Series", "Forecasting", "Data Analysis"]
         },
         {
           "title": "Stochastic Processes",
           "org": "National Research University – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": [
-            "Stochastic Processes",
-            "Probability",
-            "Mathematics"
-          ]
+          "tags": ["Stochastic Processes", "Probability", "Mathematics"]
         },
         {
           "title": "Corso Avanzato di Lingua e Cultura Italiana - Becario del gobierno italiano",
           "org": "Università per Stranieri di Perugia",
           "startDate": "ene–mar 2017",
           "isVisible": true,
-          "tags": [
-            "Italian",
-            "Language",
-            "Culture"
-          ]
+          "tags": ["Italian", "Language", "Culture"]
         }
       ]
     }
