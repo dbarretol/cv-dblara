@@ -40,7 +40,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <JsonLdSchema profile={profile} />
+      <JsonLdSchema profile={profile} sections={sections} />
 
       <Sidebar
         sections={visibleSections.map((s) => ({ id: s.id, title: s.title, icon: s.icon }))}

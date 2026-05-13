@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://https://dbarretol.github.io/cv-dblara/sitemap.xml
+Sitemap: https://dbarretol.github.io/cv-dblara/sitemap.xml
