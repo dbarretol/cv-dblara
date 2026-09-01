@@ -162,49 +162,64 @@
       "id": "projects",
       "title": "Proyectos Destacados",
       "icon": "folder",
-      "isVisible": false,
+      "isVisible": true,
       "items": [
         {
-          "title": "Plataforma de Analítica en Tiempo Real",
-          "org": "Telefónica Digital",
-          "startDate": "2023",
+          "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
+          "org": "Udacity — Nanodegree Future AWS Agent Engineer",
+          "startDate": "2026",
           "isVisible": true,
-          "summary": "Sistema de procesamiento de eventos en tiempo real para análisis de red.",
+          "summary": "Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
           "bullets": [
-            "Arquitectura basada en Apache Kafka y Spark Structured Streaming.",
-            "Dashboards en tiempo real con Grafana.",
-            "Reducción del tiempo de detección de anomalías de 2 horas a 5 minutos."
+            "Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
+            "Integración de herramientas externas (seguimiento de pedidos y reembolsos) vía AgentCore Gateway usando el Model Context Protocol (MCP) y funciones Lambda.",
+            "RAG con Bedrock Knowledge Base para responder consultas de producto y políticas de forma fundamentada.",
+            "Memoria entre sesiones con AgentCore Memory y cálculo exacto de descuentos de fidelidad con el Code Interpreter en sandbox.",
+            "Navegación web en vivo mediante AgentCore Browser Tool."
           ],
-          "tags": ["Kafka", "Spark Streaming", "Grafana", "Azure"],
-          "links": [
-            {
-              "label": "Caso de estudio",
-              "url": "#"
-            }
-          ]
+          "tags": ["Amazon Bedrock AgentCore", "Strands SDK", "MCP", "RAG", "AWS Lambda", "Python"]
         },
         {
-          "title": "Motor de Recomendaciones ML",
-          "org": "Proyecto personal",
-          "startDate": "2022",
+          "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
+          "org": "Udacity — Nanodegree Future AWS Agent Engineer",
+          "startDate": "2026",
           "isVisible": true,
-          "summary": "Sistema de recomendación basado en filtrado colaborativo y deep learning.",
+          "summary": "Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
           "bullets": [
-            "Entrenamiento de modelos con PyTorch sobre dataset de 10M+ interacciones.",
-            "API de inferencia serverless desplegada en GCP Cloud Functions.",
-            "Precisión del modelo: 92% en métricas de ranking."
+            "Diseño del system prompt que enruta mensajes y recopila datos de bugs (descripción, pasos, entorno) en conversaciones multi-turno.",
+            "Registro de tickets con la herramienta create_bug_report (Lambda + DynamoDB) expuesta a través de un AgentCore Gateway.",
+            "Respuestas de FAQ ancladas en un documento embebido en el prompt.",
+            "Evaluación automatizada con Amazon Bedrock Evaluations (LLM-as-a-judge) sobre una suite de pruebas propia."
           ],
-          "tags": ["PyTorch", "GCP", "MLOps", "Python"],
-          "links": [
-            {
-              "label": "GitHub",
-              "url": "https://github.com"
-            },
-            {
-              "label": "Demo",
-              "url": "#"
-            }
-          ]
+          "tags": ["Amazon Bedrock AgentCore", "Prompt Engineering", "Bedrock Evaluations", "AWS Lambda", "DynamoDB", "CloudFormation"]
+        },
+        {
+          "title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
+          "org": "Udacity — Nanodegree Future AWS AI Engineer",
+          "startDate": "2025",
+          "isVisible": true,
+          "summary": "Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
+          "bullets": [
+            "Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3 como corpus documental.",
+            "Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la base de datos con SQL.",
+            "Scripts en Python para la ingesta, indexación y consulta contra los modelos de lenguaje de Bedrock.",
+            "Aplicación de medidas de seguridad sobre el pipeline GenAI."
+          ],
+          "tags": ["Amazon Bedrock", "RAG", "Terraform", "Aurora PostgreSQL", "Amazon S3", "Python"]
+        },
+        {
+          "title": "Smart Budget Buddy — agente de educación financiera con Amazon Bedrock",
+          "org": "Udacity — Nanodegree Future AWS AI Engineer",
+          "startDate": "2025",
+          "isVisible": true,
+          "summary": "Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
+          "bullets": [
+            "Construcción iterativa del prompt del agente, definiendo tono, comportamiento y alcance.",
+            "Implementación de un guardrail de Amazon Bedrock para evitar consejos inseguros o sesgados y garantizar respuestas inclusivas.",
+            "Evaluación del agente sobre diálogos de prueba con preguntas de la vida real.",
+            "Prácticas de IA responsable y gestión de costos dentro de un presupuesto acotado de AWS."
+          ],
+          "tags": ["Amazon Bedrock", "Bedrock Agents", "Guardrails", "IA Responsable", "Prompt Engineering"]
         }
       ]
     },
