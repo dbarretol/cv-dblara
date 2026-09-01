@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {
   Briefcase, FolderOpen, GraduationCap, Award, Code, Globe,
-  BookOpen, Trophy, Users, Book, Menu, X, ChevronRight
+  BookOpen, Trophy, Users, Book, Menu, X, ChevronRight, BrainCircuit
 } from "lucide-react";
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
@@ -15,6 +15,7 @@ const iconMap: Record<string, React.FC<{ className?: string }>> = {
   trophy: Trophy,
   users: Users,
   book: Book,
+  "brain-circuit": BrainCircuit,
 };
 
 interface Section {

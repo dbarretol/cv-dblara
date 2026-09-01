@@ -226,14 +226,23 @@
       ]
     },
     {
-      "id": "education",
-      "title": "Formación Académica",
-      "icon": "graduation-cap",
+      "id": "ai-training",
+      "title": "Formación y Certificaciones en IA",
+      "icon": "brain-circuit",
       "isVisible": true,
       "items": [
         {
+          "title": "Nanodegree Future AWS Agent Engineer (AWS AI & ML Scholars 2026)",
+          "org": "Udacity · AWS",
+          "startDate": "2026",
+          "isVisible": true,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "summary": "En curso (finaliza oct 2026). Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
+          "tags": ["AWS", "Amazon Bedrock AgentCore", "AI Agents"]
+        },
+        {
           "title": "Programa de Especialización en IA Generativa y Machine Learning Ops",
-          "org": "Facultad de Ingeniería Económica, Estadística y Ciencias Sociales - Centro de Formación Continua",
+          "org": "UNI - Facultad de Ingeniería Económica, Estadística y Ciencias Sociales (Centro de Formación Continua)",
           "startDate": "Mar 2026",
           "endDate": "Set 2026",
           "location": "Lima, Perú",
@@ -266,6 +275,36 @@
           ]
         },
         {
+          "title": "Nanodegree Future AWS AI Engineer (AWS AI & ML Scholars 2025)",
+          "org": "Udacity · AWS",
+          "startDate": "2025",
+          "isVisible": true,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
+          "tags": ["AWS", "Generative AI", "Amazon Bedrock"]
+        },
+        {
+          "title": "Introducción a la IA generativa con AWS",
+          "org": "Udacity",
+          "startDate": "2025",
+          "isVisible": true,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "tags": ["AWS", "Generative AI"]
+        },
+        {
+          "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
+          "org": "Instituto Nacional de Salud del Niño - San Borja",
+          "startDate": "2024",
+          "isVisible": true,
+          "tags": [
+            "AI in Healthcare",
+            "Medical Data",
+            "Machine Learning",
+            "Predictive Modeling"
+          ],
+          "notes": "TODO: precisar rango exacto (sep–nov 2024)"
+        },
+        {
           "title": "Programa de Especialización en Deep Learning",
           "org": "Universidad Ricardo Palma",
           "startDate": "Feb 2024",
@@ -276,6 +315,30 @@
           "summary": "Redes neuronales y machine learning; Deep learning y Natural Language Processing (NLP); Deep learning y Computer Vision",
           "tags": ["Deep Learning", "Neural Networks", "TensorFlow", "PyTorch"]
         },
+        {
+          "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+          "org": "Microsoft",
+          "startDate": "2024",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
+          "tags": ["Azure", "AI"]
+        },
+        {
+          "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
+          "org": "Microsoft",
+          "startDate": "2024",
+          "isVisible": true,
+          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
+          "tags": ["Azure", "Data Science"]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Formación Académica",
+      "icon": "graduation-cap",
+      "isVisible": true,
+      "items": [
         {
           "title": "Maestría en Administración de Negocios (MBA)",
           "org": "ESAN Graduate School of Business",
@@ -334,48 +397,6 @@
       "icon": "award",
       "isVisible": true,
       "items": [
-        {
-          "title": "Nanodegree Future AWS Agent Engineer (AWS AI & ML Scholars 2026)",
-          "org": "Udacity · AWS",
-          "startDate": "2026",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "summary": "En curso (finaliza oct 2026). Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
-          "tags": ["AWS", "Amazon Bedrock AgentCore", "AI Agents"]
-        },
-        {
-          "title": "Nanodegree Future AWS AI Engineer (AWS AI & ML Scholars 2025)",
-          "org": "Udacity · AWS",
-          "startDate": "2025",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
-          "tags": ["AWS", "Generative AI", "Amazon Bedrock"]
-        },
-        {
-          "title": "Introducción a la IA generativa con AWS",
-          "org": "Udacity",
-          "startDate": "2025",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": ["AWS", "Generative AI"]
-        },
-        {
-          "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
-          "tags": ["Azure", "AI"]
-        },
-        {
-          "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
-          "tags": ["Azure", "Data Science"]
-        },
         {
           "title": "Associate Cloud Engineer",
           "org": "Google Cloud",
@@ -828,19 +849,6 @@
       "icon": "book",
       "isVisible": true,
       "items": [
-        {
-          "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
-          "org": "Instituto Nacional de Salud del Niño - San Borja",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "AI in Healthcare",
-            "Medical Data",
-            "Machine Learning",
-            "Predictive Modeling"
-          ],
-          "notes": "TODO: precisar rango exacto (sep–nov 2024)"
-        },
         {
           "title": "Google Cloud para Big Data y Analítica",
           "org": "Universidad Ricardo Palma",
