@@ -167,7 +167,8 @@
         {
           "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
           "org": "Udacity — Nanodegree Future AWS Agent Engineer",
-          "startDate": "2026",
+          "startDate": "Jul 2026",
+          "endDate": "Presente",
           "isVisible": true,
           "summary": "Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
           "bullets": [
@@ -182,7 +183,8 @@
         {
           "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
           "org": "Udacity — Nanodegree Future AWS Agent Engineer",
-          "startDate": "2026",
+          "startDate": "Jul 2026",
+          "endDate": "Presente",
           "isVisible": true,
           "summary": "Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
           "bullets": [
