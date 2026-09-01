@@ -853,10 +853,29 @@
     },
     {
       "id": "activities",
-      "title": "Otras Actividades",
+      "title": "Otras Actividades y Desarrollo Complementario",
       "icon": "users",
       "isVisible": true,
       "items": [
+        {
+          "title": "Formación en comunicación y presencia escénica",
+          "org": "PUCP · Perú Clown · Colegio de Ingenieros del Perú",
+          "startDate": "Ago 2026",
+          "endDate": "Dic 2026",
+          "isVisible": true,
+          "summary": "Talleres orientados a fortalecer la comunicación, la voz y la presencia frente a audiencias.",
+          "bullets": [
+            "Taller de Voz y Presencia – Facultad de Artes Escénicas, PUCP (set–nov 2026).",
+            "Taller de Clown – Perú Clown (ago–dic 2026).",
+            "Taller de Canto – Colegio de Ingenieros del Perú (ago–set 2026)."
+          ],
+          "tags": [
+            "Comunicación efectiva",
+            "Oratoria",
+            "Presencia escénica",
+            "Improvisación"
+          ]
+        },
         {
           "title": "Miembro del Comité de Doctorado",
           "org": "Escuela Central de Posgrado – Universidad Nacional de Ingeniería",
