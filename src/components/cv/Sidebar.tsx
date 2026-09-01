@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import {
   Briefcase, FolderOpen, GraduationCap, Award, Code, Globe,
-  BookOpen, Trophy, Users, Book, Menu, X, ChevronRight
+  BookOpen, Trophy, Users, Book, BrainCircuit, Menu, X, ChevronRight
 } from "lucide-react";
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
   briefcase: Briefcase,
   folder: FolderOpen,
   "graduation-cap": GraduationCap,
+  brain: BrainCircuit,
   award: Award,
   code: Code,
   globe: Globe,
