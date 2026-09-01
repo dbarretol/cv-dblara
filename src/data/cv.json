@@ -159,73 +159,6 @@
       ]
     },
     {
-      "id": "projects",
-      "title": "Proyectos Destacados",
-      "icon": "folder",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
-          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
-          "startDate": "Jul 2026",
-          "endDate": "Presente",
-          "isVisible": true,
-          "summary": "Módulo 2 (Building Agents with Amazon Bedrock AgentCore and Strands SDK). Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
-          "bullets": [
-            "Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
-            "Integración de herramientas externas (seguimiento de pedidos y reembolsos) vía AgentCore Gateway usando el Model Context Protocol (MCP) y funciones Lambda.",
-            "RAG con Bedrock Knowledge Base para responder consultas de producto y políticas de forma fundamentada.",
-            "Memoria entre sesiones con AgentCore Memory y cálculo exacto de descuentos de fidelidad con el Code Interpreter en sandbox.",
-            "Navegación web en vivo mediante AgentCore Browser Tool."
-          ],
-          "tags": ["Amazon Bedrock AgentCore", "Strands SDK", "MCP", "RAG", "AWS Lambda", "Python"]
-        },
-        {
-          "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
-          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
-          "startDate": "Jul 2026",
-          "endDate": "Presente",
-          "isVisible": true,
-          "summary": "Módulo 1 (Prompting for Effective LLM Reasoning). Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
-          "bullets": [
-            "Diseño del system prompt que enruta mensajes y recopila datos de bugs (descripción, pasos, entorno) en conversaciones multi-turno.",
-            "Registro de tickets con la herramienta create_bug_report (Lambda + DynamoDB) expuesta a través de un AgentCore Gateway.",
-            "Respuestas de FAQ ancladas en un documento embebido en el prompt.",
-            "Evaluación automatizada con Amazon Bedrock Evaluations (LLM-as-a-judge) sobre una suite de pruebas propia."
-          ],
-          "tags": ["Amazon Bedrock AgentCore", "Prompt Engineering", "Bedrock Evaluations", "AWS Lambda", "DynamoDB", "CloudFormation"]
-        },
-        {
-          "title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
-          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
-          "startDate": "2025",
-          "isVisible": true,
-          "summary": "Módulo 2 (Building Generative AI Applications with Amazon Bedrock). Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
-          "bullets": [
-            "Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3 como corpus documental.",
-            "Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la base de datos con SQL.",
-            "Scripts en Python para la ingesta, indexación y consulta contra los modelos de lenguaje de Bedrock.",
-            "Aplicación de medidas de seguridad sobre el pipeline GenAI."
-          ],
-          "tags": ["Amazon Bedrock", "RAG", "Terraform", "Aurora PostgreSQL", "Amazon S3", "Python"]
-        },
-        {
-          "title": "Smart Budget Buddy — agente de educación financiera con Amazon Bedrock",
-          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
-          "startDate": "2025",
-          "isVisible": true,
-          "summary": "Módulo 1 (Building Responsible AI Solutions with AWS). Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
-          "bullets": [
-            "Construcción iterativa del prompt del agente, definiendo tono, comportamiento y alcance.",
-            "Implementación de un guardrail de Amazon Bedrock para evitar consejos inseguros o sesgados y garantizar respuestas inclusivas.",
-            "Evaluación del agente sobre diálogos de prueba con preguntas de la vida real.",
-            "Prácticas de IA responsable y gestión de costos dentro de un presupuesto acotado de AWS."
-          ],
-          "tags": ["Amazon Bedrock", "Bedrock Agents", "Guardrails", "IA Responsable", "Prompt Engineering"]
-        }
-      ]
-    },
-    {
       "id": "ai-training",
       "title": "Formación y Certificaciones en IA",
       "icon": "brain-circuit",
@@ -238,7 +171,11 @@
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
           "summary": "En curso (finaliza oct 2026). Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
-          "tags": ["AWS", "Amazon Bedrock AgentCore", "AI Agents"]
+          "tags": [
+            "AWS",
+            "Amazon Bedrock AgentCore",
+            "AI Agents"
+          ]
         },
         {
           "title": "Programa de Especialización en IA Generativa y Machine Learning Ops",
@@ -281,7 +218,11 @@
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
           "summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
-          "tags": ["AWS", "Generative AI", "Amazon Bedrock"]
+          "tags": [
+            "AWS",
+            "Generative AI",
+            "Amazon Bedrock"
+          ]
         },
         {
           "title": "Introducción a la IA generativa con AWS",
@@ -289,7 +230,10 @@
           "startDate": "2025",
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": ["AWS", "Generative AI"]
+          "tags": [
+            "AWS",
+            "Generative AI"
+          ]
         },
         {
           "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
@@ -313,7 +257,12 @@
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/URP.png",
           "summary": "Redes neuronales y machine learning; Deep learning y Natural Language Processing (NLP); Deep learning y Computer Vision",
-          "tags": ["Deep Learning", "Neural Networks", "TensorFlow", "PyTorch"]
+          "tags": [
+            "Deep Learning",
+            "Neural Networks",
+            "TensorFlow",
+            "PyTorch"
+          ]
         },
         {
           "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
@@ -321,7 +270,10 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
-          "tags": ["Azure", "AI"]
+          "tags": [
+            "Azure",
+            "AI"
+          ]
         },
         {
           "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
@@ -329,7 +281,104 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
-          "tags": ["Azure", "Data Science"]
+          "tags": [
+            "Azure",
+            "Data Science"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Proyectos de Implementación de IA",
+      "icon": "folder",
+      "isVisible": true,
+      "items": [
+        {
+          "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
+          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
+          "startDate": "Jul 2026",
+          "endDate": "Presente",
+          "isVisible": true,
+          "summary": "Módulo 2 (Building Agents with Amazon Bedrock AgentCore and Strands SDK). Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
+          "bullets": [
+            "Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
+            "Integración de herramientas externas (seguimiento de pedidos y reembolsos) vía AgentCore Gateway usando el Model Context Protocol (MCP) y funciones Lambda.",
+            "RAG con Bedrock Knowledge Base para responder consultas de producto y políticas de forma fundamentada.",
+            "Memoria entre sesiones con AgentCore Memory y cálculo exacto de descuentos de fidelidad con el Code Interpreter en sandbox.",
+            "Navegación web en vivo mediante AgentCore Browser Tool."
+          ],
+          "tags": [
+            "Amazon Bedrock AgentCore",
+            "Strands SDK",
+            "MCP",
+            "RAG",
+            "AWS Lambda",
+            "Python"
+          ]
+        },
+        {
+          "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
+          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
+          "startDate": "Jul 2026",
+          "endDate": "Presente",
+          "isVisible": true,
+          "summary": "Módulo 1 (Prompting for Effective LLM Reasoning). Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
+          "bullets": [
+            "Diseño del system prompt que enruta mensajes y recopila datos de bugs (descripción, pasos, entorno) en conversaciones multi-turno.",
+            "Registro de tickets con la herramienta create_bug_report (Lambda + DynamoDB) expuesta a través de un AgentCore Gateway.",
+            "Respuestas de FAQ ancladas en un documento embebido en el prompt.",
+            "Evaluación automatizada con Amazon Bedrock Evaluations (LLM-as-a-judge) sobre una suite de pruebas propia."
+          ],
+          "tags": [
+            "Amazon Bedrock AgentCore",
+            "Prompt Engineering",
+            "Bedrock Evaluations",
+            "AWS Lambda",
+            "DynamoDB",
+            "CloudFormation"
+          ]
+        },
+        {
+          "title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
+          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
+          "startDate": "2025",
+          "isVisible": true,
+          "summary": "Módulo 2 (Building Generative AI Applications with Amazon Bedrock). Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
+          "bullets": [
+            "Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3 como corpus documental.",
+            "Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la base de datos con SQL.",
+            "Scripts en Python para la ingesta, indexación y consulta contra los modelos de lenguaje de Bedrock.",
+            "Aplicación de medidas de seguridad sobre el pipeline GenAI."
+          ],
+          "tags": [
+            "Amazon Bedrock",
+            "RAG",
+            "Terraform",
+            "Aurora PostgreSQL",
+            "Amazon S3",
+            "Python"
+          ]
+        },
+        {
+          "title": "Smart Budget Buddy — agente de educación financiera con Amazon Bedrock",
+          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
+          "startDate": "2025",
+          "isVisible": true,
+          "summary": "Módulo 1 (Building Responsible AI Solutions with AWS). Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
+          "bullets": [
+            "Construcción iterativa del prompt del agente, definiendo tono, comportamiento y alcance.",
+            "Implementación de un guardrail de Amazon Bedrock para evitar consejos inseguros o sesgados y garantizar respuestas inclusivas.",
+            "Evaluación del agente sobre diálogos de prueba con preguntas de la vida real.",
+            "Prácticas de IA responsable y gestión de costos dentro de un presupuesto acotado de AWS."
+          ],
+          "tags": [
+            "Amazon Bedrock",
+            "Bedrock Agents",
+            "Guardrails",
+            "IA Responsable",
+            "Prompt Engineering"
+          ]
         }
       ]
     },
@@ -403,7 +452,9 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/ACE_Google.png",
-          "tags": ["GCP"]
+          "tags": [
+            "GCP"
+          ]
         },
         {
           "title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
@@ -411,7 +462,10 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP300.png",
-          "tags": ["Azure", "Databases"]
+          "tags": [
+            "Azure",
+            "Databases"
+          ]
         },
         {
           "title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
@@ -419,7 +473,10 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_PL300.png",
-          "tags": ["Power BI", "Data Analytics"]
+          "tags": [
+            "Power BI",
+            "Data Analytics"
+          ]
         },
         {
           "title": "Certified Associate in Project Management (CAPM)",
@@ -427,7 +484,9 @@
           "startDate": "2014",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/CAPM_PMI.png",
-          "tags": ["Project Management"]
+          "tags": [
+            "Project Management"
+          ]
         },
         {
           "title": "Investigador RENACYT - Nivel VII",
@@ -435,7 +494,9 @@
           "startDate": "2023",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/RENACYT_CONCYTEC.png",
-          "tags": ["Research"]
+          "tags": [
+            "Research"
+          ]
         },
         {
           "title": "GitHub Foundations",
@@ -443,7 +504,10 @@
           "startDate": "2024",
           "isVisible": true,
           "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/GITHUB_GITHUB.png",
-          "tags": ["GitHub", "Version Control"]
+          "tags": [
+            "GitHub",
+            "Version Control"
+          ]
         }
       ]
     },
@@ -824,7 +888,10 @@
           "startDate": "May 2022",
           "isVisible": true,
           "summary": "Jornadas Peruanas de Energía Solar – JOPES 2022.",
-          "tags": ["Energía solar", "Energías renovables"]
+          "tags": [
+            "Energía solar",
+            "Energías renovables"
+          ]
         },
         {
           "title": "Expositor invitado",
@@ -867,21 +934,33 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Python", "Data Automation", "Data Analysis"]
+          "tags": [
+            "Python",
+            "Data Automation",
+            "Data Analysis"
+          ]
         },
         {
           "title": "Programación y optimización de datos con SQL",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["SQL", "Query Optimization", "Databases"]
+          "tags": [
+            "SQL",
+            "Query Optimization",
+            "Databases"
+          ]
         },
         {
           "title": "Análisis de datos y creación de dashboards",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Data Analysis", "Dashboards", "Business Intelligence"]
+          "tags": [
+            "Data Analysis",
+            "Dashboards",
+            "Business Intelligence"
+          ]
         },
         {
           "title": "Creación de dashboards y Business Intelligence con Power BI",
@@ -900,28 +979,46 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Excel", "Power Query", "Data Cleaning", "Data Analysis"]
+          "tags": [
+            "Excel",
+            "Power Query",
+            "Data Cleaning",
+            "Data Analysis"
+          ]
         },
         {
           "title": "Macros y funciones avanzadas en Excel",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Excel", "Excel VBA", "Advanced Functions", "Automation"]
+          "tags": [
+            "Excel",
+            "Excel VBA",
+            "Advanced Functions",
+            "Automation"
+          ]
         },
         {
           "title": "Macros en Excel para la gestión empresarial",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Excel VBA", "Business Automation", "Process Optimization"]
+          "tags": [
+            "Excel VBA",
+            "Business Automation",
+            "Process Optimization"
+          ]
         },
         {
           "title": "Gestión financiera básica de negocios con Excel",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Financial Analysis", "Excel", "Business Finance"]
+          "tags": [
+            "Financial Analysis",
+            "Excel",
+            "Business Finance"
+          ]
         },
         {
           "title": "Automatización de tareas con Power Apps y Power Automate",
@@ -940,119 +1037,189 @@
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["React", "Frontend", "JavaScript", "Web Development"]
+          "tags": [
+            "React",
+            "Frontend",
+            "JavaScript",
+            "Web Development"
+          ]
         },
         {
           "title": "Diseño web con WordPress",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["WordPress", "Web Development", "CMS"]
+          "tags": [
+            "WordPress",
+            "Web Development",
+            "CMS"
+          ]
         },
         {
           "title": "Ecommerce con WordPress",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["WordPress", "Ecommerce", "WooCommerce"]
+          "tags": [
+            "WordPress",
+            "Ecommerce",
+            "WooCommerce"
+          ]
         },
         {
           "title": "Aplicaciones móviles con Flutter",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Flutter", "Mobile Development", "Dart"]
+          "tags": [
+            "Flutter",
+            "Mobile Development",
+            "Dart"
+          ]
         },
         {
           "title": "Diseño UX/UI con Figma",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Figma", "UX Design", "UI Design", "Prototyping"]
+          "tags": [
+            "Figma",
+            "UX Design",
+            "UI Design",
+            "Prototyping"
+          ]
         },
         {
           "title": "Ley de contrataciones del Estado",
           "org": "CEPS UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Public Procurement", "Government Regulation", "Compliance"]
+          "tags": [
+            "Public Procurement",
+            "Government Regulation",
+            "Compliance"
+          ]
         },
         {
           "title": "Fundamentos de inteligencia artificial",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Artificial Intelligence", "AI Fundamentals"]
+          "tags": [
+            "Artificial Intelligence",
+            "AI Fundamentals"
+          ]
         },
         {
           "title": "Machine learning con Python",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Machine Learning", "Python", "Data Science"]
+          "tags": [
+            "Machine Learning",
+            "Python",
+            "Data Science"
+          ]
         },
         {
           "title": "Deep learning con Python",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Deep Learning", "Python", "Neural Networks"]
+          "tags": [
+            "Deep Learning",
+            "Python",
+            "Neural Networks"
+          ]
         },
         {
           "title": "Linux",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Linux", "Command Line", "Operating Systems"]
+          "tags": [
+            "Linux",
+            "Command Line",
+            "Operating Systems"
+          ]
         },
         {
           "title": "Gestión de proyectos con MS Project",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Project Management", "MS Project", "Planning"]
+          "tags": [
+            "Project Management",
+            "MS Project",
+            "Planning"
+          ]
         },
         {
           "title": "Inteligencia de negocios con Excel",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Business Intelligence", "Excel", "Data Analysis"]
+          "tags": [
+            "Business Intelligence",
+            "Excel",
+            "Data Analysis"
+          ]
         },
         {
           "title": "Fundamentos de Blockchain",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Blockchain", "Distributed Systems", "Cryptography"]
+          "tags": [
+            "Blockchain",
+            "Distributed Systems",
+            "Cryptography"
+          ]
         },
         {
           "title": "SQL Server (BD 1 y 2)",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["SQL Server", "Database Administration", "T-SQL"]
+          "tags": [
+            "SQL Server",
+            "Database Administration",
+            "T-SQL"
+          ]
         },
         {
           "title": "Cloud computing (AWS – Azure – Google Cloud)",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Cloud Computing", "AWS", "Azure", "Google Cloud Platform"]
+          "tags": [
+            "Cloud Computing",
+            "AWS",
+            "Azure",
+            "Google Cloud Platform"
+          ]
         },
         {
           "title": "Aplicaciones de IA para universitarios",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Artificial Intelligence", "Applied AI", "Automation"]
+          "tags": [
+            "Artificial Intelligence",
+            "Applied AI",
+            "Automation"
+          ]
         },
         {
           "title": "Gestión de proyectos – SCRUM",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["SCRUM", "Agile", "Project Management"]
+          "tags": [
+            "SCRUM",
+            "Agile",
+            "Project Management"
+          ]
         },
         {
           "title": "Power BI (básico e intermedio)",
@@ -1082,42 +1249,65 @@
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["EDA", "Data Analysis", "Python"]
+          "tags": [
+            "EDA",
+            "Data Analysis",
+            "Python"
+          ]
         },
         {
           "title": "Geoinformática y teledetección",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["GIS", "Remote Sensing", "Geospatial Analysis"]
+          "tags": [
+            "GIS",
+            "Remote Sensing",
+            "Geospatial Analysis"
+          ]
         },
         {
           "title": "Ciberseguridad: Pentesting web",
           "org": "OTI UNI",
           "startDate": "2024",
           "isVisible": true,
-          "tags": ["Cybersecurity", "Penetration Testing", "Web Security"]
+          "tags": [
+            "Cybersecurity",
+            "Penetration Testing",
+            "Web Security"
+          ]
         },
         {
           "title": "Programa de Especialización en Patentes - 215 horas lectivas",
           "org": "INDECOPI",
           "startDate": "jul–nov 2022",
           "isVisible": true,
-          "tags": ["Patents", "Intellectual Property"]
+          "tags": [
+            "Patents",
+            "Intellectual Property"
+          ]
         },
         {
           "title": "Applied Machine Learning in Python",
           "org": "University of Michigan – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": ["Machine Learning", "Python", "Applied ML"]
+          "tags": [
+            "Machine Learning",
+            "Python",
+            "Applied ML"
+          ]
         },
         {
           "title": "Wind Energy",
           "org": "Technical University of Denmark – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": ["Renewable Energy", "Wind Power", "Energy Systems"]
+          "tags": [
+            "Renewable Energy",
+            "Wind Power",
+            "Energy Systems"
+          ]
         },
         {
           "title": "Wind Resources for Renewable Energies",
@@ -1135,21 +1325,33 @@
           "org": "The State University of New York – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": ["Time Series", "Forecasting", "Data Analysis"]
+          "tags": [
+            "Time Series",
+            "Forecasting",
+            "Data Analysis"
+          ]
         },
         {
           "title": "Stochastic Processes",
           "org": "National Research University – Coursera",
           "startDate": "oct–dic 2022",
           "isVisible": true,
-          "tags": ["Stochastic Processes", "Probability", "Mathematics"]
+          "tags": [
+            "Stochastic Processes",
+            "Probability",
+            "Mathematics"
+          ]
         },
         {
           "title": "Corso Avanzato di Lingua e Cultura Italiana - Becario del gobierno italiano",
           "org": "Università per Stranieri di Perugia",
           "startDate": "ene–mar 2017",
           "isVisible": true,
-          "tags": ["Italian", "Language", "Culture"]
+          "tags": [
+            "Italian",
+            "Language",
+            "Culture"
+          ]
         }
       ]
     }
