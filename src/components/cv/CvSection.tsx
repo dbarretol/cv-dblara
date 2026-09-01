@@ -27,6 +27,36 @@ const CvSection = ({ section }: { section: SectionData }) => {
   const visibleItems = (section.items || []).filter((item) => item.isVisible !== false);
   if (visibleItems.length === 0) return null;
 
+  if (section.id === "languages") {
+    return (
+      <section id={section.id} className="mb-12 scroll-mt-20" aria-label={section.title}>
+        <h2 className="section-title">{section.title}</h2>
+
+        <div className="flex flex-wrap justify-center gap-3">
+          {visibleItems.map((item, i) => (
+            <div
+              key={i}
+              className="inline-flex items-center gap-2 rounded-sm border border-border bg-card px-3 py-1.5"
+            >
+              {item.image && (
+                <img
+                  src={item.image}
+                  alt={`${item.title} bandera`}
+                  className="w-5 h-5 object-contain rounded-sm"
+                  loading="lazy"
+                />
+              )}
+              <span className="text-sm font-medium text-foreground">{item.title}</span>
+              {item.summary && (
+                <span className="text-sm text-muted-foreground">· {item.summary}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id={section.id} className="mb-12 scroll-mt-20" aria-label={section.title}>
       <h2 className="section-title">{section.title}</h2>
