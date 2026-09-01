@@ -166,11 +166,11 @@
       "items": [
         {
           "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
-          "org": "Udacity — Nanodegree Future AWS Agent Engineer",
+          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
           "startDate": "Jul 2026",
           "endDate": "Presente",
           "isVisible": true,
-          "summary": "Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
+          "summary": "Módulo 2 (Building Agents with Amazon Bedrock AgentCore and Strands SDK). Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
           "bullets": [
             "Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
             "Integración de herramientas externas (seguimiento de pedidos y reembolsos) vía AgentCore Gateway usando el Model Context Protocol (MCP) y funciones Lambda.",
@@ -182,11 +182,11 @@
         },
         {
           "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
-          "org": "Udacity — Nanodegree Future AWS Agent Engineer",
+          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
           "startDate": "Jul 2026",
           "endDate": "Presente",
           "isVisible": true,
-          "summary": "Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
+          "summary": "Módulo 1 (Prompting for Effective LLM Reasoning). Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
           "bullets": [
             "Diseño del system prompt que enruta mensajes y recopila datos de bugs (descripción, pasos, entorno) en conversaciones multi-turno.",
             "Registro de tickets con la herramienta create_bug_report (Lambda + DynamoDB) expuesta a través de un AgentCore Gateway.",
@@ -197,10 +197,10 @@
         },
         {
           "title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
-          "org": "Udacity — Nanodegree Future AWS AI Engineer",
+          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
           "startDate": "2025",
           "isVisible": true,
-          "summary": "Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
+          "summary": "Módulo 2 (Building Generative AI Applications with Amazon Bedrock). Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
           "bullets": [
             "Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3 como corpus documental.",
             "Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la base de datos con SQL.",
@@ -211,10 +211,10 @@
         },
         {
           "title": "Smart Budget Buddy — agente de educación financiera con Amazon Bedrock",
-          "org": "Udacity — Nanodegree Future AWS AI Engineer",
+          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
           "startDate": "2025",
           "isVisible": true,
-          "summary": "Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
+          "summary": "Módulo 1 (Building Responsible AI Solutions with AWS). Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
           "bullets": [
             "Construcción iterativa del prompt del agente, definiendo tono, comportamiento y alcance.",
             "Implementación de un guardrail de Amazon Bedrock para evitar consejos inseguros o sesgados y garantizar respuestas inclusivas.",
@@ -335,12 +335,22 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Programa Nanodegree -  Future AWS AI Engineer",
-          "org": "Udacity",
+          "title": "Nanodegree Future AWS Agent Engineer (AWS AI & ML Scholars 2026)",
+          "org": "Udacity · AWS",
+          "startDate": "2026",
+          "isVisible": true,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
+          "summary": "En curso (finaliza oct 2026). Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
+          "tags": ["AWS", "Amazon Bedrock AgentCore", "AI Agents"]
+        },
+        {
+          "title": "Nanodegree Future AWS AI Engineer (AWS AI & ML Scholars 2025)",
+          "org": "Udacity · AWS",
           "startDate": "2025",
           "isVisible": true,
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": ["AWS", "AI"]
+          "summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
+          "tags": ["AWS", "Generative AI", "Amazon Bedrock"]
         },
         {
           "title": "Introducción a la IA generativa con AWS",
@@ -677,12 +687,18 @@
       "isVisible": true,
       "items": [
         {
-          "title": "Beca AWS de IA y ML",
-          "org": "AWS",
+          "title": "Beca AWS AI & ML Scholarship 2026",
+          "org": "AWS · Udacity",
+          "startDate": "2026",
+          "isVisible": true,
+          "summary": "Beneficiario del programa AWS AI & ML Scholars 2026, con patrocinio completo del Nanodegree \"Future AWS Agent Engineer\" (prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS)."
+        },
+        {
+          "title": "Beca AWS AI & ML Scholarship 2025",
+          "org": "AWS · Udacity",
           "startDate": "2025",
           "isVisible": true,
-          "summary": "Seleccionado como uno de los 1,500 beneficiarios globales del Programa de Becas AWS de IA y ML, recibiendo tutoría y patrocinio completo para un Nanogrado en Aprendizaje Automático.",
-          "notes": "TODO: confirmar nombre exacto del programa/nanogrado y entidad asociada (p. ej., Udacity) si aplica"
+          "summary": "Beneficiario del programa AWS AI & ML Scholars 2025, con patrocinio completo del Nanodegree \"Future AWS AI Engineer\" (IA responsable en AWS y aplicaciones de IA generativa con Amazon Bedrock)."
         },
         {
           "title": "Primer puesto - Graduados de MBA a tiempo completo",
