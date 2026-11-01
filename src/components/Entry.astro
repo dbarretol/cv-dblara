@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { typo } from '../lib/cv';
+
+interface Props {
+	title: string;
+	org?: string;
+	place?: string;
+	date?: string;
+	logo?: ImageMetadata;
+	distinction?: string;
+	summary?: string;
+	bullets?: string[];
+	keywords?: string[];
+}
+
+const { title, org, place, date, logo, distinction, summary, bullets, keywords } = Astro.props;
+---
+
+<article class="entry">
+	{logo && <Image class="logo" src={logo} alt="" width={96} height={96} loading="lazy" />}
+	<div class="entry-body">
+		<div class="entry-head">
+			<h3>{typo(title)}</h3>
+			{date && <span class="date">{date}</span>}
+		</div>
+		{
+			org && (
+				<p class="org">
+					{typo(org)}
+					{place && <span class="place">, {place}</span>}
+				</p>
+			)
+		}
+		{distinction && <p class="distinction">{typo(distinction)}</p>}
+		{summary && <p>{typo(summary)}</p>}
+		{
+			bullets && bullets.length > 0 && (
+				<ul class="bullets">
+					{bullets.map((b) => (
+						<li>{typo(b)}</li>
+					))}
+				</ul>
+			)
+		}
+		{keywords && keywords.length > 0 && <p class="keywords">{keywords.join(', ')}</p>}
+		<slot />
+	</div>
+</article>
