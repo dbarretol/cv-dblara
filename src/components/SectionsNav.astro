@@ -1,0 +1,80 @@
+---
+import { sections } from '../data/site';
+
+interface Props {
+	ids: readonly string[];
+}
+const { ids } = Astro.props;
+const items = sections.filter((s) => ids.includes(s.id));
+---
+
+<nav class="sections-nav" aria-label="Secciones del CV">
+	<div class="nav-bar">
+		<span class="current-section">{items[0]?.nav}</span>
+		<button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-secciones">
+			<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+				<path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+			</svg>
+			<span>Secciones</span>
+		</button>
+	</div>
+	<ul id="menu-secciones">
+		{
+			items.map((s) => (
+				<li>
+					<a href={`#${s.id}`}>{s.nav}</a>
+				</li>
+			))
+		}
+	</ul>
+</nav>
+
+<script>
+	// Progressive enhancement: without JavaScript the bar is a plain list of links.
+	document.documentElement.classList.add('js');
+
+	const nav = document.querySelector<HTMLElement>('.sections-nav')!;
+	const button = nav.querySelector<HTMLButtonElement>('.menu-button')!;
+	const current = nav.querySelector<HTMLElement>('.current-section')!;
+	const links = [...nav.querySelectorAll<HTMLAnchorElement>('ul a')];
+
+	const setOpen = (open: boolean) => {
+		button.setAttribute('aria-expanded', String(open));
+		nav.toggleAttribute('data-open', open);
+	};
+
+	button.addEventListener('click', () => setOpen(button.getAttribute('aria-expanded') !== 'true'));
+	links.forEach((a) => a.addEventListener('click', () => setOpen(false)));
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && nav.hasAttribute('data-open')) {
+			setOpen(false);
+			button.focus();
+		}
+	});
+	document.addEventListener('click', (e) => {
+		if (!nav.contains(e.target as Node)) setOpen(false);
+	});
+	matchMedia('(max-width: 700px)').addEventListener('change', () => setOpen(false));
+
+	// Mark the section in view.
+	const observer = new IntersectionObserver(
+		(entries) => {
+			for (const entry of entries) {
+				if (!entry.isIntersecting) continue;
+				for (const a of links) {
+					if (a.hash === `#${entry.target.id}`) {
+						a.setAttribute('aria-current', 'location');
+						current.textContent = a.textContent;
+					} else {
+						a.removeAttribute('aria-current');
+					}
+				}
+			}
+		},
+		{ rootMargin: '-30% 0px -65% 0px' },
+	);
+	document.querySelectorAll('main section[id]').forEach((s) => observer.observe(s));
+
+	// Printing from the browser: show the folded course list.
+	window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((d) => (d.open = true)));
+</script>

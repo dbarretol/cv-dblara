@@ -1,1378 +1,1249 @@
 {
-  "profile": {
-    "name": "Dr. David Barreto Lara",
-    "title": " 👨‍💼MBA | CIP 330188 | Consultor independiente | 🤖 Inteligencia Artificial |⚙️Gestión e ingeniería de mantenimiento |⚡Energías Renovables |🧑‍🏫Docente Universitario | Especialista en Patentes | 🔬Investigador RENACYT ",
-    "email": "dbarretol@outlook.com",
-    "phone": "(Solicitar por correo electrónico)",
-    "location": "Lima, Perú",
-    "linkedin": "https://www.linkedin.com/in/dbarretol",
-    "github": "https://github.com/dbarretol",
-    "website": "https://dbarretol.github.io/cv-dblara",
-    "summary": "Soy Maestro en administración (MBA) con especialización en finanzas corporativas e Ingeniero mecánico-electricista con doctorado en energía. Tengo experiencia en investigación y docencia a nivel de posgrado, así como en auditorías de gestión de mantenimiento en el sector energético. He liderado proyectos de optimización de procesos y poseo certificaciones en gestión de proyectos, soluciones en la nube y servicios de inteligencia artificial. Mis habilidades incluyen la orientación a resultados, pensamiento analítico, disciplina y autogestión. Además, tengo la capacidad de capacitar y formar a otros, contribuyendo al fortalecimiento de la gestión interna y al cumplimiento de los objetivos organizacionales."
-  },
-  "sections": [
-    {
-      "id": "experience",
-      "title": "Experiencia Profesional",
-      "icon": "briefcase",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Profesor a tiempo parcial",
-          "org": "Universidad Autónoma del Perú",
-          "startDate": "Abr 2025",
-          "endDate": "Dic 2025",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "summary": "Docencia de pregrado en la Facultad de Ingeniería Civil.",
-          "bullets": [
-            "Impartir cursos de pregrado para estudiantes de Ingeniería Civil.",
-            "Cursos: Métodos de investigación, Materiales de construcción, Estática."
-          ],
-          "tags": [
-            "Docencia universitaria",
-            "Ingeniería Civil",
-            "Metodología de investigación",
-            "Estática",
-            "Materiales de construcción"
-          ]
-        },
-        {
-          "title": "Docente de posgrado",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "Oct 2021",
-          "endDate": "Dic 2024",
-          "location": "Rímac, Lima",
-          "isVisible": true,
-          "summary": "Dictado de cursos avanzados y orientación de investigación a nivel de maestría y doctorado en Ingeniería Ambiental y Energética.",
-          "bullets": [
-            "Dictado de cursos avanzados de investigación a nivel doctoral y de maestría en programas de Ingeniería Ambiental y Energética.",
-            "Orientación a estudiantes de posgrado en el desarrollo de planes de investigación, empleando metodologías científicas y fomentando sus habilidades analíticas y críticas.",
-            "Diseño y enseñanza de cursos sobre metodología de la investigación, estadística aplicada y seminarios de investigación.",
-            "Cursos dictados: Plan de investigación, Metodología de la investigación científica, Estadística aplicada, Investigación doctoral, Seminario de tesis."
-          ],
-          "tags": [
-            "Docencia de posgrado",
-            "Metodología de investigación",
-            "Estadística aplicada",
-            "Ingeniería Ambiental",
-            "Ingeniería Energética",
-            "Mentoría académica"
-          ]
-        },
-        {
-          "title": "Consultor independiente",
-          "org": "Independiente (Sector: Consultoría/Energía)",
-          "startDate": "Jul 2017",
-          "endDate": "Presente",
-          "location": "Perú",
-          "isVisible": true,
-          "summary": "Consultoría especializada en auditorías de gestión de mantenimiento para el sector energético, incluyendo centrales termoeléctricas de ciclo combinado de gas natural.",
-          "bullets": [
-            "Liderazgo de auditorías de gestión de mantenimiento en el sector energético, colaborando con una central termoeléctrica de gas natural de ciclo combinado.",
-            "Propuesta de mejoras para optimizar la eficiencia de los procesos y abordar riesgos, contribuyendo al cumplimiento de los objetivos organizacionales.",
-            "Consultoría externa para la empresa FÉNIX.",
-            "Proyectos clave: Auditoría de mantenimiento mayor (2023), Auditoría anual de gestión de paradas (2021), Auditorías de mantenimiento preventivo (2019, 2017)."
-          ],
-          "tags": [
-            "Auditoría de mantenimiento",
-            "Gestión de mantenimiento",
-            "Sector energético",
-            "Ciclo combinado",
-            "Gestión de riesgos",
-            "Optimización de procesos"
-          ]
-        },
-        {
-          "title": "Investigador asociado visitante",
-          "org": "Queen's University Belfast",
-          "startDate": "Nov 2019",
-          "endDate": "Ene 2020",
-          "location": "Belfast, UK",
-          "isVisible": true,
-          "summary": "Investigación sobre aerogeneradores offshore, análisis estocástico de estructuras marinas y publicación de artículos en revistas indexadas.",
-          "bullets": [
-            "Investigación exhaustiva sobre aerogeneradores offshore, evaluando la influencia del cizallamiento del viento, la longitud de simulación y la incertidumbre de la cimentación en las respuestas extremas a largo plazo.",
-            "Aplicación de métodos analíticos en el análisis estocástico de estructuras offshore.",
-            "Uso de infraestructura de computación de alto rendimiento (HPC) para simulaciones y análisis avanzados.",
-            "Generación de artículos de investigación sobre energía eólica publicados en revistas indexadas."
-          ],
-          "tags": [
-            "Energía eólica offshore",
-            "Análisis estocástico",
-            "HPC",
-            "Estructuras marinas",
-            "Investigación científica",
-            "Publicaciones indexadas"
-          ]
-        },
-        {
-          "title": "Doctorando a tiempo completo",
-          "org": "Independiente (Beca CONCYTEC)",
-          "startDate": "Abr 2016",
-          "endDate": "Oct 2020",
-          "location": "Perú / UK / Italia",
-          "isVisible": true,
-          "summary": "Estudios doctorales a tiempo completo en la Universidad Nacional de Ingeniería con financiamiento CONCYTEC y experiencia investigadora internacional.",
-          "bullets": [
-            "Dedicación a tiempo completo a estudios de doctorado en la Universidad Nacional de Ingeniería, financiados por beca CONCYTEC.",
-            "Experiencia internacional viviendo en el Reino Unido (3 meses) e Italia (3 meses), gracias a financiamiento gubernamental.",
-            "Desarrollo de habilidades de autogestión, disciplina y trabajo bajo presión en entornos con alta incertidumbre."
-          ],
-          "tags": [
-            "Doctorado",
-            "CONCYTEC",
-            "Python",
-            "OpenFAST",
-            "TurbSim",
-            "Investigación científica",
-            "Experiencia internacional"
-          ]
-        },
-        {
-          "title": "Asistente de ingeniería de mantenimiento",
-          "org": "PETREX S. A.",
-          "startDate": "Set 2012",
-          "endDate": "Feb 2016",
-          "location": "San Isidro, Lima",
-          "isVisible": true,
-          "summary": "Gestión de mantenimiento de equipos de perforación y workover a nivel internacional en el sector de petróleo y gas.",
-          "bullets": [
-            "Gestión del mantenimiento de equipos de perforación y workover en Perú, Bolivia, Chile y Colombia.",
-            "Realización de auditorías internas del sistema de mantenimiento en lotes petroleros y elaboración de informes de cumplimiento.",
-            "Supervisión del plan preventivo y coordinación con personal de campo para completar las órdenes de mantenimiento.",
-            "Seguimiento de repuestos y servicios, colaborando con el área de compras.",
-            "Resolución de problemas con AMOS y SAP en colaboración con la oficina central en Italia.",
-            "Capacitación interna sobre el uso de SAP y AMOS al personal operativo.",
-            "Automatización de la generación de reportes y la obtención de historiales de mantenimiento."
-          ],
-          "tags": [
-            "SAP",
-            "AMOS",
-            "Mantenimiento preventivo",
-            "Petróleo y Gas",
-            "Auditoría interna",
-            "Gestión de mantenimiento",
-            "Perforación"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ai-training",
-      "title": "Formación y Certificaciones en IA",
-      "icon": "brain-circuit",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Nanodegree Future AWS Agent Engineer (AWS AI & ML Scholars 2026)",
-          "org": "Udacity · AWS",
-          "startDate": "2026",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "summary": "En curso (finaliza oct 2026). Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
-          "tags": [
-            "AWS",
-            "Amazon Bedrock AgentCore",
-            "AI Agents"
-          ]
-        },
-        {
-          "title": "Programa de Especialización en IA Generativa y Machine Learning Ops",
-          "org": "UNI - Facultad de Ingeniería Económica, Estadística y Ciencias Sociales (Centro de Formación Continua)",
-          "startDate": "Mar 2026",
-          "endDate": "Set 2026",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Especialización en IA generativa y MLOps, con enfoque en despliegue de modelos y aplicaciones prácticas.",
-          "tags": [
-            "Generative AI",
-            "Machine Learning",
-            "MLOps",
-            "Model Deployment",
-            "Artificial Intelligence"
-          ]
-        },
-        {
-          "title": "Programa de Especialización en Ingeniería de IA",
-          "org": "DSRP (Data Science Research Peru)",
-          "startDate": "Nov 2025",
-          "endDate": "Mar 2026",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/dsrp.png",
-          "summary": " Fundamentos de IA, LLM y RAG, Proyecto integrador",
-          "tags": [
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Deep Learning",
-            "Model Deployment",
-            "MLOps"
-          ]
-        },
-        {
-          "title": "Nanodegree Future AWS AI Engineer (AWS AI & ML Scholars 2025)",
-          "org": "Udacity · AWS",
-          "startDate": "2025",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
-          "tags": [
-            "AWS",
-            "Generative AI",
-            "Amazon Bedrock"
-          ]
-        },
-        {
-          "title": "Introducción a la IA generativa con AWS",
-          "org": "Udacity",
-          "startDate": "2025",
-          "isVisible": true,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png",
-          "tags": [
-            "AWS",
-            "Generative AI"
-          ]
-        },
-        {
-          "title": "Inteligencia Artificial en Salud - Nivel Intermedio",
-          "org": "Instituto Nacional de Salud del Niño - San Borja",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "AI in Healthcare",
-            "Medical Data",
-            "Machine Learning",
-            "Predictive Modeling"
-          ],
-          "notes": "TODO: precisar rango exacto (sep–nov 2024)"
-        },
-        {
-          "title": "Programa de Especialización en Deep Learning",
-          "org": "Universidad Ricardo Palma",
-          "startDate": "Feb 2024",
-          "endDate": "Jun 2024",
-          "location": null,
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/URP.png",
-          "summary": "Redes neuronales y machine learning; Deep learning y Natural Language Processing (NLP); Deep learning y Computer Vision",
-          "tags": [
-            "Deep Learning",
-            "Neural Networks",
-            "TensorFlow",
-            "PyTorch"
-          ]
-        },
-        {
-          "title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_AI102.png",
-          "tags": [
-            "Azure",
-            "AI"
-          ]
-        },
-        {
-          "title": "Microsoft Certified: Data Scientist Associate (DP-100)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP100.png",
-          "tags": [
-            "Azure",
-            "Data Science"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "projects",
-      "title": "Proyectos de Implementación de IA",
-      "icon": "folder",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
-          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
-          "startDate": "Jul 2026",
-          "endDate": "Presente",
-          "isVisible": true,
-          "summary": "Módulo 2 (Building Agents with Amazon Bedrock AgentCore and Strands SDK). Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
-          "bullets": [
-            "Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
-            "Integración de herramientas externas (seguimiento de pedidos y reembolsos) vía AgentCore Gateway usando el Model Context Protocol (MCP) y funciones Lambda.",
-            "RAG con Bedrock Knowledge Base para responder consultas de producto y políticas de forma fundamentada.",
-            "Memoria entre sesiones con AgentCore Memory y cálculo exacto de descuentos de fidelidad con el Code Interpreter en sandbox.",
-            "Navegación web en vivo mediante AgentCore Browser Tool."
-          ],
-          "tags": [
-            "Amazon Bedrock AgentCore",
-            "Strands SDK",
-            "MCP",
-            "RAG",
-            "AWS Lambda",
-            "Python"
-          ]
-        },
-        {
-          "title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
-          "org": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer",
-          "startDate": "Jul 2026",
-          "endDate": "Presente",
-          "isVisible": true,
-          "summary": "Módulo 1 (Prompting for Effective LLM Reasoning). Chatbot de atención para una tienda online que clasifica cada mensaje y ejecuta el comportamiento correcto (reporte de bug, consulta de plataforma o derivación a humano) mediante un único system prompt sobre el harness gestionado de AgentCore.",
-          "bullets": [
-            "Diseño del system prompt que enruta mensajes y recopila datos de bugs (descripción, pasos, entorno) en conversaciones multi-turno.",
-            "Registro de tickets con la herramienta create_bug_report (Lambda + DynamoDB) expuesta a través de un AgentCore Gateway.",
-            "Respuestas de FAQ ancladas en un documento embebido en el prompt.",
-            "Evaluación automatizada con Amazon Bedrock Evaluations (LLM-as-a-judge) sobre una suite de pruebas propia."
-          ],
-          "tags": [
-            "Amazon Bedrock AgentCore",
-            "Prompt Engineering",
-            "Bedrock Evaluations",
-            "AWS Lambda",
-            "DynamoDB",
-            "CloudFormation"
-          ]
-        },
-        {
-          "title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
-          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
-          "startDate": "2025",
-          "isVisible": true,
-          "summary": "Módulo 2 (Building Generative AI Applications with Amazon Bedrock). Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando modelos de Amazon Bedrock con almacenamiento vectorial, aprovisionado como infraestructura como código.",
-          "bullets": [
-            "Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3 como corpus documental.",
-            "Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la base de datos con SQL.",
-            "Scripts en Python para la ingesta, indexación y consulta contra los modelos de lenguaje de Bedrock.",
-            "Aplicación de medidas de seguridad sobre el pipeline GenAI."
-          ],
-          "tags": [
-            "Amazon Bedrock",
-            "RAG",
-            "Terraform",
-            "Aurora PostgreSQL",
-            "Amazon S3",
-            "Python"
-          ]
-        },
-        {
-          "title": "Smart Budget Buddy — agente de educación financiera con Amazon Bedrock",
-          "org": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer",
-          "startDate": "2025",
-          "isVisible": true,
-          "summary": "Módulo 1 (Building Responsible AI Solutions with AWS). Agente de AWS Bedrock (Agent Builder) para el backend de un chatbot que ayuda a estudiantes a crear presupuestos simples, entender conceptos financieros básicos y evitar trampas comunes de dinero.",
-          "bullets": [
-            "Construcción iterativa del prompt del agente, definiendo tono, comportamiento y alcance.",
-            "Implementación de un guardrail de Amazon Bedrock para evitar consejos inseguros o sesgados y garantizar respuestas inclusivas.",
-            "Evaluación del agente sobre diálogos de prueba con preguntas de la vida real.",
-            "Prácticas de IA responsable y gestión de costos dentro de un presupuesto acotado de AWS."
-          ],
-          "tags": [
-            "Amazon Bedrock",
-            "Bedrock Agents",
-            "Guardrails",
-            "IA Responsable",
-            "Prompt Engineering"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "education",
-      "title": "Formación Académica",
-      "icon": "graduation-cap",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Maestría en Administración de Negocios (MBA)",
-          "org": "ESAN Graduate School of Business",
-          "startDate": "Set 2023",
-          "endDate": "Octubre 2024",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/ESAN.png",
-          "summary": "Especialización en Finanzas corporativas. Primer puesto en graduados de MBA a tiempo completo."
-        },
-        {
-          "title": "Doctorado en Energética",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2016",
-          "endDate": "2018",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Graduado en el 1er puesto. Becario del gobierno peruano."
-        },
-        {
-          "title": "Maestría en Gerencia e Ingeniería de Mantenimiento",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2013",
-          "endDate": "2015",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Graduado en el 1er puesto. Premio a la mejor tesis."
-        },
-        {
-          "title": "Ingeniería Mecánica-Eléctrica",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2016",
-          "endDate": "2020",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Ingeniero Mecánico-Eléctrico titulado y colegiado (CIP 330188). Graduado en el 1er puesto."
-        },
-        {
-          "title": "Ingeniería Naval",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2007",
-          "endDate": "2011",
-          "location": "Lima, Perú",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/institutions/UNI.png",
-          "summary": "Bachiller en Ingeniería Naval. Graduado en el 1er puesto."
-        }
-      ]
-    },
-    {
-      "id": "certifications",
-      "title": "Certificaciones",
-      "icon": "award",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Associate Cloud Engineer",
-          "org": "Google Cloud",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/ACE_Google.png",
-          "tags": [
-            "GCP"
-          ]
-        },
-        {
-          "title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_DP300.png",
-          "tags": [
-            "Azure",
-            "Databases"
-          ]
-        },
-        {
-          "title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-          "org": "Microsoft",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/microsoft_PL300.png",
-          "tags": [
-            "Power BI",
-            "Data Analytics"
-          ]
-        },
-        {
-          "title": "Certified Associate in Project Management (CAPM)",
-          "org": "PMI",
-          "startDate": "2014",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/CAPM_PMI.png",
-          "tags": [
-            "Project Management"
-          ]
-        },
-        {
-          "title": "Investigador RENACYT - Nivel VII",
-          "org": "CONCYTEC",
-          "startDate": "2023",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/RENACYT_CONCYTEC.png",
-          "tags": [
-            "Research"
-          ]
-        },
-        {
-          "title": "GitHub Foundations",
-          "org": "GitHub",
-          "startDate": "2024",
-          "isVisible": true,
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/certifications/GITHUB_GITHUB.png",
-          "tags": [
-            "GitHub",
-            "Version Control"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "skills",
-      "title": "Habilidades y Competencias",
-      "icon": "code",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Programación y Análisis de Datos",
-          "isVisible": true,
-          "tags": [
-            "Python",
-            "SQL",
-            "Power BI",
-            "Power Query",
-            "Excel avanzado (Macros/VBA)"
-          ]
-        },
-        {
-          "title": "Cloud Computing e Inteligencia Artificial",
-          "isVisible": true,
-          "tags": [
-            "Google Cloud Platform",
-            "AWS",
-            "Azure",
-            "Machine Learning",
-            "Deep Learning",
-            "IA Generativa",
-            "EDA (Exploratory Data Analysis)"
-          ]
-        },
-        {
-          "title": "Ingeniería, Energía y Simulación",
-          "isVisible": true,
-          "tags": [
-            "Energía eólica offshore",
-            "Energías renovables",
-            "OpenFAST",
-            "TurbSim",
-            "Análisis estocástico",
-            "Estructuras marinas",
-            "Ingeniería de mantenimiento"
-          ]
-        },
-        {
-          "title": "Gestión y Negocios",
-          "isVisible": true,
-          "tags": [
-            "Finanzas corporativas",
-            "Gestión de proyectos (CAPM/SCRUM)",
-            "MS Project",
-            "Gestión de mantenimiento",
-            "Auditoría de mantenimiento",
-            "SAP",
-            "AMOS"
-          ]
-        },
-        {
-          "title": "Investigación y Docencia",
-          "isVisible": true,
-          "tags": [
-            "Metodología de investigación",
-            "Estadística aplicada",
-            "Redacción científica",
-            "Publicaciones indexadas",
-            "Mentoría académica",
-            "Patentes (INDECOPI)"
-          ]
-        },
-        {
-          "title": "Desarrollo Web y Herramientas",
-          "isVisible": true,
-          "tags": [
-            "React",
-            "Flutter",
-            "WordPress",
-            "Figma (UX/UI)",
-            "GitHub",
-            "Linux",
-            "Docker"
-          ]
-        },
-        {
-          "title": "Habilidades Blandas",
-          "isVisible": true,
-          "tags": [
-            "Liderazgo",
-            "Pensamiento analítico",
-            "Resolución de problemas",
-            "Comunicación efectiva",
-            "Autogestión",
-            "Adaptabilidad",
-            "Trabajo bajo presión",
-            "Disciplina"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "languages",
-      "title": "Idiomas",
-      "icon": "globe",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Español",
-          "isVisible": true,
-          "summary": "Nativo",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/330px-Flag_of_Peru.svg.png"
-        },
-        {
-          "title": "Inglés",
-          "isVisible": true,
-          "summary": "B2 – Avanzado",
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/usa.png"
-        },
-        {
-          "title": "Italiano",
-          "isVisible": true,
-          "summary": "C1 – Avanzado",
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/italy.png"
-        },
-        {
-          "title": "Francés",
-          "isVisible": true,
-          "summary": "A2 – Básico Superior",
-          "image": "https://raw.githubusercontent.com/dbarretol/dbl-bucket/refs/heads/main/images/languages/france.png"
-        }
-      ]
-    },
-    {
-      "id": "publications",
-      "title": "Publicaciones",
-      "icon": "book-open",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Estudio exploratorio del desarrollo de parques eólicos offshore en Perú",
-          "org": "ESAN Graduate School of Business",
-          "startDate": "2024",
-          "isVisible": true,
-          "summary": "Tesis de MBA. Autor: Barreto, David.",
-          "links": [
-            {
-              "label": "Documento",
-              "url": "https://hdl.handle.net/20.500.12640/4263"
-            }
-          ]
-        },
-        {
-          "title": "Análisis de la influencia del comportamiento estocástico del viento en las respuestas dinámicas extremas de largo plazo de una turbina eólica onshore de 5 MW",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2023",
-          "isVisible": true,
-          "summary": "Tesis de titulación. Autor: Barreto, David.",
-          "links": [
-            {
-              "label": "Documento",
-              "url": "http://hdl.handle.net/20.500.14076/26965"
-            }
-          ]
-        },
-        {
-          "title": "Implied safety level in design codes for monopile offshore wind turbines - Parametric study on the effect of partial safety factors",
-          "org": "CRC Press - Advances in the Analysis and Design of Marine Structures",
-          "startDate": "2023",
-          "isVisible": true,
-          "summary": "Libro/capítulo. Autores: Amlashi, Hadi; Karimirad, Madjid & Barreto, David. Páginas 223-233.",
-          "links": [
-            {
-              "label": "DOI / Editorial",
-              "url": "https://doi.org/10.1201/9781003399759-25"
-            }
-          ]
-        },
-        {
-          "title": "Dynamic response assessment of an offshore wind turbine under Peruvian environmental conditions",
-          "org": "Journal of Physics: Conference Series",
-          "startDate": "2023",
-          "isVisible": true,
-          "summary": "Artículo científico. Autores: Barreto, David & Ortega, Arturo. Vol. 2538(1), 012006.",
-          "links": [
-            {
-              "label": "DOI",
-              "url": "https://doi.org/10.1088/1742-6596/2538/1/012006"
-            }
-          ]
-        },
-        {
-          "title": "Effects of Simulation Length and Flexible Foundation on Long-Term Response Extrapolation of a Bottom-Fixed Offshore Wind Turbine",
-          "org": "Journal of Offshore Mechanics and Arctic Engineering",
-          "startDate": "2021",
-          "isVisible": true,
-          "summary": "Artículo científico. Autores: Barreto, David; Karimirad, Madjid & Ortega, Arturo. Vol. 144(3).",
-          "links": [
-            {
-              "label": "DOI",
-              "url": "https://doi.org/10.1115/1.4053030"
-            }
-          ]
-        },
-        {
-          "title": "Uncertainty quantification in structural responses of offshore monopile wind turbines",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2020",
-          "isVisible": true,
-          "summary": "Tesis de doctorado. Autor: Barreto, David.",
-          "links": [
-            {
-              "label": "Documento",
-              "url": "http://hdl.handle.net/20.500.14076/22175"
-            }
-          ]
-        },
-        {
-          "title": "Influence of Wind Shear Uncertainty in Long-Term Extreme Responses of an Offshore Monopile Wind Turbine",
-          "org": "ASME 2020 39th International Conference on Ocean, Offshore and Arctic Engineering",
-          "startDate": "2020",
-          "isVisible": true,
-          "summary": "Proceedings. Autores: Barreto, David; Karimirad, Madjid & Ortega Malca, Arturo. Volume 2A: Structures, Safety, and Reliability, V02AT02A061.",
-          "links": [
-            {
-              "label": "DOI / ASME",
-              "url": "https://doi.org/10.1115/OMAE2020-18506"
-            }
-          ]
-        },
-        {
-          "title": "Sensitivity Analysis of a Bottom Fixed Offshore Wind Turbine Using the Environmental Contour Method",
-          "org": "ASME 2019 38th International Conference on Ocean, Offshore and Arctic Engineering",
-          "startDate": "2019",
-          "isVisible": true,
-          "summary": "Proceedings. Autores: Barreto, David; Moghtadaei, Abdolmajid; Karimirad, Madjid & Ortega, Arturo. Volume 3: Structures, Safety, and Reliability, V003T02A071.",
-          "links": [
-            {
-              "label": "DOI / ASME",
-              "url": "https://doi.org/10.1115/OMAE2019-95390"
-            }
-          ]
-        },
-        {
-          "title": "Modelos de control de inventarios para la reducción de costos de repuestos de mantenimiento en taladros de perforación offshore en la provincia de Tumbes",
-          "org": "Universidad Nacional de Ingeniería",
-          "startDate": "2015",
-          "isVisible": true,
-          "summary": "Tesis de maestría. Autor: Barreto, David.",
-          "links": [
-            {
-              "label": "Documento",
-              "url": "https://cybertesis.uni.edu.pe/handle/20.500.14076/2533"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "awards",
-      "title": "Premios y Reconocimientos",
-      "icon": "trophy",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Beca AWS AI & ML Scholarship 2026",
-          "org": "AWS · Udacity",
-          "startDate": "2026",
-          "isVisible": true,
-          "summary": "Beneficiario del programa AWS AI & ML Scholars 2026, con patrocinio completo del Nanodegree \"Future AWS Agent Engineer\" (prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS)."
-        },
-        {
-          "title": "Beca AWS AI & ML Scholarship 2025",
-          "org": "AWS · Udacity",
-          "startDate": "2025",
-          "isVisible": true,
-          "summary": "Beneficiario del programa AWS AI & ML Scholars 2025, con patrocinio completo del Nanodegree \"Future AWS AI Engineer\" (IA responsable en AWS y aplicaciones de IA generativa con Amazon Bedrock)."
-        },
-        {
-          "title": "Primer puesto - Graduados de MBA a tiempo completo",
-          "org": "ESAN Graduate School of Business",
-          "startDate": "2024",
-          "isVisible": true,
-          "summary": "Reconocimiento por obtener el primer puesto entre los graduados de MBA a tiempo completo.",
-          "notes": "TODO: el dato original indica 'Dic. 2024'; agrega mes si tu JSON lo soporta (p. ej., 2024-12)"
-        },
-        {
-          "title": "Beca - Reconocimiento a la excelencia académica",
-          "org": "ESAN Graduate School of Business",
-          "startDate": "2023",
-          "isVisible": true,
-          "summary": "Beneficio que cubre el 75% del costo total del MBA.",
-          "notes": "TODO: el dato original indica 'Abr. 2023'; agrega mes si tu JSON lo soporta (p. ej., 2023-04)"
-        },
-        {
-          "title": "Segundo puesto - Programa de especialización en patentes",
-          "org": "Escuela Nacional - INDECOPI",
-          "startDate": "2022",
-          "isVisible": true,
-          "summary": "Reconocimiento por obtener el segundo puesto en el Programa de especialización en patentes.",
-          "notes": "TODO: el dato original indica 'Dic. 2022'; agrega mes si tu JSON lo soporta (p. ej., 2022-12)"
-        },
-        {
-          "title": "Primer puesto - Graduados en Ingeniería Mecánica Eléctrica",
-          "org": "Universidad Nacional de Ingeniería (UNI) - Facultad de Ingeniería Mecánica",
-          "startDate": "2020",
-          "isVisible": true,
-          "summary": "Reconocimiento por obtener el primer puesto entre los graduados en Ingeniería Mecánica Eléctrica.",
-          "notes": "TODO: confirmar si corresponde a promoción/semestre específico"
-        },
-        {
-          "title": "Ganador - Proyecto para pasantía de investigación en Reino Unido",
-          "org": "FONDECYT - PROCIENCIA",
-          "startDate": "2019",
-          "isVisible": true,
-          "summary": "Apoyo financiero para visita de investigación al Reino Unido, valorada en 6,900 USD (concurso: Movilización en ciencia, tecnología e innovación tecnológica - Pasantías).",
-          "notes": "TODO: el periodo original es 'Nov. 2019 - Ene. 2020'; si tu JSON lo permite, agregar endDate=2020-01"
-        },
-        {
-          "title": "Primer puesto - Graduados del Doctorado en Energética",
-          "org": "Universidad Nacional de Ingeniería (UNI) - Facultad de Ingeniería Mecánica",
-          "startDate": "2018",
-          "isVisible": true,
-          "summary": "Reconocimiento por obtener el primer puesto entre los graduados del Doctorado en Energética.",
-          "notes": "TODO: confirmar promoción/semestre específico"
-        },
-        {
-          "title": "Beca - Estudios avanzados de lengua y cultura italiana",
-          "org": "MAECI — Università per Stranieri di Perugia",
-          "startDate": "2017",
-          "isVisible": true,
-          "summary": "Beca para estudios avanzados de lengua y cultura italiana.",
-          "notes": "TODO: el periodo original indica 'Ene - Mar 2017'; si tu JSON lo permite, usar startDate=2017-01 y endDate=2017-03"
-        },
-        {
-          "title": "Beca completa - Estudios de doctorado",
-          "org": "FONDECYT - CONCYTEC",
-          "startDate": "2016",
-          "isVisible": true,
-          "summary": "Subvención para estudios de doctorado valorada en aproximadamente 37,000 USD, para cubrir costos académicos, obtención del grado y estipendio mensual.",
-          "notes": "TODO: el periodo original es 'Abr. 2016 - Abr. 2019'; si tu JSON lo permite, agregar endDate=2019-04"
-        }
-      ]
-    },
-    {
-      "id": "activities",
-      "title": "Otras Actividades y Desarrollo Complementario",
-      "icon": "users",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Formación en comunicación y presencia escénica",
-          "org": "PUCP · Perú Clown · Colegio de Ingenieros del Perú",
-          "startDate": "Ago 2026",
-          "endDate": "Dic 2026",
-          "isVisible": true,
-          "summary": "Talleres orientados a fortalecer la comunicación, la voz y la presencia frente a audiencias.",
-          "bullets": [
-            "Taller de Voz y Presencia – Facultad de Artes Escénicas, PUCP (set–nov 2026).",
-            "Taller de Clown – Perú Clown (ago–dic 2026).",
-            "Taller de Canto – Colegio de Ingenieros del Perú (ago–set 2026)."
-          ],
-          "tags": [
-            "Comunicación efectiva",
-            "Oratoria",
-            "Presencia escénica",
-            "Improvisación"
-          ]
-        },
-        {
-          "title": "Miembro del Comité de Doctorado",
-          "org": "Escuela Central de Posgrado – Universidad Nacional de Ingeniería",
-          "startDate": "Dic 2022",
-          "endDate": "Presente",
-          "isVisible": true,
-          "summary": "Miembro del Comité de Doctorado del Programa en Ciencias con mención en Energética."
-        },
-        {
-          "title": "Coordinador ejecutivo y Expositor invitado",
-          "org": "Instituto Peruano de Mantenimiento (IPEMAN)",
-          "startDate": "Nov 2024",
-          "isVisible": true,
-          "summary": "22° Congreso Peruano – Ingeniería de Mantenimiento (18 de noviembre de 2024).",
-          "bullets": [
-            "Coordinador ejecutivo del foro: \"Confiabilidad, Automatización y Mantenimiento 4.0\".",
-            "Expositor con el tema: \"Papel del Machine Learning en la Ingeniería de Mantenimiento\"."
-          ],
-          "tags": [
-            "Machine Learning",
-            "Ingeniería de Mantenimiento",
-            "Mantenimiento 4.0",
-            "Confiabilidad"
-          ]
-        },
-        {
-          "title": "Expositor",
-          "org": "Centro de Energías Renovables y Uso Racional de la Energía (CER UNI)",
-          "startDate": "May 2022",
-          "isVisible": true,
-          "summary": "Jornadas Peruanas de Energía Solar – JOPES 2022.",
-          "tags": [
-            "Energía solar",
-            "Energías renovables"
-          ]
-        },
-        {
-          "title": "Expositor invitado",
-          "org": "Instituto Peruano de Mantenimiento (IPEMAN)",
-          "startDate": "Oct 2021",
-          "isVisible": true,
-          "summary": "21° Congreso Bicentenario Peruano – Ingeniería de Mantenimiento (25 al 29 de octubre de 2021).",
-          "bullets": [
-            "Tema: \"Gemelos Digitales y su Importancia en la Era del Mantenimiento Inteligente\"."
-          ],
-          "tags": [
-            "Gemelos digitales",
-            "Mantenimiento inteligente",
-            "Ingeniería de Mantenimiento"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "courses",
-      "title": "Cursos de Capacitación",
-      "icon": "book",
-      "isVisible": true,
-      "items": [
-        {
-          "title": "Google Cloud para Big Data y Analítica",
-          "org": "Universidad Ricardo Palma",
-          "startDate": "feb–mar 2024",
-          "isVisible": true,
-          "tags": [
-            "Google Cloud Platform",
-            "BigQuery",
-            "Cloud Run",
-            "Data Engineering",
-            "Cloud Architecture"
-          ]
-        },
-        {
-          "title": "Análisis y automatización de datos con Python",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Python",
-            "Data Automation",
-            "Data Analysis"
-          ]
-        },
-        {
-          "title": "Programación y optimización de datos con SQL",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "SQL",
-            "Query Optimization",
-            "Databases"
-          ]
-        },
-        {
-          "title": "Análisis de datos y creación de dashboards",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Data Analysis",
-            "Dashboards",
-            "Business Intelligence"
-          ]
-        },
-        {
-          "title": "Creación de dashboards y Business Intelligence con Power BI",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Power BI",
-            "Business Intelligence",
-            "Dashboards",
-            "Data Visualization"
-          ]
-        },
-        {
-          "title": "Ciencia de datos con Excel y Power Query",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Excel",
-            "Power Query",
-            "Data Cleaning",
-            "Data Analysis"
-          ]
-        },
-        {
-          "title": "Macros y funciones avanzadas en Excel",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Excel",
-            "Excel VBA",
-            "Advanced Functions",
-            "Automation"
-          ]
-        },
-        {
-          "title": "Macros en Excel para la gestión empresarial",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Excel VBA",
-            "Business Automation",
-            "Process Optimization"
-          ]
-        },
-        {
-          "title": "Gestión financiera básica de negocios con Excel",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Financial Analysis",
-            "Excel",
-            "Business Finance"
-          ]
-        },
-        {
-          "title": "Automatización de tareas con Power Apps y Power Automate",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Power Apps",
-            "Power Automate",
-            "Workflow Automation",
-            "Low-Code"
-          ]
-        },
-        {
-          "title": "Aplicaciones frontend con React",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "React",
-            "Frontend",
-            "JavaScript",
-            "Web Development"
-          ]
-        },
-        {
-          "title": "Diseño web con WordPress",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "WordPress",
-            "Web Development",
-            "CMS"
-          ]
-        },
-        {
-          "title": "Ecommerce con WordPress",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "WordPress",
-            "Ecommerce",
-            "WooCommerce"
-          ]
-        },
-        {
-          "title": "Aplicaciones móviles con Flutter",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Flutter",
-            "Mobile Development",
-            "Dart"
-          ]
-        },
-        {
-          "title": "Diseño UX/UI con Figma",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Figma",
-            "UX Design",
-            "UI Design",
-            "Prototyping"
-          ]
-        },
-        {
-          "title": "Ley de contrataciones del Estado",
-          "org": "CEPS UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Public Procurement",
-            "Government Regulation",
-            "Compliance"
-          ]
-        },
-        {
-          "title": "Fundamentos de inteligencia artificial",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Artificial Intelligence",
-            "AI Fundamentals"
-          ]
-        },
-        {
-          "title": "Machine learning con Python",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Machine Learning",
-            "Python",
-            "Data Science"
-          ]
-        },
-        {
-          "title": "Deep learning con Python",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Deep Learning",
-            "Python",
-            "Neural Networks"
-          ]
-        },
-        {
-          "title": "Linux",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Linux",
-            "Command Line",
-            "Operating Systems"
-          ]
-        },
-        {
-          "title": "Gestión de proyectos con MS Project",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Project Management",
-            "MS Project",
-            "Planning"
-          ]
-        },
-        {
-          "title": "Inteligencia de negocios con Excel",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Business Intelligence",
-            "Excel",
-            "Data Analysis"
-          ]
-        },
-        {
-          "title": "Fundamentos de Blockchain",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Blockchain",
-            "Distributed Systems",
-            "Cryptography"
-          ]
-        },
-        {
-          "title": "SQL Server (BD 1 y 2)",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "SQL Server",
-            "Database Administration",
-            "T-SQL"
-          ]
-        },
-        {
-          "title": "Cloud computing (AWS – Azure – Google Cloud)",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Cloud Computing",
-            "AWS",
-            "Azure",
-            "Google Cloud Platform"
-          ]
-        },
-        {
-          "title": "Aplicaciones de IA para universitarios",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Artificial Intelligence",
-            "Applied AI",
-            "Automation"
-          ]
-        },
-        {
-          "title": "Gestión de proyectos – SCRUM",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "SCRUM",
-            "Agile",
-            "Project Management"
-          ]
-        },
-        {
-          "title": "Power BI (básico e intermedio)",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Power BI",
-            "Business Intelligence",
-            "Dashboards",
-            "Data Visualization"
-          ]
-        },
-        {
-          "title": "Transformación digital",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Digital Transformation",
-            "Innovation Strategy",
-            "Technology Management"
-          ]
-        },
-        {
-          "title": "Exploratory Data Analysis",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "EDA",
-            "Data Analysis",
-            "Python"
-          ]
-        },
-        {
-          "title": "Geoinformática y teledetección",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "GIS",
-            "Remote Sensing",
-            "Geospatial Analysis"
-          ]
-        },
-        {
-          "title": "Ciberseguridad: Pentesting web",
-          "org": "OTI UNI",
-          "startDate": "2024",
-          "isVisible": true,
-          "tags": [
-            "Cybersecurity",
-            "Penetration Testing",
-            "Web Security"
-          ]
-        },
-        {
-          "title": "Programa de Especialización en Patentes - 215 horas lectivas",
-          "org": "INDECOPI",
-          "startDate": "jul–nov 2022",
-          "isVisible": true,
-          "tags": [
-            "Patents",
-            "Intellectual Property"
-          ]
-        },
-        {
-          "title": "Applied Machine Learning in Python",
-          "org": "University of Michigan – Coursera",
-          "startDate": "oct–dic 2022",
-          "isVisible": true,
-          "tags": [
-            "Machine Learning",
-            "Python",
-            "Applied ML"
-          ]
-        },
-        {
-          "title": "Wind Energy",
-          "org": "Technical University of Denmark – Coursera",
-          "startDate": "oct–dic 2022",
-          "isVisible": true,
-          "tags": [
-            "Renewable Energy",
-            "Wind Power",
-            "Energy Systems"
-          ]
-        },
-        {
-          "title": "Wind Resources for Renewable Energies",
-          "org": "École Polytechnique – Coursera",
-          "startDate": "oct–dic 2022",
-          "isVisible": true,
-          "tags": [
-            "Renewable Energy",
-            "Wind Resource Assessment",
-            "Sustainability"
-          ]
-        },
-        {
-          "title": "Practical Time Series Analysis",
-          "org": "The State University of New York – Coursera",
-          "startDate": "oct–dic 2022",
-          "isVisible": true,
-          "tags": [
-            "Time Series",
-            "Forecasting",
-            "Data Analysis"
-          ]
-        },
-        {
-          "title": "Stochastic Processes",
-          "org": "National Research University – Coursera",
-          "startDate": "oct–dic 2022",
-          "isVisible": true,
-          "tags": [
-            "Stochastic Processes",
-            "Probability",
-            "Mathematics"
-          ]
-        },
-        {
-          "title": "Corso Avanzato di Lingua e Cultura Italiana - Becario del gobierno italiano",
-          "org": "Università per Stranieri di Perugia",
-          "startDate": "ene–mar 2017",
-          "isVisible": true,
-          "tags": [
-            "Italian",
-            "Language",
-            "Culture"
-          ]
-        }
-      ]
-    }
-  ]
+	"generated": {
+		"note": "Generated by scripts/export-cv.mjs from master_cv.yaml. Do not edit by hand.",
+		"sourceVersion": "1.0.0",
+		"lastUpdated": "2026-11-01"
+	},
+	"profile": {
+		"name": "Dr. David Barreto Lara",
+		"email": "dbarretol@outlook.com",
+		"location": "Lima, Perú",
+		"linkedin": "https://www.linkedin.com/in/dbarretol",
+		"github": "https://github.com/dbarretol",
+		"summary": "Maestro en Administración (MBA) con especialización en finanzas corporativas e Ingeniero Mecánico-Electricista con Doctorado en Energética. Experiencia en investigación y docencia a nivel de posgrado, auditorías de gestión de mantenimiento en el sector energético, y liderazgo de proyectos de optimización de procesos. Certificaciones en gestión de proyectos, soluciones en la nube (AWS, Azure, GCP) e inteligencia artificial. Habilidades clave: orientación a resultados, pensamiento analítico, disciplina y autogestión."
+	},
+	"experience": [
+		{
+			"id": "exp-001",
+			"title": "Profesor a tiempo parcial",
+			"org": "Universidad Autónoma del Perú",
+			"location": "Lima, Perú",
+			"startDate": "2025-04",
+			"endDate": "2025-12",
+			"summary": "Docencia de pregrado en la Facultad de Ingeniería Civil.",
+			"bullets": [
+				"Impartir cursos de pregrado para estudiantes de Ingeniería Civil.",
+				"Cursos: Métodos de investigación, Materiales de construcción, Estática."
+			],
+			"tags": [
+				"Docencia universitaria",
+				"Ingeniería Civil",
+				"Metodología de investigación",
+				"Estática"
+			]
+		},
+		{
+			"id": "exp-002",
+			"title": "Docente de posgrado",
+			"org": "Universidad Nacional de Ingeniería",
+			"location": "Rímac, Lima, Perú",
+			"startDate": "2021-10",
+			"endDate": "2024-12",
+			"summary": "Dictado de cursos avanzados y orientación de investigación a nivel de maestría y doctorado en Ingeniería Ambiental y Energética.",
+			"bullets": [
+				"Dictado de cursos avanzados de investigación a nivel doctoral y de maestría.",
+				"Orientación a estudiantes de posgrado en planes de investigación con metodologías científicas.",
+				"Cursos: Plan de investigación, Metodología de la investigación científica, Estadística aplicada, Investigación doctoral, Seminario de tesis."
+			],
+			"tags": [
+				"Docencia de posgrado",
+				"Metodología de investigación",
+				"Estadística aplicada",
+				"Ingeniería Ambiental",
+				"Ingeniería Energética",
+				"Mentoría académica"
+			]
+		},
+		{
+			"id": "exp-003",
+			"title": "Consultor independiente",
+			"org": "Independiente - Sector Consultoría / Energía",
+			"location": "Perú",
+			"startDate": "2017-07",
+			"endDate": "2023",
+			"summary": "Consultoría especializada en auditorías de gestión de mantenimiento para el sector energético, incluyendo centrales termoeléctricas de ciclo combinado de gas natural.",
+			"bullets": [
+				"Liderazgo de auditorías de gestión de mantenimiento en el sector energético (FÉNIX Power).",
+				"Propuesta de mejoras para optimizar eficiencia de procesos y abordar riesgos.",
+				"Proyectos clave: Auditoría de mantenimiento mayor (2023), Auditoría anual de gestión de paradas (2021), Auditorías de mantenimiento preventivo (2019, 2017)."
+			],
+			"tags": [
+				"Auditoría de mantenimiento",
+				"Gestión de mantenimiento",
+				"Sector energético",
+				"Ciclo combinado",
+				"Consultoría"
+			]
+		},
+		{
+			"id": "exp-004",
+			"title": "Investigador asociado visitante",
+			"org": "Queen's University Belfast",
+			"location": "Belfast, Reino Unido",
+			"startDate": "2019-11",
+			"endDate": "2020-01",
+			"summary": "Investigación sobre aerogeneradores offshore, análisis estocástico de estructuras marinas y publicación de artículos en revistas indexadas.",
+			"bullets": [
+				"Investigación sobre aerogeneradores offshore: influencia del cizallamiento del viento, longitud de simulación e incertidumbre de cimentación.",
+				"Aplicación de métodos analíticos en el análisis estocástico de estructuras offshore.",
+				"Uso de infraestructura HPC (High Performance Computing) para simulaciones avanzadas.",
+				"Publicación de artículos de investigación sobre energía eólica en revistas indexadas."
+			],
+			"tags": [
+				"Energía eólica offshore",
+				"Análisis estocástico",
+				"HPC",
+				"Estructuras marinas",
+				"Investigación científica"
+			]
+		},
+		{
+			"id": "exp-005",
+			"title": "Doctorando a tiempo completo",
+			"org": "Universidad Nacional de Ingeniería",
+			"location": "Perú / Reino Unido / Italia",
+			"startDate": "2016-04",
+			"endDate": "2020-10",
+			"summary": "Estudios doctorales a tiempo completo financiados por CONCYTEC, con experiencia investigadora internacional en UK e Italia.",
+			"bullets": [
+				"Dedicación a tiempo completo a estudios de doctorado en la UNI, financiados por beca CONCYTEC.",
+				"Estancia de investigación en Reino Unido (3 meses) e Italia (3 meses) con financiamiento gubernamental.",
+				"Desarrollo de habilidades de autogestión, disciplina y trabajo bajo presión."
+			],
+			"tags": [
+				"Doctorado",
+				"CONCYTEC",
+				"Python",
+				"OpenFAST",
+				"TurbSim",
+				"Investigación científica",
+				"Experiencia internacional"
+			]
+		},
+		{
+			"id": "exp-006",
+			"title": "Asistente de ingeniería de mantenimiento",
+			"org": "PETREX S.A.",
+			"location": "San Isidro, Lima, Perú",
+			"startDate": "2012-09",
+			"endDate": "2016-02",
+			"summary": "Gestión de mantenimiento de equipos de perforación y workover a nivel internacional en el sector de petróleo y gas.",
+			"bullets": [
+				"Gestión del mantenimiento de equipos de perforación y workover en Perú, Bolivia, Chile y Colombia.",
+				"Auditorías internas del sistema de mantenimiento en lotes petroleros y elaboración de informes de cumplimiento.",
+				"Supervisión del plan preventivo y coordinación con personal de campo.",
+				"Seguimiento de repuestos y servicios, colaborando con el área de compras.",
+				"Gestión de servicios de proveedores: coordinación de su ingreso a campo, seguimiento de la ejecución y revisión de los informes finales de servicio.",
+				"Resolución de problemas con AMOS y SAP en colaboración con la oficina central en Italia.",
+				"Capacitación interna sobre SAP y AMOS al personal operativo.",
+				"Automatización de la generación de reportes e historiales de mantenimiento: de 2 días a media tarde."
+			],
+			"tags": [
+				"SAP",
+				"AMOS",
+				"Mantenimiento preventivo",
+				"Petróleo y Gas",
+				"Auditoría interna",
+				"Gestión de mantenimiento",
+				"Perforación"
+			]
+		}
+	],
+	"aiTraining": [
+		{
+			"id": "ai-001",
+			"title": "Nanodegree: Future AWS Agent Engineer",
+			"program": "AWS AI & ML Scholars 2026",
+			"org": "Udacity - AWS",
+			"startDate": "2026",
+			"endDate": "2026-10",
+			"status": "completed",
+			"summary": "Prompting para razonamiento con LLM, agentes con Amazon Bedrock AgentCore y Strands SDK, y sistemas multi-agente en AWS.",
+			"credentialUrl": "https://www.udacity.com/certificate/e/b8194ddc-900d-11f1-959b-af86fc18e59f",
+			"tags": [
+				"AWS",
+				"Amazon Bedrock AgentCore",
+				"Strands SDK",
+				"AI Agents",
+				"Multi-agent"
+			],
+			"image": "1280px-Amazon_Web_Services_Logosvg-774b1b.png"
+		},
+		{
+			"id": "ai-002",
+			"title": "Programa de Especialización en IA Generativa y Machine Learning Ops",
+			"org": "UNI - FIEECS (Centro de Formación Continua)",
+			"location": "Lima, Perú",
+			"startDate": "2026-03",
+			"endDate": "2026-09",
+			"status": "completed",
+			"summary": "Especialización en IA generativa y MLOps, despliegue de modelos y aplicaciones prácticas.",
+			"distinction": "Primer puesto de los graduados",
+			"tags": [
+				"Generative AI",
+				"Machine Learning",
+				"MLOps",
+				"Model Deployment",
+				"Artificial Intelligence"
+			],
+			"image": "UNI-26375c.png"
+		},
+		{
+			"id": "ai-003",
+			"title": "Programa de Especialización en Ingeniería de IA",
+			"org": "DSRP (Data Science Research Perú)",
+			"location": "Lima, Perú",
+			"startDate": "2025-11",
+			"endDate": "2026-03",
+			"status": "completed",
+			"summary": "Fundamentos de IA, LLM y RAG, Proyecto integrador.",
+			"tags": [
+				"Artificial Intelligence",
+				"Machine Learning",
+				"Deep Learning",
+				"MLOps",
+				"LLM",
+				"RAG"
+			],
+			"image": "dsrp-90a611.png"
+		},
+		{
+			"id": "ai-004",
+			"title": "Nanodegree: Future AWS AI Engineer",
+			"program": "AWS AI & ML Scholars 2025",
+			"org": "Udacity - AWS",
+			"startDate": "2025",
+			"endDate": "2025",
+			"status": "completed",
+			"summary": "IA responsable en AWS y desarrollo de aplicaciones de IA generativa con Amazon Bedrock.",
+			"credentialUrl": "https://www.udacity.com/certificate/e/b145f6f6-8152-11f0-a92b-9f854d063931",
+			"tags": [
+				"AWS",
+				"Generative AI",
+				"Amazon Bedrock",
+				"Responsible AI"
+			],
+			"image": "1280px-Amazon_Web_Services_Logosvg-774b1b.png"
+		},
+		{
+			"id": "ai-005",
+			"title": "Introducción a la IA generativa con AWS",
+			"org": "Udacity",
+			"startDate": "2025",
+			"endDate": "2025",
+			"status": "completed",
+			"tags": [
+				"AWS",
+				"Generative AI"
+			],
+			"image": "1280px-Amazon_Web_Services_Logosvg-774b1b.png"
+		},
+		{
+			"id": "ai-006",
+			"title": "Programa de Especialización en Deep Learning",
+			"org": "Universidad Ricardo Palma",
+			"startDate": "2024-02",
+			"endDate": "2024-06",
+			"status": "completed",
+			"summary": "Redes neuronales y ML; Deep learning y NLP; Deep learning y Computer Vision.",
+			"tags": [
+				"Deep Learning",
+				"Neural Networks",
+				"TensorFlow",
+				"PyTorch",
+				"NLP",
+				"Computer Vision"
+			],
+			"image": "URP-8e3268.png"
+		},
+		{
+			"id": "ai-007",
+			"title": "Inteligencia Artificial en Salud - Nivel Intermedio",
+			"org": "Instituto Nacional de Salud del Niño - San Borja",
+			"startDate": "2024-09",
+			"endDate": "2024-11",
+			"status": "completed",
+			"tags": [
+				"AI in Healthcare",
+				"Medical Data",
+				"Machine Learning",
+				"Predictive Modeling"
+			]
+		}
+	],
+	"projects": [
+		{
+			"id": "proj-001",
+			"title": "Agente de soporte al cliente con Amazon Bedrock AgentCore y Strands SDK",
+			"context": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer (Módulo 2)",
+			"startDate": "2026-07",
+			"status": "completed",
+			"summary": "Agente conversacional para e-commerce desplegado en Amazon Bedrock AgentCore Runtime, capaz de mantener contexto entre sesiones y coordinar múltiples sistemas backend desde una sola interfaz.",
+			"bullets": [
+				"Despliegue del agente en AgentCore Runtime con el Strands SDK (BedrockAgentCoreApp y entrypoint).",
+				"Integración de herramientas externas vía AgentCore Gateway usando MCP y funciones Lambda.",
+				"RAG con Bedrock Knowledge Base para consultas de producto y políticas.",
+				"Memoria entre sesiones con AgentCore Memory y Code Interpreter en sandbox.",
+				"Navegación web en vivo mediante AgentCore Browser Tool."
+			],
+			"tags": [
+				"Amazon Bedrock AgentCore",
+				"Strands SDK",
+				"MCP",
+				"RAG",
+				"AWS Lambda",
+				"Python",
+				"Multi-agent"
+			]
+		},
+		{
+			"id": "proj-002",
+			"title": "Chatbot de soporte con enrutamiento por prompt en Bedrock AgentCore",
+			"context": "Udacity · AWS AI & ML Scholars 2026 — Nanodegree Future AWS Agent Engineer (Módulo 1)",
+			"startDate": "2026-07",
+			"status": "completed",
+			"summary": "Chatbot de atención para tienda online que clasifica mensajes y ejecuta el comportamiento correcto mediante un único system prompt sobre AgentCore.",
+			"bullets": [
+				"Diseño del system prompt que enruta mensajes y recopila datos de bugs en conversaciones multi-turno.",
+				"Registro de tickets con create_bug_report (Lambda + DynamoDB) vía AgentCore Gateway.",
+				"Respuestas de FAQ ancladas en documento embebido en el prompt.",
+				"Evaluación automatizada con Amazon Bedrock Evaluations (LLM-as-a-judge)."
+			],
+			"tags": [
+				"Amazon Bedrock AgentCore",
+				"Prompt Engineering",
+				"Bedrock Evaluations",
+				"AWS Lambda",
+				"DynamoDB",
+				"CloudFormation"
+			]
+		},
+		{
+			"id": "proj-003",
+			"title": "Sistema RAG de consulta de documentos con Amazon Bedrock y Python",
+			"context": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer (Módulo 2)",
+			"startDate": "2025",
+			"endDate": "2025",
+			"status": "completed",
+			"summary": "Sistema de gestión del conocimiento que ingesta documentos y responde consultas en lenguaje natural combinando Amazon Bedrock con almacenamiento vectorial, aprovisionado como IaC.",
+			"bullets": [
+				"Pipeline GenAI RAG con Amazon Bedrock, Aurora PostgreSQL Serverless (pgvector) y Amazon S3.",
+				"Aprovisionamiento de recursos AWS con Terraform (IaC) y preparación de la BD con SQL.",
+				"Scripts en Python para ingesta, indexación y consulta contra los LLMs de Bedrock.",
+				"Aplicación de medidas de seguridad sobre el pipeline GenAI."
+			],
+			"tags": [
+				"Amazon Bedrock",
+				"RAG",
+				"Terraform",
+				"Aurora PostgreSQL",
+				"Amazon S3",
+				"Python",
+				"IaC"
+			]
+		},
+		{
+			"id": "proj-004",
+			"title": "Smart Budget Buddy — Agente de educación financiera con Amazon Bedrock",
+			"context": "Udacity · AWS AI & ML Scholars 2025 — Nanodegree Future AWS AI Engineer (Módulo 1)",
+			"startDate": "2025",
+			"endDate": "2025",
+			"status": "completed",
+			"summary": "Agente de AWS Bedrock para chatbot que ayuda a estudiantes a crear presupuestos simples y entender conceptos financieros básicos.",
+			"bullets": [
+				"Construcción iterativa del prompt del agente: tono, comportamiento y alcance.",
+				"Implementación de guardrail de Amazon Bedrock para respuestas inclusivas y seguras.",
+				"Evaluación del agente sobre diálogos de prueba con preguntas reales.",
+				"Prácticas de IA responsable y gestión de costos en AWS."
+			],
+			"tags": [
+				"Amazon Bedrock",
+				"Bedrock Agents",
+				"Guardrails",
+				"Responsible AI",
+				"Prompt Engineering"
+			]
+		}
+	],
+	"education": [
+		{
+			"id": "edu-001",
+			"degree": "Maestría en Administración de Negocios (MBA)",
+			"specialization": "Finanzas Corporativas",
+			"org": "ESAN Graduate School of Business",
+			"location": "Lima, Perú",
+			"startDate": "2023-09",
+			"endDate": "2024-10",
+			"distinction": "Primer puesto - Graduados de MBA a tiempo completo",
+			"image": "ESAN-d774b7.png"
+		},
+		{
+			"id": "edu-002",
+			"degree": "Doctorado en Energética",
+			"org": "Universidad Nacional de Ingeniería (UNI)",
+			"location": "Lima, Perú",
+			"startDate": "2016",
+			"endDate": "2018",
+			"distinction": "Primer puesto. Becario CONCYTEC.",
+			"thesis": "Uncertainty quantification in structural responses of offshore monopile wind turbines",
+			"thesisUrl": "http://hdl.handle.net/20.500.14076/22175",
+			"image": "UNI-26375c.png"
+		},
+		{
+			"id": "edu-003",
+			"degree": "Maestría en Gerencia e Ingeniería de Mantenimiento",
+			"org": "Universidad Nacional de Ingeniería (UNI)",
+			"location": "Lima, Perú",
+			"startDate": "2013",
+			"endDate": "2015",
+			"distinction": "Primer puesto. Premio a la mejor tesis.",
+			"thesis": "Modelos de control de inventarios para la reducción de costos de repuestos de mantenimiento en taladros de perforación offshore",
+			"thesisUrl": "https://cybertesis.uni.edu.pe/handle/20.500.14076/2533",
+			"image": "UNI-26375c.png"
+		},
+		{
+			"id": "edu-004",
+			"degree": "Ingeniería Mecánica-Eléctrica",
+			"org": "Universidad Nacional de Ingeniería (UNI)",
+			"location": "Lima, Perú",
+			"startDate": "2016",
+			"endDate": "2020",
+			"distinction": "Primer puesto. Titulado y colegiado - CIP 330188.",
+			"thesis": "Análisis de la influencia del comportamiento estocástico del viento en las respuestas dinámicas extremas de largo plazo de una turbina eólica onshore de 5 MW",
+			"thesisUrl": "http://hdl.handle.net/20.500.14076/26965",
+			"image": "UNI-26375c.png"
+		},
+		{
+			"id": "edu-005",
+			"degree": "Ingeniería Naval (Bachiller)",
+			"org": "Universidad Nacional de Ingeniería (UNI)",
+			"location": "Lima, Perú",
+			"startDate": "2007",
+			"endDate": "2011",
+			"distinction": "Primer puesto - Graduados de Ingeniería Naval.",
+			"image": "UNI-26375c.png"
+		}
+	],
+	"certifications": [
+		{
+			"id": "cert-009",
+			"title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103)",
+			"issuer": "Microsoft",
+			"date": "2026-10-16",
+			"expiryDate": "2027-10-16",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/917bd5d3823ae471"
+		},
+		{
+			"id": "cert-004",
+			"title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/226da14964821bff",
+			"image": "microsoft_DP300-f1527e.png"
+		},
+		{
+			"id": "cert-005",
+			"title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/cdc2ac17de0d1b86",
+			"image": "microsoft_PL300-f3f2ab.png"
+		},
+		{
+			"id": "cert-002",
+			"title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/88368976a482f61d",
+			"image": "microsoft_AI102-d8cf12.png"
+		},
+		{
+			"id": "cert-003",
+			"title": "Microsoft Certified: Azure Data Scientist Associate (DP-100)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/1725ff6ef156bcea",
+			"image": "microsoft_DP100-6ee8b7.png"
+		},
+		{
+			"id": "cert-001",
+			"title": "Associate Cloud Engineer",
+			"issuer": "Google Cloud",
+			"date": "2024",
+			"credentialUrl": "https://www.credly.com/badges/c01f62aa-1d2d-4d4b-941c-fa9dbdae53bb/public_url",
+			"image": "ACE_Google-08166b.png"
+		},
+		{
+			"id": "cert-006",
+			"title": "Certified Associate in Project Management (CAPM)",
+			"issuer": "PMI",
+			"date": "2014",
+			"image": "CAPM_PMI-9d44aa.png"
+		},
+		{
+			"id": "cert-008",
+			"title": "GitHub Foundations",
+			"issuer": "GitHub",
+			"date": "2024",
+			"image": "GITHUB_GITHUB-6caa71.png"
+		},
+		{
+			"id": "cert-007",
+			"title": "Investigador RENACYT - Nivel VII",
+			"issuer": "CONCYTEC",
+			"date": "2023",
+			"image": "RENACYT_CONCYTEC-d40cd9.png"
+		}
+	],
+	"skills": {
+		"technical": [
+			{
+				"group": "programming_and_data",
+				"items": [
+					{
+						"name": "Python",
+						"level": "advanced"
+					},
+					{
+						"name": "SQL",
+						"level": "advanced"
+					},
+					{
+						"name": "Power BI",
+						"level": "advanced"
+					},
+					{
+						"name": "Power Query",
+						"level": "advanced"
+					},
+					{
+						"name": "Excel (Macros / VBA)",
+						"level": "advanced"
+					},
+					{
+						"name": "R",
+						"level": "basic"
+					},
+					{
+						"name": "Matlab",
+						"level": "intermediate"
+					},
+					{
+						"name": "GAMS",
+						"level": "basic"
+					}
+				]
+			},
+			{
+				"group": "cloud_and_ai",
+				"items": [
+					{
+						"name": "AWS (Amazon Web Services)",
+						"level": "intermediate"
+					},
+					{
+						"name": "Microsoft Azure",
+						"level": "intermediate"
+					},
+					{
+						"name": "Google Cloud Platform (GCP)",
+						"level": "intermediate"
+					},
+					{
+						"name": "Machine Learning",
+						"level": "intermediate"
+					},
+					{
+						"name": "Deep Learning",
+						"level": "intermediate"
+					},
+					{
+						"name": "Generative AI / LLMs",
+						"level": "intermediate"
+					},
+					{
+						"name": "Amazon Bedrock",
+						"level": "intermediate"
+					},
+					{
+						"name": "MLOps",
+						"level": "basic"
+					},
+					{
+						"name": "EDA (Exploratory Data Analysis)",
+						"level": "advanced"
+					}
+				]
+			},
+			{
+				"group": "engineering_and_simulation",
+				"items": [
+					{
+						"name": "OpenFAST",
+						"level": "expert"
+					},
+					{
+						"name": "TurbSim",
+						"level": "expert"
+					},
+					{
+						"name": "Análisis estocástico",
+						"level": "expert"
+					},
+					{
+						"name": "Ingeniería de mantenimiento",
+						"level": "expert"
+					},
+					{
+						"name": "Energías renovables",
+						"level": "expert"
+					},
+					{
+						"name": "SAP (Módulo PM)",
+						"level": "advanced"
+					},
+					{
+						"name": "AMOS",
+						"level": "advanced"
+					}
+				]
+			},
+			{
+				"group": "management_and_finance",
+				"items": [
+					{
+						"name": "Gestión de proyectos (CAPM)",
+						"level": "advanced"
+					},
+					{
+						"name": "SCRUM / Agile",
+						"level": "intermediate"
+					},
+					{
+						"name": "MS Project",
+						"level": "intermediate"
+					},
+					{
+						"name": "Finanzas corporativas",
+						"level": "advanced"
+					},
+					{
+						"name": "Auditoría de mantenimiento",
+						"level": "expert"
+					}
+				]
+			},
+			{
+				"group": "research_and_teaching",
+				"items": [
+					{
+						"name": "Metodología de investigación científica",
+						"level": "expert"
+					},
+					{
+						"name": "Estadística aplicada",
+						"level": "expert"
+					},
+					{
+						"name": "Redacción científica",
+						"level": "expert"
+					},
+					{
+						"name": "Propiedad intelectual / Patentes",
+						"level": "intermediate"
+					},
+					{
+						"name": "Mentoría académica",
+						"level": "advanced"
+					}
+				]
+			},
+			{
+				"group": "web_and_tools",
+				"items": [
+					{
+						"name": "React",
+						"level": "basic"
+					},
+					{
+						"name": "Flutter",
+						"level": "basic"
+					},
+					{
+						"name": "WordPress",
+						"level": "basic"
+					},
+					{
+						"name": "Figma",
+						"level": "basic"
+					},
+					{
+						"name": "GitHub / Git",
+						"level": "intermediate"
+					},
+					{
+						"name": "Linux",
+						"level": "intermediate"
+					},
+					{
+						"name": "Docker",
+						"level": "basic"
+					},
+					{
+						"name": "Terraform",
+						"level": "basic"
+					}
+				]
+			}
+		],
+		"soft": [
+			"Liderazgo",
+			"Pensamiento analítico",
+			"Resolución de problemas",
+			"Comunicación efectiva",
+			"Autogestión",
+			"Adaptabilidad",
+			"Trabajo bajo presión",
+			"Disciplina",
+			"Capacitación y formación de equipos",
+			"Orientación a resultados"
+		]
+	},
+	"languages": [
+		{
+			"language": "Español",
+			"level": "Nativo",
+			"cefr": "C2"
+		},
+		{
+			"language": "Inglés",
+			"level": "Avanzado",
+			"cefr": "B2"
+		},
+		{
+			"language": "Italiano",
+			"level": "Avanzado",
+			"cefr": "C1"
+		},
+		{
+			"language": "Francés",
+			"level": "Básico Superior",
+			"cefr": "A2"
+		}
+	],
+	"publications": [
+		{
+			"id": "pub-001",
+			"type": "thesis_mba",
+			"title": "Estudio exploratorio del desarrollo de parques eólicos offshore en Perú",
+			"authors": [
+				"Barreto, David"
+			],
+			"institution": "ESAN Graduate School of Business",
+			"year": "2024",
+			"url": "https://hdl.handle.net/20.500.12640/4263"
+		},
+		{
+			"id": "pub-002",
+			"type": "thesis_undergraduate",
+			"title": "Análisis de la influencia del comportamiento estocástico del viento en las respuestas dinámicas extremas de largo plazo de una turbina eólica onshore de 5 MW",
+			"authors": [
+				"Barreto, David"
+			],
+			"institution": "Universidad Nacional de Ingeniería",
+			"year": "2023",
+			"url": "http://hdl.handle.net/20.500.14076/26965"
+		},
+		{
+			"id": "pub-003",
+			"type": "book_chapter",
+			"title": "Implied safety level in design codes for monopile offshore wind turbines - Parametric study on the effect of partial safety factors",
+			"authors": [
+				"Amlashi, Hadi",
+				"Karimirad, Madjid",
+				"Barreto, David"
+			],
+			"venue": "CRC Press — Advances in the Analysis and Design of Marine Structures",
+			"year": "2023",
+			"pages": "223-233",
+			"doi": "https://doi.org/10.1201/9781003399759-25"
+		},
+		{
+			"id": "pub-004",
+			"type": "journal_article",
+			"title": "Dynamic response assessment of an offshore wind turbine under Peruvian environmental conditions",
+			"authors": [
+				"Barreto, David",
+				"Ortega, Arturo"
+			],
+			"venue": "Journal of Physics: Conference Series",
+			"year": "2023",
+			"volume": "2538(1)",
+			"articleNumber": "012006",
+			"doi": "https://doi.org/10.1088/1742-6596/2538/1/012006"
+		},
+		{
+			"id": "pub-005",
+			"type": "journal_article",
+			"title": "Effects of Simulation Length and Flexible Foundation on Long-Term Response Extrapolation of a Bottom-Fixed Offshore Wind Turbine",
+			"authors": [
+				"Barreto, David",
+				"Karimirad, Madjid",
+				"Ortega, Arturo"
+			],
+			"venue": "Journal of Offshore Mechanics and Arctic Engineering (ASME)",
+			"year": "2021",
+			"volume": "144(3)",
+			"doi": "https://doi.org/10.1115/1.4053030"
+		},
+		{
+			"id": "pub-006",
+			"type": "thesis_phd",
+			"title": "Uncertainty quantification in structural responses of offshore monopile wind turbines",
+			"authors": [
+				"Barreto, David"
+			],
+			"institution": "Universidad Nacional de Ingeniería",
+			"year": "2020",
+			"url": "http://hdl.handle.net/20.500.14076/22175"
+		},
+		{
+			"id": "pub-007",
+			"type": "conference_proceedings",
+			"title": "Influence of Wind Shear Uncertainty in Long-Term Extreme Responses of an Offshore Monopile Wind Turbine",
+			"authors": [
+				"Barreto, David",
+				"Karimirad, Madjid",
+				"Ortega Malca, Arturo"
+			],
+			"venue": "ASME 2020 39th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2020)",
+			"year": "2020",
+			"doi": "https://doi.org/10.1115/OMAE2020-18506"
+		},
+		{
+			"id": "pub-008",
+			"type": "conference_proceedings",
+			"title": "Sensitivity Analysis of a Bottom Fixed Offshore Wind Turbine Using the Environmental Contour Method",
+			"authors": [
+				"Barreto, David",
+				"Moghtadaei, Abdolmajid",
+				"Karimirad, Madjid",
+				"Ortega, Arturo"
+			],
+			"venue": "ASME 2019 38th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2019)",
+			"year": "2019",
+			"doi": "https://doi.org/10.1115/OMAE2019-95390"
+		},
+		{
+			"id": "pub-009",
+			"type": "thesis_masters",
+			"title": "Modelos de control de inventarios para la reducción de costos de repuestos de mantenimiento en taladros de perforación offshore en la provincia de Tumbes",
+			"authors": [
+				"Barreto, David"
+			],
+			"institution": "Universidad Nacional de Ingeniería",
+			"year": "2015",
+			"url": "https://cybertesis.uni.edu.pe/handle/20.500.14076/2533"
+		}
+	],
+	"awards": [
+		{
+			"id": "award-001",
+			"title": "Beca AWS AI & ML Scholarship 2026",
+			"org": "AWS · Udacity",
+			"date": "2026",
+			"summary": "Beneficiario del programa AWS AI & ML Scholars 2026, con patrocinio completo del Nanodegree Future AWS Agent Engineer."
+		},
+		{
+			"id": "award-002",
+			"title": "Beca AWS AI & ML Scholarship 2025",
+			"org": "AWS · Udacity",
+			"date": "2025",
+			"summary": "Beneficiario del programa AWS AI & ML Scholars 2025, con patrocinio completo del Nanodegree Future AWS AI Engineer."
+		},
+		{
+			"id": "award-003",
+			"title": "Primer puesto — Graduados de MBA a tiempo completo",
+			"org": "ESAN Graduate School of Business",
+			"date": "2024-12",
+			"summary": "Reconocimiento por obtener el primer puesto entre los graduados de MBA a tiempo completo."
+		},
+		{
+			"id": "award-004",
+			"title": "Beca — Reconocimiento a la excelencia académica (MBA)",
+			"org": "ESAN Graduate School of Business",
+			"date": "2023-04",
+			"summary": "Beca que cubre el 75% del costo total del MBA por merito académico."
+		},
+		{
+			"id": "award-005",
+			"title": "Segundo puesto — Programa de Especialización en Patentes",
+			"org": "Escuela Nacional — INDECOPI",
+			"date": "2022-12",
+			"summary": "Reconocimiento por obtener el segundo puesto en el Programa de Especialización en Patentes."
+		},
+		{
+			"id": "award-006",
+			"title": "Primer puesto — Graduados en Ingeniería Mecánica-Eléctrica",
+			"org": "Universidad Nacional de Ingeniería — Facultad de Ingeniería Mecánica",
+			"date": "2020",
+			"summary": "Reconocimiento por obtener el primer puesto entre los graduados en Ingeniería Mecánica-Eléctrica."
+		},
+		{
+			"id": "award-007",
+			"title": "Ganador — Proyecto para pasantía de investigación en Reino Unido",
+			"org": "FONDECYT — PROCIENCIA",
+			"date": "2019",
+			"endDate": "2020-01",
+			"summary": "Apoyo financiero para visita de investigación al Reino Unido (~6,900 USD). Concurso: Movilización en ciencia, tecnología e innovación — Pasantías."
+		},
+		{
+			"id": "award-008",
+			"title": "Primer puesto — Graduados del Doctorado en Energética",
+			"org": "Universidad Nacional de Ingeniería — Facultad de Ingeniería Mecánica",
+			"date": "2018",
+			"summary": "Reconocimiento por obtener el primer puesto entre los graduados del Doctorado en Energética."
+		},
+		{
+			"id": "award-009",
+			"title": "Beca — Estudios avanzados de lengua y cultura italiana",
+			"org": "MAECI — Università per Stranieri di Perugia",
+			"date": "2017-01",
+			"endDate": "2017-03",
+			"summary": "Beca del gobierno italiano para estudios avanzados de lengua y cultura italiana en Perugia."
+		},
+		{
+			"id": "award-010",
+			"title": "Beca completa — Estudios de doctorado",
+			"org": "FONDECYT — CONCYTEC",
+			"date": "2016-04",
+			"endDate": "2019-04",
+			"summary": "Subvención para estudios de doctorado valorada en ~37,000 USD, cubriendo costos académicos, obtención del grado y estipendio mensual."
+		}
+	],
+	"activities": [
+		{
+			"id": "act-001",
+			"title": "Formación en comunicación y presencia escénica",
+			"orgs": [
+				"PUCP — Facultad de Artes Escénicas",
+				"Perú Clown",
+				"Colegio de Ingenieros del Perú"
+			],
+			"startDate": "2026-08",
+			"endDate": "2026-12",
+			"bullets": [
+				"Taller de Voz y Presencia — Facultad de Artes Escénicas, PUCP (set–nov 2026).",
+				"Taller de Clown — Perú Clown (ago–dic 2026).",
+				"Taller de Canto — Colegio de Ingenieros del Perú (ago–set 2026)."
+			],
+			"tags": [
+				"Comunicación efectiva",
+				"Oratoria",
+				"Presencia escénica",
+				"Improvisación"
+			]
+		},
+		{
+			"id": "act-002",
+			"title": "Miembro del Comité de Doctorado",
+			"org": "Escuela Central de Posgrado — Universidad Nacional de Ingeniería",
+			"program": "Doctorado en Ciencias con mención en Energética",
+			"startDate": "2022-12",
+			"tags": [
+				"Academia",
+				"UNI",
+				"Investigación",
+				"Comité"
+			]
+		},
+		{
+			"id": "act-003",
+			"title": "Coordinador ejecutivo y Expositor invitado",
+			"org": "Instituto Peruano de Mantenimiento (IPEMAN)",
+			"event": "22° Congreso Peruano — Ingeniería de Mantenimiento",
+			"date": "2024-11-18",
+			"bullets": [
+				"Coordinador ejecutivo del foro: Confiabilidad, Automatización y Mantenimiento 4.0.",
+				"Expositor con el tema: Papel del Machine Learning en la Ingeniería de Mantenimiento."
+			],
+			"tags": [
+				"Machine Learning",
+				"Ingeniería de Mantenimiento",
+				"Mantenimiento 4.0",
+				"Expositor"
+			]
+		},
+		{
+			"id": "act-004",
+			"title": "Expositor",
+			"org": "Centro de Energías Renovables y Uso Racional de la Energía (CER UNI)",
+			"event": "Jornadas Peruanas de Energía Solar — JOPES 2022",
+			"date": "2022-05",
+			"tags": [
+				"Energía solar",
+				"Energías renovables",
+				"Expositor"
+			]
+		},
+		{
+			"id": "act-005",
+			"title": "Expositor invitado",
+			"org": "Instituto Peruano de Mantenimiento (IPEMAN)",
+			"event": "21° Congreso Bicentenario Peruano — Ingeniería de Mantenimiento",
+			"date": "2021-10",
+			"bullets": [
+				"Tema: Gemelos Digitales y su Importancia en la Era del Mantenimiento Inteligente."
+			],
+			"tags": [
+				"Gemelos digitales",
+				"Mantenimiento inteligente",
+				"Expositor"
+			]
+		}
+	],
+	"courses": [
+		{
+			"id": "crs-001",
+			"title": "Aplicaciones frontend con React",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-002",
+			"title": "Diseño web con WordPress",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-003",
+			"title": "Ecommerce con WordPress",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-004",
+			"title": "Aplicaciones móviles con Flutter",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-005",
+			"title": "Diseño UX/UI con Figma",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-006",
+			"title": "Google Cloud para Big Data y Analítica",
+			"org": "Universidad Ricardo Palma",
+			"startDate": "2024-02",
+			"endDate": "2024-03"
+		},
+		{
+			"id": "crs-007",
+			"title": "Análisis y automatización de datos con Python",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-008",
+			"title": "Programación y optimización de datos con SQL",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-009",
+			"title": "Análisis de datos y creación de dashboards",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-010",
+			"title": "Creación de dashboards y BI con Power BI",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-011",
+			"title": "Ciencia de datos con Excel y Power Query",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-012",
+			"title": "Macros y funciones avanzadas en Excel",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-013",
+			"title": "Macros en Excel para la gestión empresarial",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-014",
+			"title": "Gestión financiera básica de negocios con Excel",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-015",
+			"title": "Automatización de tareas con Power Apps y Power Automate",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-016",
+			"title": "Ley de contrataciones del Estado",
+			"org": "CEPS UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-017",
+			"title": "Fundamentos de inteligencia artificial",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-018",
+			"title": "Machine learning con Python",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-019",
+			"title": "Deep learning con Python",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-020",
+			"title": "Linux",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-021",
+			"title": "Gestión de proyectos con MS Project",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-022",
+			"title": "Inteligencia de negocios con Excel",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-023",
+			"title": "Fundamentos de Blockchain",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-024",
+			"title": "SQL Server (BD 1 y BD 2)",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-025",
+			"title": "Cloud computing (AWS – Azure – Google Cloud)",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-026",
+			"title": "Aplicaciones de IA para universitarios",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-027",
+			"title": "Gestión de proyectos — SCRUM",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-028",
+			"title": "Power BI (básico e intermedio)",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-029",
+			"title": "Transformación digital",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-030",
+			"title": "Exploratory Data Analysis",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-031",
+			"title": "Geoinformática y teledetección",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-032",
+			"title": "Ciberseguridad: Pentesting web",
+			"org": "OTI UNI",
+			"year": "2024"
+		},
+		{
+			"id": "crs-033",
+			"title": "Programa de Especialización en Patentes — 215 horas lectivas",
+			"org": "INDECOPI",
+			"startDate": "2022-07",
+			"endDate": "2022-11"
+		},
+		{
+			"id": "crs-034",
+			"title": "Applied Machine Learning in Python",
+			"org": "University of Michigan — Coursera",
+			"startDate": "2022-10",
+			"endDate": "2022-12"
+		},
+		{
+			"id": "crs-035",
+			"title": "Wind Energy",
+			"org": "Technical University of Denmark — Coursera",
+			"startDate": "2022-10",
+			"endDate": "2022-12"
+		},
+		{
+			"id": "crs-036",
+			"title": "Wind Resources for Renewable Energies",
+			"org": "École Polytechnique — Coursera",
+			"startDate": "2022-10",
+			"endDate": "2022-12"
+		},
+		{
+			"id": "crs-037",
+			"title": "Practical Time Series Analysis",
+			"org": "The State University of New York — Coursera",
+			"startDate": "2022-10",
+			"endDate": "2022-12"
+		},
+		{
+			"id": "crs-038",
+			"title": "Stochastic Processes",
+			"org": "National Research University — Coursera",
+			"startDate": "2022-10",
+			"endDate": "2022-12"
+		},
+		{
+			"id": "crs-039",
+			"title": "Corso Avanzato di Lingua e Cultura Italiana",
+			"org": "Università per Stranieri di Perugia",
+			"startDate": "2017-01",
+			"endDate": "2017-03"
+		}
+	]
 }

@@ -1,0 +1,283 @@
+---
+// Certification cards; each opens a detail pop-up with the large badge and the verification link.
+// Uses the native Popover API: works without JavaScript, closes with Escape or a click outside,
+// and returns focus to the card.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import ExternalIcon from './ExternalIcon.astro';
+import { cv, formatDate } from '../lib/cv';
+import { badgeImage, cvImage } from '../lib/images';
+import { certificationBadges } from '../data/site';
+
+const items = cv.certifications.map((c) => ({
+	...c,
+	shortTitle: c.title.replace(/^Microsoft Certified:\s*/, ''),
+	badge: (cvImage(c.image) ?? badgeImage(certificationBadges[c.id])) as ImageMetadata | undefined,
+	initials: c.issuer
+		.split(/\s+/)
+		.map((w) => w[0])
+		.join('')
+		.slice(0, 3)
+		.toUpperCase(),
+}));
+---
+
+<ul class="certs">
+	{
+		items.map((c) => (
+			<li>
+				<button class="cert-card" type="button" popovertarget={`cert-${c.id}`} aria-haspopup="dialog">
+					{c.badge ? (
+						<Image src={c.badge} alt="" width={112} loading="lazy" />
+					) : (
+						<span class="initials" aria-hidden="true">
+							{c.initials}
+						</span>
+					)}
+					<span class="cert-text">
+						<span class="cert-title">{c.shortTitle}</span>
+						<span class="cert-meta">
+							{c.issuer}, <time datetime={c.date}>{formatDate(c.date)}</time>
+						</span>
+					</span>
+				</button>
+
+				<div id={`cert-${c.id}`} class="cert-dialog" popover role="dialog" aria-labelledby={`cert-${c.id}-t`}>
+					{c.badge && (
+						<div class="dialog-badge">
+							<Image src={c.badge} alt={`Insignia: ${c.shortTitle}`} width={320} loading="lazy" />
+						</div>
+					)}
+					<div class="dialog-body">
+						<p class="dialog-title" id={`cert-${c.id}-t`}>
+							{c.title}
+						</p>
+						<p class="cert-meta">
+							{c.issuer}, obtenida en <time datetime={c.date}>{formatDate(c.date)}</time>
+							{c.expiryDate && (
+								<>
+									. Vigente hasta <time datetime={c.expiryDate}>{formatDate(c.expiryDate)}</time>
+								</>
+							)}
+							.
+						</p>
+						{!c.credentialUrl && <p class="note">Sin enlace público de verificación.</p>}
+						<div class="dialog-actions">
+							{c.credentialUrl && (
+								<a class="btn btn-wine" href={c.credentialUrl} autofocus>
+									Verificar credencial
+									<ExternalIcon />
+								</a>
+							)}
+							<button class="btn btn-outline" type="button" popovertarget={`cert-${c.id}`} popovertargetaction="hide" autofocus={!c.credentialUrl}>
+								Cerrar
+							</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		))
+	}
+</ul>
+
+<style>
+	.certs {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 12px;
+	}
+
+	.cert-card {
+		display: flex;
+		gap: 14px;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 14px 16px;
+		border: 1px solid var(--line);
+		border-radius: var(--radius-s);
+		background: var(--paper);
+		color: inherit;
+		font: inherit;
+		text-align: left;
+		cursor: pointer;
+		transition:
+			transform 0.2s ease-out,
+			border-color 0.2s ease-out,
+			box-shadow 0.2s ease-out;
+	}
+
+	.cert-card:hover {
+		transform: translateY(-2px);
+		border-color: var(--wine);
+		box-shadow: 0 12px 28px -18px rgb(121 1 35 / 0.6);
+	}
+
+	.cert-card img,
+	.initials {
+		flex: none;
+		width: 56px;
+		height: 56px;
+		object-fit: contain;
+	}
+
+	.initials {
+		display: grid;
+		place-items: center;
+		border-radius: var(--radius-s);
+		background: rgb(121 1 35 / 0.09);
+		color: var(--wine);
+		font-weight: 700;
+		font-size: 0.9rem;
+	}
+
+	.cert-text {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+	}
+
+	.cert-title {
+		font-family: var(--serif);
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 1.3;
+		color: var(--ink);
+	}
+
+	.cert-meta {
+		color: var(--muted);
+		font-size: 0.85rem;
+	}
+
+	/* Pop-up */
+	.cert-dialog {
+		margin: auto;
+		width: min(480px, calc(100% - 32px));
+		max-height: calc(100dvh - 32px);
+		overflow: auto;
+		padding: 0;
+		border: 1px solid var(--line);
+		border-top: 4px solid var(--wine);
+		border-radius: var(--radius-m);
+		background: var(--paper);
+		color: var(--ink);
+		box-shadow: 0 30px 80px -20px rgb(33 37 41 / 0.6);
+	}
+
+	.cert-dialog::backdrop {
+		background: rgb(33 37 41 / 0.6);
+		backdrop-filter: blur(3px);
+	}
+
+	.dialog-badge {
+		display: grid;
+		place-items: center;
+		padding: 28px;
+		background: var(--cream);
+		border-bottom: 1px solid var(--line);
+	}
+
+	.dialog-badge img {
+		width: 160px;
+		height: auto;
+	}
+
+	.dialog-body {
+		padding: 22px 24px 24px;
+	}
+
+	.dialog-title {
+		margin-bottom: 6px;
+		font-family: var(--serif);
+		font-size: 1.35rem;
+		font-weight: 500;
+		line-height: 1.25;
+		text-wrap: balance;
+	}
+
+	.note {
+		margin-top: 12px;
+		color: var(--muted);
+		font-size: 0.88rem;
+	}
+
+	.dialog-actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 10px;
+		margin-top: 22px;
+	}
+
+	.btn-wine {
+		background: var(--wine);
+		border-color: var(--wine);
+		color: #fff;
+	}
+
+	.btn-wine:hover {
+		background: var(--wine-deep);
+		border-color: var(--wine-deep);
+		color: #fff;
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: var(--wine);
+		cursor: pointer;
+	}
+
+	.btn-outline:hover {
+		background: rgb(121 1 35 / 0.08);
+	}
+
+	@media (max-width: 900px) {
+		.certs {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 600px) {
+		.certs {
+			grid-template-columns: minmax(0, 1fr);
+		}
+
+		.dialog-actions .btn {
+			flex: 1;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.cert-card:hover {
+			transform: none;
+		}
+	}
+
+	@media print {
+		.certs {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 6px;
+		}
+
+		.cert-card {
+			padding: 6px;
+			gap: 8px;
+			break-inside: avoid;
+		}
+
+		.cert-card img,
+		.initials {
+			width: 32px;
+			height: 32px;
+		}
+
+		.cert-title {
+			font-size: 9pt;
+		}
+
+		.cert-dialog {
+			display: none !important;
+		}
+	}
+</style>

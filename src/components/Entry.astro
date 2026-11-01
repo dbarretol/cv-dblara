@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { typo } from '../lib/cv';
+import DateRange from './DateRange.astro';
+
+interface Props {
+	title: string;
+	org?: string;
+	place?: string;
+	dates?: { start?: string; end?: string; open?: boolean };
+	logo?: ImageMetadata;
+	distinction?: string;
+	summary?: string;
+	bullets?: string[];
+	keywords?: string[];
+}
+
+const { title, org, place, dates, logo, distinction, summary, bullets, keywords } = Astro.props;
+---
+
+<article class="entry">
+	{logo && <Image class="logo" src={logo} alt="" width={96} loading="lazy" />}
+	<div class="entry-body">
+		<div class="entry-head">
+			<h3>{typo(title)}</h3>
+			{dates && <DateRange {...dates} />}
+		</div>
+		{
+			org && (
+				<p class="org">
+					{typo(org)}
+					{place && <span class="place">, {place}</span>}
+				</p>
+			)
+		}
+		{distinction && <p class="distinction">{typo(distinction)}</p>}
+		{summary && <p>{typo(summary)}</p>}
+		{
+			bullets && bullets.length > 0 && (
+				<ul class="bullets">
+					{bullets.map((b) => (
+						<li>{typo(b)}</li>
+					))}
+				</ul>
+			)
+		}
+		{keywords && keywords.length > 0 && <p class="keywords">{keywords.join(', ')}</p>}
+		<slot />
+	</div>
+</article>
