@@ -217,6 +217,24 @@ summary {
 	color: #fff;
 }
 
+/* Icon + text: the icon sits outside the underline and does not wrap away from its label. */
+.contact a,
+.contact span {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	white-space: nowrap;
+}
+
+.contact-icon {
+	flex: none;
+	opacity: 0.9;
+}
+
+.contact {
+	gap: 6px 20px;
+}
+
 .hero .actions {
 	margin-top: 16px;
 }

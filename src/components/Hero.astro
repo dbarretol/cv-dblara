@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import photo from '../assets/perfil.jpg';
 import { cv } from '../lib/cv';
 import { site } from '../data/site';
+import ContactIcon from './ContactIcon.astro';
 
 const name = cv.profile.name.replace(/^Dr\.\s*/, '');
 const pdf = `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${site.pdfFileName}`;
@@ -24,10 +25,16 @@ const pdf = `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${site.pdfFileName}
 			<p class="headline">{site.headline}</p>
 			<p class="focus">{site.focus}</p>
 			<ul class="contact">
-				<li><a href={`mailto:${cv.profile.email}`}>{cv.profile.email}</a></li>
-				<li>{cv.profile.location}</li>
-				<li><a href={cv.profile.linkedin}>LinkedIn</a></li>
-				<li><a href={cv.profile.github}>GitHub</a></li>
+				<li>
+					<a href={`mailto:${cv.profile.email}`}><ContactIcon name="mail" />{cv.profile.email}</a>
+				</li>
+				<li><span><ContactIcon name="map-pin" />{cv.profile.location}</span></li>
+				<li>
+					<a href={cv.profile.linkedin}><ContactIcon name="linkedin" />LinkedIn</a>
+				</li>
+				<li>
+					<a href={cv.profile.github}><ContactIcon name="github" />GitHub</a>
+				</li>
 			</ul>
 			<div class="actions">
 				<a class="btn btn-primary" href={pdf} download>Descargar CV (PDF)</a>
