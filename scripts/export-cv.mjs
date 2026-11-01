@@ -72,7 +72,7 @@ const cv = {
 		pick(i, ['id', 'title', 'org', 'location', 'start_date', 'end_date', 'summary', 'bullets', 'tags']),
 	),
 	aiTraining: master.ai_training.map((i) =>
-		withImage(i, pick(i, ['id', 'title', 'program', 'org', 'location', 'start_date', 'end_date', 'status', 'summary', 'distinction', 'tags'])),
+		withImage(i, pick(i, ['id', 'title', 'program', 'org', 'location', 'start_date', 'end_date', 'status', 'summary', 'distinction', 'credential_url', 'tags'])),
 	),
 	projects: master.projects.map((i) =>
 		pick(i, ['id', 'title', 'context', 'start_date', 'end_date', 'status', 'summary', 'bullets', 'tags']),
