@@ -31,6 +31,12 @@ else {
 }
 if (!/<meta http-equiv="content-security-policy"/i.test(index)) errors.push('index.html: missing CSP meta tag');
 
+// The download button points to the generated PDF.
+const pdf = files.find((f) => f.endsWith('david-barreto-lara-cv.pdf'));
+if (!pdf) errors.push('missing david-barreto-lara-cv.pdf (scripts/generate-pdf.mjs)');
+else if (statSync(pdf).size < 50_000 || !readFileSync(pdf).subarray(0, 5).equals(Buffer.from('%PDF-'))) errors.push('PDF looks invalid');
+if (!index.includes('david-barreto-lara-cv.pdf')) errors.push('index.html: no link to the PDF');
+
 if (errors.length) {
 	console.error('check-dist failed:\n- ' + errors.join('\n- '));
 	process.exit(1);
