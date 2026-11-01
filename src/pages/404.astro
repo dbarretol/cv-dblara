@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+
+const home = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<Base title="Página no encontrada | David Barreto Lara" description="La página que buscas no existe." noindex>
+	<div class="sheet not-found">
+		<main id="contenido">
+			<h1>Página no encontrada</h1>
+			<p>La dirección no existe o cambió.</p>
+			<p><a href={home}>Ir a la hoja de vida de David Barreto Lara</a></p>
+		</main>
+	</div>
+</Base>
+
+<style>
+	.not-found {
+		margin-top: 15vh;
+		padding: 40px 56px;
+	}
+	.not-found h1 {
+		color: var(--wine);
+		font-size: 2rem;
+		margin-bottom: 12px;
+	}
+	.not-found p + p {
+		margin-top: 8px;
+	}
+</style>
