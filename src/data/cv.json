@@ -10,7 +10,7 @@
 		"location": "Lima, Perú",
 		"linkedin": "https://www.linkedin.com/in/dbarretol",
 		"github": "https://github.com/dbarretol",
-		"summary": "Maestro en Administración (MBA) con especialización en finanzas corporativas e Ingeniero Mecánico-Eléctrico con Doctorado en Energética. Experiencia en investigación y docencia a nivel de posgrado, auditorías de gestión de mantenimiento en el sector energético, y liderazgo de proyectos de optimización de procesos. Certificaciones en gestión de proyectos, soluciones en la nube (AWS, Azure, GCP) e inteligencia artificial. Habilidades clave: orientación a resultados, pensamiento analítico, disciplina y autogestión."
+		"summary": "Maestro en Administración (MBA) con especialización en finanzas corporativas e Ingeniero Mecánico-Electricista con Doctorado en Energética. Experiencia en investigación y docencia a nivel de posgrado, auditorías de gestión de mantenimiento en el sector energético, y liderazgo de proyectos de optimización de procesos. Certificaciones en gestión de proyectos, soluciones en la nube (AWS, Azure, GCP) e inteligencia artificial. Habilidades clave: orientación a resultados, pensamiento analítico, disciplina y autogestión."
 	},
 	"experience": [
 		{
@@ -426,28 +426,12 @@
 	],
 	"certifications": [
 		{
-			"id": "cert-001",
-			"title": "Associate Cloud Engineer",
-			"issuer": "Google Cloud",
-			"date": "2024",
-			"credentialUrl": "https://www.credly.com/badges/c01f62aa-1d2d-4d4b-941c-fa9dbdae53bb/public_url",
-			"image": "ACE_Google-08166b.png"
-		},
-		{
-			"id": "cert-002",
-			"title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+			"id": "cert-009",
+			"title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103)",
 			"issuer": "Microsoft",
-			"date": "2024",
-			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/88368976a482f61d",
-			"image": "microsoft_AI102-d8cf12.png"
-		},
-		{
-			"id": "cert-003",
-			"title": "Microsoft Certified: Azure Data Scientist Associate (DP-100)",
-			"issuer": "Microsoft",
-			"date": "2024",
-			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/1725ff6ef156bcea",
-			"image": "microsoft_DP100-6ee8b7.png"
+			"date": "2026-10-16",
+			"expiryDate": "2027-10-16",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/917bd5d3823ae471"
 		},
 		{
 			"id": "cert-004",
@@ -466,18 +450,35 @@
 			"image": "microsoft_PL300-f3f2ab.png"
 		},
 		{
+			"id": "cert-002",
+			"title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/88368976a482f61d",
+			"image": "microsoft_AI102-d8cf12.png"
+		},
+		{
+			"id": "cert-003",
+			"title": "Microsoft Certified: Azure Data Scientist Associate (DP-100)",
+			"issuer": "Microsoft",
+			"date": "2024",
+			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/1725ff6ef156bcea",
+			"image": "microsoft_DP100-6ee8b7.png"
+		},
+		{
+			"id": "cert-001",
+			"title": "Associate Cloud Engineer",
+			"issuer": "Google Cloud",
+			"date": "2024",
+			"credentialUrl": "https://www.credly.com/badges/c01f62aa-1d2d-4d4b-941c-fa9dbdae53bb/public_url",
+			"image": "ACE_Google-08166b.png"
+		},
+		{
 			"id": "cert-006",
 			"title": "Certified Associate in Project Management (CAPM)",
 			"issuer": "PMI",
 			"date": "2014",
 			"image": "CAPM_PMI-9d44aa.png"
-		},
-		{
-			"id": "cert-007",
-			"title": "Investigador RENACYT - Nivel VII",
-			"issuer": "CONCYTEC",
-			"date": "2023",
-			"image": "RENACYT_CONCYTEC-d40cd9.png"
 		},
 		{
 			"id": "cert-008",
@@ -487,12 +488,11 @@
 			"image": "GITHUB_GITHUB-6caa71.png"
 		},
 		{
-			"id": "cert-009",
-			"title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
-			"issuer": "Microsoft",
-			"date": "2026-10-16",
-			"expiryDate": "2027-10-16",
-			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/917bd5d3823ae471"
+			"id": "cert-007",
+			"title": "Investigador RENACYT - Nivel VII",
+			"issuer": "CONCYTEC",
+			"date": "2023",
+			"image": "RENACYT_CONCYTEC-d40cd9.png"
 		}
 	],
 	"skills": {
@@ -597,14 +597,6 @@
 					{
 						"name": "Energías renovables",
 						"level": "expert"
-					},
-					{
-						"name": "Teoría de mercados eléctricos",
-						"level": "intermediate"
-					},
-					{
-						"name": "Procedimientos Técnicos COES (PR-15, PR-21, PR-22, PR-33)",
-						"level": "basic"
 					},
 					{
 						"name": "SAP (Módulo PM)",
