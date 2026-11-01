@@ -6,7 +6,7 @@ import SectionsNav from '../components/SectionsNav.astro';
 import Entry from '../components/Entry.astro';
 import ExternalIcon from '../components/ExternalIcon.astro';
 import photo from '../assets/perfil.jpg';
-import { cv, formatDate, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
+import { cv, doiOf, formatAuthors, formatDate, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
 import { cvImage, flagImage } from '../lib/images';
 import { flags, publicationTypes, sections, site, skillGroups, softSkillsTitle } from '../data/site';
 
@@ -32,7 +32,7 @@ const shown = sections.filter((s) => has[s.id]);
 const titleOf = (id: string) => sections.find((s) => s.id === id)!.title;
 
 // Publications: "Autores (año). Título. Medio, vol. X, art. Y, pp. Z."
-const pubLink = (p: (typeof cv.publications)[number]) => (p.doi ? `https://doi.org/${p.doi}` : p.url);
+const pubLink = (p: (typeof cv.publications)[number]) => (p.doi ? `https://doi.org/${doiOf(p.doi)}` : p.url);
 const pubDetails = (p: (typeof cv.publications)[number]) =>
 	[p.venue ?? p.institution, p.volume && `vol. ${p.volume}`, p.articleNumber && `art. ${p.articleNumber}`, p.pages && `pp. ${p.pages}`]
 		.filter(Boolean)
@@ -152,7 +152,7 @@ const jsonLd = {
 									distinction={e.distinction}
 								>
 									{e.thesis && (
-										<p>
+										<p class="thesis">
 											Tesis:{' '}
 											{e.thesisUrl ? (
 												<a class="ext-link" href={e.thesisUrl}>
@@ -180,7 +180,7 @@ const jsonLd = {
 								const badge = cvImage(c.image);
 								return (
 									<li>
-										{badge ? <Image src={badge} alt="" width={112} height={112} loading="lazy" /> : <span class="badge-placeholder" aria-hidden="true" />}
+										{badge ? <Image src={badge} alt="" width={112} loading="lazy" /> : <span class="badge-placeholder" aria-hidden="true" />}
 										<div>
 											<h3>{c.title.replace(/^Microsoft Certified:\s*/, '')}</h3>
 											<p>
@@ -255,14 +255,14 @@ const jsonLd = {
 									<li>
 										<div class="entry-head">
 											<p class="citation">
-												{joinList(p.authors)}. <cite>{typo(p.title)}</cite>. {pubDetails(p) && <>{pubDetails(p)}. </>}
+												{formatAuthors(p.authors)}. <cite>{typo(p.title)}</cite>. {pubDetails(p) && <>{pubDetails(p)}. </>}
 												<span class="pub-type">{publicationTypes[p.type] ?? p.type}.</span>
 											</p>
 											<span class="date">{p.year}</span>
 										</div>
 										{link && (
 											<a class="ext-link" href={link}>
-												{p.doi ? `DOI ${p.doi}` : 'Ver documento'}
+												{p.doi ? `DOI ${doiOf(p.doi)}` : 'Ver documento'}
 												<ExternalIcon />
 											</a>
 										)}
@@ -342,7 +342,7 @@ const jsonLd = {
 
 	<footer class="site-footer">
 		<p>
-			Última actualización: {formatLongDate(cv.generated.lastUpdated)}. Servicios de consultoría en IA en
+			Última actualización: {formatLongDate(cv.generated.lastUpdated)}. Servicios de consultoría en IA en{' '}
 			<a href={site.landing.url}>davidbarretolara.pages.dev</a>.
 		</p>
 	</footer>

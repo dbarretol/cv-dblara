@@ -77,5 +77,12 @@ export const formatLongDate = (value: string) => {
 /** Spanish list: "a, b y c". */
 export const joinList = (items: readonly string[]) => new Intl.ListFormat(site.locale, { type: 'conjunction' }).format(items);
 
-/** Replaces straight double quotes with Spanish typographic quotes. */
-export const typo = (s: string) => s.replace(/"([^"]*)"/g, '“$1”');
+/** Typographic fixes for data text: curly quotes and an en dash for spaced hyphens. */
+export const typo = (s: string) => s.replace(/"([^"]*)"/g, '“$1”').replace(/ - /g, ' – ');
+
+/** Authors in citation style: "Amlashi, H.; Karimirad, M. y Barreto, D." keeps surnames and full names readable. */
+export const formatAuthors = (authors: readonly string[]) =>
+	authors.length > 1 ? `${authors.slice(0, -1).join('; ')} y ${authors.at(-1)}` : (authors[0] ?? '');
+
+/** DOI as stored may be a bare identifier or a full https://doi.org/ URL. */
+export const doiOf = (doi: string) => doi.replace(/^https?:\/\/(dx\.)?doi\.org\//i, '');

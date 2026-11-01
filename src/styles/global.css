@@ -455,15 +455,20 @@ summary {
 }
 
 .ext-link {
-	display: inline-flex;
-	align-items: center;
-	gap: 4px;
 	font-size: 0.88rem;
 	font-weight: 600;
 }
 
+/* Inline so that long link texts wrap with the arrow right after the last word. */
 .ext-icon {
-	flex: none;
+	display: inline;
+	margin-left: 3px;
+	vertical-align: -1px;
+}
+
+.thesis .ext-link {
+	font-weight: 400;
+	font-size: inherit;
 }
 
 /* Certifications */
@@ -839,25 +844,110 @@ summary {
 		border-radius: 0;
 	}
 
+	body {
+		line-height: 1.4;
+	}
+
+	.summary {
+		padding-top: 10px;
+		font-size: 1rem;
+	}
+
+	.tags-list {
+		margin-top: 8px;
+	}
+
 	.cv-section {
-		margin-top: 18px;
+		margin-top: 14px;
 	}
 
 	.cv-section > h2 {
-		margin-bottom: 8px;
-		font-size: 14pt;
+		margin-bottom: 4px;
+		padding-bottom: 4px;
+		font-size: 13pt;
 		break-after: avoid;
 	}
 
-	.entry,
+	/* Entries may break across pages; only their heading stays with the first lines. */
+	.entry-head,
+	.org {
+		break-after: avoid;
+	}
+
 	.pubs li,
 	.certs li,
-	.skills > div {
+	.skills > div,
+	.languages li {
 		break-inside: avoid;
 	}
 
 	.entry {
-		padding: 8px 0;
+		padding: 5px 0;
+		gap: 10px;
+	}
+
+	.entry::before {
+		top: 10px;
+	}
+
+	.entry-head h3 {
+		font-size: 11pt;
+	}
+
+	.org {
+		margin: 0 0 2px;
+	}
+
+	.keywords {
+		display: none;
+	}
+
+	.bullets {
+		margin-top: 2px;
+	}
+
+	.bullets li {
+		margin-top: 1px;
+	}
+
+	.logo {
+		width: 30px;
+		height: 30px;
+		padding: 2px;
+	}
+
+	.date {
+		padding: 3px 7px;
+		font-size: 7.5pt;
+	}
+
+	.certs {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 6px;
+	}
+
+	.certs li {
+		padding: 6px;
+		gap: 8px;
+	}
+
+	.certs img,
+	.certs .badge-placeholder {
+		width: 32px;
+		height: 32px;
+	}
+
+	.certs h3 {
+		font-size: 9pt;
+	}
+
+	.skills > div {
+		grid-template-columns: 180px 1fr;
+		padding: 4px 0;
+	}
+
+	.pubs li {
+		padding: 5px 0;
 	}
 
 	.courses summary {
@@ -874,13 +964,13 @@ summary {
 		break-after: avoid;
 	}
 
-	/* Show external URLs in print, except obvious ones */
-	.ext-link::after {
-		content: ' (' attr(href) ')';
-		color: var(--muted);
-		font-weight: 400;
-		font-size: 8pt;
-		word-break: break-all;
+	.courses li {
+		break-inside: avoid;
+	}
+
+	/* Links stay clickable in the PDF; the arrow icon is enough. */
+	.ext-link {
+		text-decoration: none;
 	}
 
 	.site-footer {
