@@ -10,7 +10,8 @@ const BASE_PATH = process.env.BASE_PATH ?? '/cv-dblara';
 export default defineConfig({
 	site: SITE_URL,
 	base: BASE_PATH,
-	trailingSlash: 'ignore',
+	// Always with a trailing slash, as in the canonical URL (one URL per page in the sitemap).
+	trailingSlash: 'always',
 	build: { inlineStylesheets: 'always' },
 	security: {
 		// Hash-based CSP delivered as <meta>: only the site's own scripts and styles run.

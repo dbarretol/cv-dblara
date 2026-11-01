@@ -5,6 +5,7 @@ import Hero from '../components/Hero.astro';
 import SectionsNav from '../components/SectionsNav.astro';
 import Entry from '../components/Entry.astro';
 import ExternalIcon from '../components/ExternalIcon.astro';
+import DateRange from '../components/DateRange.astro';
 import photo from '../assets/perfil.jpg';
 import { cv, doiOf, formatAuthors, formatDate, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
 import { cvImage, flagImage } from '../lib/images';
@@ -13,7 +14,7 @@ import { flags, publicationTypes, sections, site, skillGroups, softSkillsTitle }
 const name = cv.profile.name.replace(/^Dr\.\s*/, '');
 const title = `${name} | Hoja de vida`;
 const description =
-	'Hoja de vida de David Barreto Lara: ingeniero mecánico-electricista, doctor en Energética y MBA. Experiencia, publicaciones, docencia y certificaciones en IA y energía.';
+	'Hoja de vida de David Barreto Lara, ingeniero mecánico-electricista, doctor en Energética y MBA: experiencia, publicaciones y certificaciones.';
 
 const has: Record<string, boolean> = {
 	experience: cv.experience.length > 0,
@@ -51,6 +52,7 @@ const jsonLd = {
 	'@id': `${canonical}#pagina`,
 	url: canonical,
 	name: title,
+	description: cv.profile.summary,
 	inLanguage: 'es-PE',
 	dateModified: cv.generated.lastUpdated,
 	mainEntity: {
@@ -58,8 +60,8 @@ const jsonLd = {
 		'@id': site.landing.personId,
 		name,
 		honorificPrefix: site.honorific,
+		// No description here: the consulting site owns the Person's description; this page describes itself above.
 		jobTitle: site.headline,
-		description: cv.profile.summary,
 		image: new URL(ldPhoto.src, Astro.site).href,
 		email: `mailto:${cv.profile.email}`,
 		address: { '@type': 'PostalAddress', addressLocality: 'Lima', addressCountry: 'PE' },
@@ -96,7 +98,7 @@ const jsonLd = {
 						<h2 id="h-experience">{titleOf('experience')}</h2>
 						<div class="timeline">
 							{cv.experience.map((e) => (
-								<Entry title={e.title} org={e.org} place={e.location} date={formatRange(e.startDate, e.endDate, true)} summary={e.summary} bullets={e.bullets} keywords={e.tags} />
+								<Entry title={e.title} org={e.org} place={e.location} dates={{ start: e.startDate, end: e.endDate, open: true }} summary={e.summary} bullets={e.bullets} keywords={e.tags} />
 							))}
 						</div>
 					</section>
@@ -112,7 +114,7 @@ const jsonLd = {
 								<Entry
 									title={t.title}
 									org={t.program ? `${t.org}, ${t.program}` : t.org}
-									date={formatRange(t.startDate, t.endDate, t.status === 'in_progress')}
+									dates={{ start: t.startDate, end: t.endDate, open: t.status === 'in_progress' }}
 									logo={cvImage(t.image)}
 									distinction={t.distinction}
 									summary={t.status === 'in_progress' ? `En curso. ${t.summary ?? ''}`.trim() : t.summary}
@@ -130,7 +132,7 @@ const jsonLd = {
 						<h2 id="h-projects">{titleOf('projects')}</h2>
 						<div class="timeline">
 							{cv.projects.map((p) => (
-								<Entry title={p.title} org={p.context} date={formatRange(p.startDate, p.endDate, p.status === 'in_progress')} summary={p.summary} bullets={p.bullets} keywords={p.tags} />
+								<Entry title={p.title} org={p.context} dates={{ start: p.startDate, end: p.endDate, open: p.status === 'in_progress' }} summary={p.summary} bullets={p.bullets} keywords={p.tags} />
 							))}
 						</div>
 					</section>
@@ -147,7 +149,7 @@ const jsonLd = {
 									title={e.specialization ? `${e.degree}, especialización en ${e.specialization}` : e.degree}
 									org={e.org}
 									place={e.location}
-									date={formatRange(e.startDate, e.endDate)}
+									dates={{ start: e.startDate, end: e.endDate }}
 									logo={cvImage(e.image)}
 									distinction={e.distinction}
 								>
@@ -184,7 +186,7 @@ const jsonLd = {
 										<div>
 											<h3>{c.title.replace(/^Microsoft Certified:\s*/, '')}</h3>
 											<p>
-												{c.issuer}, {formatDate(c.date)}
+												{c.issuer}, <time datetime={c.date}>{formatDate(c.date)}</time>
 												{c.expiryDate && <>. Vigente hasta {formatDate(c.expiryDate)}</>}
 											</p>
 											{c.credentialUrl && (
@@ -258,7 +260,7 @@ const jsonLd = {
 												{formatAuthors(p.authors)}. <cite>{typo(p.title)}</cite>. {pubDetails(p) && <>{pubDetails(p)}. </>}
 												<span class="pub-type">{publicationTypes[p.type] ?? p.type}.</span>
 											</p>
-											<span class="date">{p.year}</span>
+											<DateRange start={p.year} />
 										</div>
 										{link && (
 											<a class="ext-link" href={link}>
@@ -280,7 +282,7 @@ const jsonLd = {
 						<h2 id="h-awards">{titleOf('awards')}</h2>
 						<div class="timeline">
 							{cv.awards.map((a) => (
-								<Entry title={a.title} org={a.org} date={formatRange(a.date, a.endDate)} summary={a.summary} />
+								<Entry title={a.title} org={a.org} dates={{ start: a.date, end: a.endDate }} summary={a.summary} />
 							))}
 						</div>
 					</section>
@@ -296,7 +298,7 @@ const jsonLd = {
 								<Entry
 									title={a.title}
 									org={a.orgs ? joinList(a.orgs) : a.org}
-									date={a.date ? formatDate(a.date) : formatRange(a.startDate, a.endDate, true)}
+									dates={a.date ? { start: a.date } : { start: a.startDate, end: a.endDate, open: true }}
 									summary={a.event ?? a.program}
 									bullets={a.bullets}
 									keywords={a.tags}
