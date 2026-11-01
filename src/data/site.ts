@@ -56,6 +56,14 @@ export const publicationTypes: Record<string, string> = {
 	thesis_undergraduate: 'Tesis de titulación',
 };
 
+/**
+ * Badge images kept in the repo (src/assets/badges) for certifications whose image is not in the master CV yet,
+ * keyed by certification id.
+ */
+export const certificationBadges: Record<string, string> = {
+	'cert-009': 'microsoft_AI103',
+};
+
 /** Flag images (src/assets/flags) by language name in cv.json. */
 export const flags: Record<string, string> = {
 	Español: 'peru',

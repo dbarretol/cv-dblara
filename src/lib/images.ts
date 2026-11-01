@@ -3,6 +3,7 @@ import type { ImageMetadata } from 'astro';
 // Images downloaded by scripts/export-cv.mjs (src/assets/cv) and language flags (src/assets/flags).
 const cvImages = import.meta.glob<ImageMetadata>('../assets/cv/*', { eager: true, import: 'default' });
 const flagImages = import.meta.glob<ImageMetadata>('../assets/flags/*', { eager: true, import: 'default' });
+const badgeImages = import.meta.glob<ImageMetadata>('../assets/badges/*', { eager: true, import: 'default' });
 
 const byName = (files: Record<string, ImageMetadata>) =>
 	new Map(Object.entries(files).map(([path, img]) => [path.split('/').pop()!, img]));
@@ -18,3 +19,6 @@ export function cvImage(name?: string): ImageMetadata | undefined {
 }
 
 export const flagImage = (name?: string) => (name ? flagMap.get(name) : undefined);
+
+const badgeMap = new Map([...byName(badgeImages)].map(([name, img]) => [name.replace(/\.[^.]+$/, ''), img]));
+export const badgeImage = (name?: string) => (name ? badgeMap.get(name) : undefined);

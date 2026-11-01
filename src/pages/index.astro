@@ -6,8 +6,9 @@ import SectionsNav from '../components/SectionsNav.astro';
 import Entry from '../components/Entry.astro';
 import ExternalIcon from '../components/ExternalIcon.astro';
 import DateRange from '../components/DateRange.astro';
+import Certifications from '../components/Certifications.astro';
 import photo from '../assets/perfil.jpg';
-import { cv, doiOf, formatAuthors, formatDate, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
+import { cv, doiOf, formatAuthors, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
 import { cvImage, flagImage } from '../lib/images';
 import { flags, publicationTypes, sections, site, skillGroups, softSkillsTitle } from '../data/site';
 
@@ -119,7 +120,16 @@ const jsonLd = {
 									distinction={t.distinction}
 									summary={t.status === 'in_progress' ? `En curso. ${t.summary ?? ''}`.trim() : t.summary}
 									keywords={t.tags}
-								/>
+								>
+									{t.credentialUrl && (
+										<p>
+											<a class="ext-link" href={t.credentialUrl}>
+												Verificar diploma
+												<ExternalIcon />
+											</a>
+										</p>
+									)}
+								</Entry>
 							))}
 						</div>
 					</section>
@@ -177,29 +187,7 @@ const jsonLd = {
 				has.certifications && (
 					<section id="certifications" class="cv-section" aria-labelledby="h-certifications">
 						<h2 id="h-certifications">{titleOf('certifications')}</h2>
-						<ul class="certs">
-							{cv.certifications.map((c) => {
-								const badge = cvImage(c.image);
-								return (
-									<li>
-										{badge ? <Image src={badge} alt="" width={112} loading="lazy" /> : <span class="badge-placeholder" aria-hidden="true" />}
-										<div>
-											<h3>{c.title.replace(/^Microsoft Certified:\s*/, '')}</h3>
-											<p>
-												{c.issuer}, <time datetime={c.date}>{formatDate(c.date)}</time>
-												{c.expiryDate && <>. Vigente hasta {formatDate(c.expiryDate)}</>}
-											</p>
-											{c.credentialUrl && (
-												<a class="ext-link" href={c.credentialUrl}>
-													Verificar credencial
-													<ExternalIcon />
-												</a>
-											)}
-										</div>
-									</li>
-								);
-							})}
-						</ul>
+						<Certifications />
 					</section>
 				)
 			}

@@ -21,7 +21,7 @@ const schema = z.object({
 		z.object({ id: text, title: text, org: text, location: text.optional(), startDate: date, endDate: date.optional(), summary: text.optional(), bullets: list, tags: list }),
 	),
 	aiTraining: z.array(
-		z.object({ id: text, title: text, program: text.optional(), org: text, location: text.optional(), startDate: date, endDate: date.optional(), status: text.optional(), summary: text.optional(), distinction: text.optional(), image: text.optional(), tags: list }),
+		z.object({ id: text, title: text, program: text.optional(), org: text, location: text.optional(), startDate: date, endDate: date.optional(), status: text.optional(), summary: text.optional(), distinction: text.optional(), credentialUrl: z.url().optional(), image: text.optional(), tags: list }),
 	),
 	projects: z.array(
 		z.object({ id: text, title: text, context: text.optional(), startDate: date, endDate: date.optional(), status: text.optional(), summary: text.optional(), bullets: list, tags: list }),
