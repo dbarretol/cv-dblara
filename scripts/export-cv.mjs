@@ -104,8 +104,9 @@ const cv = {
 const json = JSON.stringify(cv, null, '\t') + '\n';
 
 // Safety net: the phone number must never be exported.
-const digits = String(p.contact?.phone ?? '').replace(/\D/g, '');
-if (digits.length >= 6 && json.replace(/\D/g, ' ').includes(digits.slice(-6))) {
+// Matches the last 9 digits with any spaces, dots or dashes between them.
+const digits = String(p.contact?.phone ?? '').replace(/\D/g, '').slice(-9);
+if (digits.length >= 6 && new RegExp(digits.split('').join('[\\s.\\-]*')).test(json)) {
 	console.error('Aborting: the phone number appears in the exported data.');
 	process.exit(1);
 }
