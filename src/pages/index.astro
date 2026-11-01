@@ -1,0 +1,349 @@
+---
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import SectionsNav from '../components/SectionsNav.astro';
+import Entry from '../components/Entry.astro';
+import ExternalIcon from '../components/ExternalIcon.astro';
+import photo from '../assets/perfil.jpg';
+import { cv, formatDate, formatLongDate, formatRange, joinList, typo } from '../lib/cv';
+import { cvImage, flagImage } from '../lib/images';
+import { flags, publicationTypes, sections, site, skillGroups, softSkillsTitle } from '../data/site';
+
+const name = cv.profile.name.replace(/^Dr\.\s*/, '');
+const title = `${name} | Hoja de vida`;
+const description =
+	'Hoja de vida de David Barreto Lara: ingeniero mecánico-electricista, doctor en Energética y MBA. Experiencia, publicaciones, docencia y certificaciones en IA y energía.';
+
+const has: Record<string, boolean> = {
+	experience: cv.experience.length > 0,
+	'ai-training': cv.aiTraining.length > 0,
+	projects: cv.projects.length > 0,
+	education: cv.education.length > 0,
+	certifications: cv.certifications.length > 0,
+	skills: cv.skills.technical.length > 0,
+	languages: cv.languages.length > 0,
+	publications: cv.publications.length > 0,
+	awards: cv.awards.length > 0,
+	activities: cv.activities.length > 0,
+	courses: cv.courses.length > 0,
+};
+const shown = sections.filter((s) => has[s.id]);
+const titleOf = (id: string) => sections.find((s) => s.id === id)!.title;
+
+// Publications: "Autores (año). Título. Medio, vol. X, art. Y, pp. Z."
+const pubLink = (p: (typeof cv.publications)[number]) => (p.doi ? `https://doi.org/${p.doi}` : p.url);
+const pubDetails = (p: (typeof cv.publications)[number]) =>
+	[p.venue ?? p.institution, p.volume && `vol. ${p.volume}`, p.articleNumber && `art. ${p.articleNumber}`, p.pages && `pp. ${p.pages}`]
+		.filter(Boolean)
+		.join(', ');
+
+// Courses grouped by institution, in the order they appear.
+const courseGroups = new Map<string, typeof cv.courses>();
+for (const c of cv.courses) courseGroups.set(c.org, [...(courseGroups.get(c.org) ?? []), c]);
+
+// Structured data: the same Person as the consulting site (shared @id), described here in full.
+const ldPhoto = await getImage({ src: photo, width: 600, format: 'jpg' });
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'ProfilePage',
+	'@id': `${canonical}#pagina`,
+	url: canonical,
+	name: title,
+	inLanguage: 'es-PE',
+	dateModified: cv.generated.lastUpdated,
+	mainEntity: {
+		'@type': 'Person',
+		'@id': site.landing.personId,
+		name,
+		honorificPrefix: site.honorific,
+		jobTitle: site.headline,
+		description: cv.profile.summary,
+		image: new URL(ldPhoto.src, Astro.site).href,
+		email: `mailto:${cv.profile.email}`,
+		address: { '@type': 'PostalAddress', addressLocality: 'Lima', addressCountry: 'PE' },
+		url: site.landing.url,
+		sameAs: [cv.profile.linkedin, cv.profile.github, canonical],
+		alumniOf: [...new Set(cv.education.map((e) => e.org))].map((org) => ({ '@type': 'CollegeOrUniversity', name: org })),
+		hasCredential: [
+			...cv.education.map((e) => ({ '@type': 'EducationalOccupationalCredential', name: e.degree, credentialCategory: 'degree', recognizedBy: { '@type': 'Organization', name: e.org } })),
+			...cv.certifications.map((c) => ({ '@type': 'EducationalOccupationalCredential', name: c.title, credentialCategory: 'certification', recognizedBy: { '@type': 'Organization', name: c.issuer }, ...(c.credentialUrl && { url: c.credentialUrl }) })),
+		],
+		award: cv.awards.map((a) => a.title),
+		knowsLanguage: cv.languages.map((l) => l.language),
+		knowsAbout: cv.skills.technical.flatMap((g) => g.items.map((i) => i.name)),
+	},
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+	<Hero />
+	<SectionsNav ids={shown.map((s) => s.id)} />
+
+	<div class="sheet">
+		<main id="contenido">
+			<div class="summary">
+				<p>{typo(cv.profile.summary)}</p>
+				<ul class="tags-list" aria-label="Credenciales">
+					{site.credentials.map((c) => <li>{c}</li>)}
+				</ul>
+			</div>
+
+			{
+				has.experience && (
+					<section id="experience" class="cv-section" aria-labelledby="h-experience">
+						<h2 id="h-experience">{titleOf('experience')}</h2>
+						<div class="timeline">
+							{cv.experience.map((e) => (
+								<Entry title={e.title} org={e.org} place={e.location} date={formatRange(e.startDate, e.endDate, true)} summary={e.summary} bullets={e.bullets} keywords={e.tags} />
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has['ai-training'] && (
+					<section id="ai-training" class="cv-section" aria-labelledby="h-ai-training">
+						<h2 id="h-ai-training">{titleOf('ai-training')}</h2>
+						<div class="timeline">
+							{cv.aiTraining.map((t) => (
+								<Entry
+									title={t.title}
+									org={t.program ? `${t.org}, ${t.program}` : t.org}
+									date={formatRange(t.startDate, t.endDate, t.status === 'in_progress')}
+									logo={cvImage(t.image)}
+									distinction={t.distinction}
+									summary={t.status === 'in_progress' ? `En curso. ${t.summary ?? ''}`.trim() : t.summary}
+									keywords={t.tags}
+								/>
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has.projects && (
+					<section id="projects" class="cv-section" aria-labelledby="h-projects">
+						<h2 id="h-projects">{titleOf('projects')}</h2>
+						<div class="timeline">
+							{cv.projects.map((p) => (
+								<Entry title={p.title} org={p.context} date={formatRange(p.startDate, p.endDate, p.status === 'in_progress')} summary={p.summary} bullets={p.bullets} keywords={p.tags} />
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has.education && (
+					<section id="education" class="cv-section" aria-labelledby="h-education">
+						<h2 id="h-education">{titleOf('education')}</h2>
+						<div class="timeline">
+							{cv.education.map((e) => (
+								<Entry
+									title={e.specialization ? `${e.degree}, especialización en ${e.specialization}` : e.degree}
+									org={e.org}
+									place={e.location}
+									date={formatRange(e.startDate, e.endDate)}
+									logo={cvImage(e.image)}
+									distinction={e.distinction}
+								>
+									{e.thesis && (
+										<p>
+											Tesis:{' '}
+											{e.thesisUrl ? (
+												<a class="ext-link" href={e.thesisUrl}>
+													<cite>{e.thesis}</cite>
+													<ExternalIcon />
+												</a>
+											) : (
+												<cite>{e.thesis}</cite>
+											)}
+										</p>
+									)}
+								</Entry>
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has.certifications && (
+					<section id="certifications" class="cv-section" aria-labelledby="h-certifications">
+						<h2 id="h-certifications">{titleOf('certifications')}</h2>
+						<ul class="certs">
+							{cv.certifications.map((c) => {
+								const badge = cvImage(c.image);
+								return (
+									<li>
+										{badge ? <Image src={badge} alt="" width={112} height={112} loading="lazy" /> : <span class="badge-placeholder" aria-hidden="true" />}
+										<div>
+											<h3>{c.title.replace(/^Microsoft Certified:\s*/, '')}</h3>
+											<p>
+												{c.issuer}, {formatDate(c.date)}
+												{c.expiryDate && <>. Vigente hasta {formatDate(c.expiryDate)}</>}
+											</p>
+											{c.credentialUrl && (
+												<a class="ext-link" href={c.credentialUrl}>
+													Verificar credencial
+													<ExternalIcon />
+												</a>
+											)}
+										</div>
+									</li>
+								);
+							})}
+						</ul>
+					</section>
+				)
+			}
+
+			{
+				has.skills && (
+					<section id="skills" class="cv-section" aria-labelledby="h-skills">
+						<h2 id="h-skills">{titleOf('skills')}</h2>
+						<dl class="skills">
+							{cv.skills.technical.map((g) => (
+								<div>
+									<dt>{skillGroups[g.group] ?? g.group}</dt>
+									<dd>{g.items.map((i) => i.name).join(', ')}</dd>
+								</div>
+							))}
+							<div>
+								<dt>{softSkillsTitle}</dt>
+								<dd>{cv.skills.soft.join(', ')}</dd>
+							</div>
+						</dl>
+					</section>
+				)
+			}
+
+			{
+				has.languages && (
+					<section id="languages" class="cv-section" aria-labelledby="h-languages">
+						<h2 id="h-languages">{titleOf('languages')}</h2>
+						<ul class="languages">
+							{cv.languages.map((l) => {
+								const flag = flagImage(flags[l.language]);
+								return (
+									<li>
+										<span class="language-name">
+											{flag && <Image class="flag" src={flag} alt="" width={56} height={40} loading="lazy" />}
+											{l.language}
+										</span>
+										<p>{l.cefr ? `${l.level} (${l.cefr})` : l.level}</p>
+									</li>
+								);
+							})}
+						</ul>
+					</section>
+				)
+			}
+
+			{
+				has.publications && (
+					<section id="publications" class="cv-section" aria-labelledby="h-publications">
+						<h2 id="h-publications">{titleOf('publications')}</h2>
+						<ol class="pubs">
+							{cv.publications.map((p) => {
+								const link = pubLink(p);
+								return (
+									<li>
+										<div class="entry-head">
+											<p class="citation">
+												{joinList(p.authors)}. <cite>{typo(p.title)}</cite>. {pubDetails(p) && <>{pubDetails(p)}. </>}
+												<span class="pub-type">{publicationTypes[p.type] ?? p.type}.</span>
+											</p>
+											<span class="date">{p.year}</span>
+										</div>
+										{link && (
+											<a class="ext-link" href={link}>
+												{p.doi ? `DOI ${p.doi}` : 'Ver documento'}
+												<ExternalIcon />
+											</a>
+										)}
+									</li>
+								);
+							})}
+						</ol>
+					</section>
+				)
+			}
+
+			{
+				has.awards && (
+					<section id="awards" class="cv-section" aria-labelledby="h-awards">
+						<h2 id="h-awards">{titleOf('awards')}</h2>
+						<div class="timeline">
+							{cv.awards.map((a) => (
+								<Entry title={a.title} org={a.org} date={formatRange(a.date, a.endDate)} summary={a.summary} />
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has.activities && (
+					<section id="activities" class="cv-section" aria-labelledby="h-activities">
+						<h2 id="h-activities">{titleOf('activities')}</h2>
+						<div class="timeline">
+							{cv.activities.map((a) => (
+								<Entry
+									title={a.title}
+									org={a.orgs ? joinList(a.orgs) : a.org}
+									date={a.date ? formatDate(a.date) : formatRange(a.startDate, a.endDate, true)}
+									summary={a.event ?? a.program}
+									bullets={a.bullets}
+									keywords={a.tags}
+								/>
+							))}
+						</div>
+					</section>
+				)
+			}
+
+			{
+				has.courses && (
+					<section id="courses" class="cv-section" aria-labelledby="h-courses">
+						<h2 id="h-courses">{titleOf('courses')}</h2>
+						<details class="courses">
+							<summary>
+								<span>
+									{cv.courses.length} cursos en {courseGroups.size} instituciones
+								</span>
+								<span class="toggle">
+									<span class="show-label">Ver lista</span>
+									<span class="hide-label">Ocultar lista</span>
+								</span>
+							</summary>
+							{[...courseGroups].map(([org, list]) => (
+								<>
+									<h3>{org}</h3>
+									<ul>
+										{list.map((c) => (
+											<li>
+												{c.title} <span class="place">({c.year ? c.year : formatRange(c.startDate, c.endDate)})</span>
+											</li>
+										))}
+									</ul>
+								</>
+							))}
+						</details>
+					</section>
+				)
+			}
+		</main>
+	</div>
+
+	<footer class="site-footer">
+		<p>
+			Última actualización: {formatLongDate(cv.generated.lastUpdated)}. Servicios de consultoría en IA en
+			<a href={site.landing.url}>davidbarretolara.pages.dev</a>.
+		</p>
+	</footer>
+</Base>
