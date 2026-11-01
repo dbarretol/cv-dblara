@@ -1,0 +1,63 @@
+# Builds the site (Astro + PDF) and deploys it to GitHub Pages.
+# Requires: Settings > Pages > Source = "GitHub Actions".
+# Pull requests only build (no deploy) so problems show up before merging.
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Same build works on another host (e.g. Cloudflare Pages) by changing these two values.
+      SITE_URL: https://dbarretol.github.io
+      BASE_PATH: /cv-dblara
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Chromium for the PDF
+        run: npx playwright install --with-deps chromium
+
+      - name: Build (type check, site, PDF, post-build checks)
+        run: npm run build
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=moderate
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

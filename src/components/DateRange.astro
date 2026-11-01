@@ -1,0 +1,29 @@
+---
+// Date badge with machine-readable <time> elements (datetime in ISO: YYYY, YYYY-MM or YYYY-MM-DD).
+import { formatDate } from '../lib/cv';
+
+interface Props {
+	start?: string;
+	end?: string;
+	/** Open range (current activity): shows "actualidad" when there is no end date. */
+	open?: boolean;
+}
+const { start, end, open = false } = Astro.props;
+const from = start ?? end;
+const to = start && end && end !== start ? end : undefined;
+---
+
+{
+	from && (
+		<span class="date">
+			<time datetime={from}>{formatDate(from)}</time>
+			{to && (
+				<>
+					{' – '}
+					<time datetime={to}>{formatDate(to)}</time>
+				</>
+			)}
+			{!to && !end && open && ' – actualidad'}
+		</span>
+	)
+}
