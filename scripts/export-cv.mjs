@@ -87,7 +87,7 @@ const cv = {
 		withImage(i, pick(i, ['id', 'degree', 'specialization', 'org', 'location', 'start_date', 'end_date', 'distinction', 'thesis', 'thesis_url'])),
 	),
 	certifications: published(master.certifications).map((i) =>
-		withImage(i, pick(i, ['id', 'title', 'issuer', 'date', 'expiry_date', 'credential_url'])),
+		withImage(i, pick(i, ['id', 'title', 'issuer', 'date', 'expiry_date', 'credential_url', 'retired'])),
 	),
 	skills: {
 		technical: Object.entries(master.skills.technical).map(([group, list]) => ({

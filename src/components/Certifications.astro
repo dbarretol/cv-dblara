@@ -38,6 +38,7 @@ const items = cv.certifications.map((c) => ({
 						<span class="cert-title">{c.shortTitle}</span>
 						<span class="cert-meta">
 							{c.issuer}, <time datetime={c.date}>{formatDate(c.date)}</time>
+							{c.retired && <span class="retired"> · retirada</span>}
 						</span>
 					</span>
 				</button>
@@ -61,6 +62,7 @@ const items = cv.certifications.map((c) => ({
 							)}
 							.
 						</p>
+						{c.retired && <p class="note">{c.issuer} retiró esta certificación: no se puede renovar.</p>}
 						{!c.credentialUrl && <p class="note">Sin enlace público de verificación.</p>}
 						<div class="dialog-actions">
 							{c.credentialUrl && (
@@ -148,6 +150,10 @@ const items = cv.certifications.map((c) => ({
 	.cert-meta {
 		color: var(--muted);
 		font-size: 0.85rem;
+	}
+
+	.retired {
+		font-style: italic;
 	}
 
 	/* Pop-up */
