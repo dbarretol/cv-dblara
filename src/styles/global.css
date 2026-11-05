@@ -544,6 +544,13 @@ summary {
 
 /* Publications */
 
+.research-profiles {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 20px;
+	margin-bottom: 6px;
+}
+
 .pubs li {
 	padding: 14px 0;
 	border-bottom: 1px dashed var(--line);

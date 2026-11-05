@@ -84,3 +84,6 @@ Thumbs.db
 
 # Astro
 .astro/
+
+# Redirect site for the old GitHub Pages address (scripts/build-redirect.mjs)
+redirect/
