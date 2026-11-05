@@ -31,6 +31,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      # The runner image already includes Google Chrome; using it avoids downloading Chromium and its
+      # system packages on every run (an apt mirror stall once kept this step hanging for minutes).
+      PDF_BROWSER_CHANNEL: chrome
     steps:
       - uses: actions/checkout@v7
 
@@ -40,9 +45,6 @@ jobs:
           cache: npm
 
       - run: npm ci
-
-      - name: Install Chromium for the PDF
-        run: npx playwright install --with-deps chromium
 
       - name: Build (type check, site, PDF, post-build checks)
         run: npm run build
@@ -69,6 +71,7 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: cloudflare-pages
       url: ${{ env.SITE_URL }}
@@ -89,6 +92,7 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       pages: write
       id-token: write
