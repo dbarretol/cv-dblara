@@ -2,7 +2,7 @@
 
 Online CV of Dr. David Barreto Lara — engineering, energy research, teaching and applied AI.
 
-**Live site:** https://dbarretol.github.io/cv-dblara/ · **Consulting site:** https://davidbarretolara.pages.dev
+**Live site:** https://cv-davidbarretolara.pages.dev · **Consulting site:** https://davidbarretolara.pages.dev
 
 The site content is in Spanish; the code and documentation are in English.
 
@@ -20,6 +20,7 @@ The site content is in Spanish; the code and documentation are in English.
 scripts/
   export-cv.mjs       Exports the public fields of the master CV (YAML) to src/data/cv.json and downloads images
   generate-pdf.mjs    Prints the built site to dist/david-barreto-lara-cv.pdf
+  build-redirect.mjs  Builds the redirect that replaces the old GitHub Pages address
   check-dist.mjs      Post-build checks (no phone numbers, one h1, JSON-LD, CSP, PDF present)
 src/
   data/cv.json        CV data (generated — do not edit by hand)
@@ -38,7 +39,7 @@ Requires Node.js 22.23.4 or later.
 | Command | What it does |
 | --- | --- |
 | `npm install` | Install dependencies |
-| `npm run dev` | Local development server at http://localhost:4321/cv-dblara/ |
+| `npm run dev` | Local development server at http://localhost:4321/ |
 | `npm run build` | Type check, build to `dist/`, generate the PDF and run the post-build checks |
 | `npm run preview` | Serve the built site locally |
 | `npm run export-cv -- <path/to/master_cv.yaml>` | Regenerate `src/data/cv.json` from the master CV |
@@ -58,14 +59,26 @@ Headline, section titles and other presentation settings live in `src/data/site.
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/deploy.yml`) builds and deploys to GitHub Pages on every push to `main`.
-Pull requests to `main` or `dev` are built and checked but not deployed. In the repository settings,
-**Pages → Source** must be set to **GitHub Actions**.
+GitHub Actions (`.github/workflows/deploy.yml`) builds the site on every push to `main` and uploads `dist/` to
+Cloudflare Pages (project `cv-davidbarretolara`, Direct Upload). Building in Actions keeps the PDF step (Playwright)
+and the post-build checks in one place. Pull requests to `main` or `dev` are built and checked but not deployed.
 
-The public URL is configured in one place: `SITE_URL` and `BASE_PATH` (defaults: `https://dbarretol.github.io`
-and `/cv-dblara`). To host the same build elsewhere, for example on Cloudflare Pages, set
-`SITE_URL=https://<project>.pages.dev` and `BASE_PATH=/`; canonical URLs, sitemap, robots.txt, structured data and the
-PDF link follow automatically, and `public/_headers` already provides the security headers Cloudflare applies.
+Setup, once:
+
+1. Create the Cloudflare Pages project: `npx wrangler pages project create cv-davidbarretolara --production-branch=main`.
+2. In the repository settings, create the environment `cloudflare-pages` (deployments from `main` only) with the
+   secrets `CLOUDFLARE_API_TOKEN` (permission *Account > Cloudflare Pages > Edit*) and `CLOUDFLARE_ACCOUNT_ID`.
+
+The public URL is configured in one place: `SITE_URL` and `BASE_PATH` (defaults: `https://cv-davidbarretolara.pages.dev`
+and `/`). Canonical URLs, sitemap, robots.txt, structured data and the PDF link follow automatically.
+`public/_headers` sets the security headers on Cloudflare.
+
+### Old address
+
+The site used to live at `https://dbarretol.github.io/cv-dblara/`. The same workflow publishes there a small page
+(`scripts/build-redirect.mjs`) that sends visitors and search engines to the new address, plus a copy of the PDF so
+old download links keep working. It is deployed only after the Cloudflare deployment succeeds
+(**Pages → Source** must stay on **GitHub Actions**).
 
 ## Previous version
 
