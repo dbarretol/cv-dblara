@@ -461,6 +461,7 @@
 			"date": "2024-12",
 			"expiryDate": "2026-12",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/88368976a482f61d",
+			"retired": true,
 			"image": "microsoft_AI102-d8cf12.png"
 		},
 		{
@@ -470,6 +471,7 @@
 			"date": "2025-03",
 			"expiryDate": "2027-03",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/1725ff6ef156bcea",
+			"retired": true,
 			"image": "microsoft_DP100-6ee8b7.png"
 		},
 		{
