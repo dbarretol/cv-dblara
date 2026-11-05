@@ -66,6 +66,9 @@ const cv = {
 		location: p.contact?.location,
 		linkedin: p.contact?.linkedin,
 		github: p.contact?.github,
+		orcid: p.contact?.orcid,
+		scopus: p.contact?.scopus,
+		researchgate: p.contact?.researchgate,
 		summary: String(p.summary ?? '').replace(/\s+/g, ' ').trim(),
 	},
 	experience: master.experience.map((i) =>

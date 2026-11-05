@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const BASE = (process.env.BASE_PATH ?? '/cv-dblara').replace(/\/?$/, '/');
+const BASE = (process.env.BASE_PATH ?? '/').replace(/\/?$/, '/');
 const FILE = 'david-barreto-lara-cv.pdf';
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
 
