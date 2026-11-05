@@ -15,6 +15,10 @@ on:
   pull_request:
     branches: [main, dev]
   workflow_dispatch:
+  # Monthly rebuild (day 1, 11:00 UTC = 06:00 in Lima) so expired certifications drop off without a commit
+  # (see src/lib/cv.ts). GitHub disables scheduled workflows after 60 days without activity in the repository.
+  schedule:
+    - cron: '0 11 1 * *'
 
 permissions:
   contents: read
