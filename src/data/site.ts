@@ -14,7 +14,7 @@ export const site = {
 		label: 'Ver servicios de consultoría',
 	},
 	pdfFileName: 'david-barreto-lara-cv.pdf',
-	googleSiteVerification: 'mDG4aOpiJuPsBNa3OX9FWIm3WLiXMAS7xazk6IN32Yo',
+	googleSiteVerification: 'P5qltKpOPurl-wwZD7BLoqxinueTII81nIR0boz1aVE',
 	locale: 'es-PE',
 } as const;
 
