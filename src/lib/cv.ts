@@ -15,6 +15,10 @@ const schema = z.object({
 		location: text,
 		linkedin: z.url(),
 		github: z.url(),
+		// Researcher profiles, shown with the publications.
+		orcid: z.url().optional(),
+		scopus: z.url().optional(),
+		researchgate: z.url().optional(),
 		summary: text,
 	}),
 	experience: z.array(

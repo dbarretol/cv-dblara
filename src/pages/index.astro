@@ -40,6 +40,15 @@ const pubDetails = (p: (typeof cv.publications)[number]) =>
 		.filter(Boolean)
 		.join(', ');
 
+// Researcher profiles (shown with the publications and listed in sameAs).
+const researchProfiles = (
+	[
+		['ORCID', cv.profile.orcid],
+		['Scopus', cv.profile.scopus],
+		['ResearchGate', cv.profile.researchgate],
+	] as [string, string | undefined][]
+).filter((r): r is [string, string] => Boolean(r[1]));
+
 // Courses grouped by institution, in the order they appear.
 const courseGroups = new Map<string, typeof cv.courses>();
 for (const c of cv.courses) courseGroups.set(c.org, [...(courseGroups.get(c.org) ?? []), c]);
@@ -47,11 +56,12 @@ for (const c of cv.courses) courseGroups.set(c.org, [...(courseGroups.get(c.org)
 // Structured data: the same Person as the consulting site (shared @id), described here in full.
 const ldPhoto = await getImage({ src: photo, width: 600, format: 'jpg' });
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const jsonLd = {
-	'@context': 'https://schema.org',
+const siteRoot = new URL(import.meta.env.BASE_URL, Astro.site).href;
+const profilePage = {
 	'@type': 'ProfilePage',
 	'@id': `${canonical}#pagina`,
 	url: canonical,
+	isPartOf: { '@id': `${siteRoot}#sitio` },
 	name: title,
 	description: cv.profile.summary,
 	inLanguage: 'es-PE',
@@ -67,7 +77,7 @@ const jsonLd = {
 		email: `mailto:${cv.profile.email}`,
 		address: { '@type': 'PostalAddress', addressLocality: 'Lima', addressCountry: 'PE' },
 		url: site.landing.url,
-		sameAs: [cv.profile.linkedin, cv.profile.github, canonical],
+		sameAs: [cv.profile.linkedin, cv.profile.github, ...researchProfiles.map((r) => r[1]), canonical],
 		alumniOf: [...new Set(cv.education.map((e) => e.org))].map((org) => ({ '@type': 'CollegeOrUniversity', name: org })),
 		hasCredential: [
 			...cv.education.map((e) => ({ '@type': 'EducationalOccupationalCredential', name: e.degree, credentialCategory: 'degree', recognizedBy: { '@type': 'Organization', name: e.org } })),
@@ -77,6 +87,22 @@ const jsonLd = {
 		knowsLanguage: cv.languages.map((l) => l.language),
 		knowsAbout: cv.skills.technical.flatMap((g) => g.items.map((i) => i.name)),
 	},
+};
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			// Site name for search results (read by Google from the root of the domain).
+			'@type': 'WebSite',
+			'@id': `${siteRoot}#sitio`,
+			url: siteRoot,
+			name: 'David Barreto Lara',
+			alternateName: 'David Barreto',
+			inLanguage: 'es-PE',
+		},
+		profilePage,
+	],
 };
 ---
 
@@ -238,6 +264,18 @@ const jsonLd = {
 				has.publications && (
 					<section id="publications" class="cv-section" aria-labelledby="h-publications">
 						<h2 id="h-publications">{titleOf('publications')}</h2>
+						{researchProfiles.length > 0 && (
+							<ul class="research-profiles" aria-label="Perfiles de investigador">
+								{researchProfiles.map(([label, url]) => (
+									<li>
+										<a class="ext-link" href={url}>
+											{label}
+											<ExternalIcon />
+										</a>
+									</li>
+								))}
+							</ul>
+						)}
 						<ol class="pubs">
 							{cv.publications.map((p) => {
 								const link = pubLink(p);
