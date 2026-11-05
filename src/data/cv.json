@@ -13,7 +13,7 @@
 		"orcid": "https://orcid.org/0000-0002-0134-1291",
 		"scopus": "https://www.scopus.com/authid/detail.uri?authorId=57212074083",
 		"researchgate": "https://www.researchgate.net/profile/David-Barreto-Lara",
-		"summary": "Maestro en Administración (MBA) con especialización en finanzas corporativas e Ingeniero Mecánico-Eléctrico con Doctorado en Energética. Experiencia en investigación y docencia a nivel de posgrado, auditorías de gestión de mantenimiento en el sector energético, y liderazgo de proyectos de optimización de procesos. Certificaciones en gestión de proyectos, soluciones en la nube (AWS, Azure, GCP) e inteligencia artificial. Habilidades clave: orientación a resultados, pensamiento analítico, disciplina y autogestión."
+		"summary": "Maestro en Administración (MBA) con especialización en finanzas corporativas e Ingeniero Mecánico-Electricista con Doctorado en Energética. Experiencia en investigación y docencia a nivel de posgrado, auditorías de gestión de mantenimiento en el sector energético, y liderazgo de proyectos de optimización de procesos. Certificaciones en gestión de proyectos, soluciones en la nube (AWS, Azure, GCP) e inteligencia artificial. Habilidades clave: orientación a resultados, pensamiento analítico, disciplina y autogestión."
 	},
 	"experience": [
 		{
@@ -498,13 +498,6 @@
 			"expiryDate": "2027-08",
 			"credentialUrl": "https://www.credly.com/badges/9ffb1187-00c3-4156-9a74-c86941e86510",
 			"image": "GITHUB_GITHUB-6caa71.png"
-		},
-		{
-			"id": "cert-007",
-			"title": "Investigador RENACYT - Nivel VII",
-			"issuer": "CONCYTEC",
-			"date": "2023",
-			"image": "RENACYT_CONCYTEC-d40cd9.png"
 		}
 	],
 	"skills": {
