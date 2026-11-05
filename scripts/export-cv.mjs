@@ -4,8 +4,8 @@
 //   npm run export-cv -- "<path to master_cv.yaml>"
 //   (or set CV_MASTER_PATH)
 //
-// Only allow-listed fields are exported. Anything else in the YAML (phone, private notes, comments)
-// never reaches the repository. The script fails if the phone number shows up in the output.
+// Only allow-listed fields are exported, and items marked `public: false` are skipped. Anything else in the YAML
+// (phone, private notes, comments) never reaches the repository. The script fails if the phone number shows up in the output.
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join } from 'node:path';
@@ -48,6 +48,9 @@ function image(url) {
 	}
 	return images.get(url);
 }
+/** Items marked `public: false` in the YAML stay out of the site. */
+const published = (list) => (list ?? []).filter((item) => item?.public !== false);
+
 const withImage = (item, obj) => {
 	const file = image(item.image_url);
 	return file ? { ...obj, image: file } : obj;
@@ -66,21 +69,24 @@ const cv = {
 		location: p.contact?.location,
 		linkedin: p.contact?.linkedin,
 		github: p.contact?.github,
+		orcid: p.contact?.orcid,
+		scopus: p.contact?.scopus,
+		researchgate: p.contact?.researchgate,
 		summary: String(p.summary ?? '').replace(/\s+/g, ' ').trim(),
 	},
-	experience: master.experience.map((i) =>
+	experience: published(master.experience).map((i) =>
 		pick(i, ['id', 'title', 'org', 'location', 'start_date', 'end_date', 'summary', 'bullets', 'tags']),
 	),
-	aiTraining: master.ai_training.map((i) =>
+	aiTraining: published(master.ai_training).map((i) =>
 		withImage(i, pick(i, ['id', 'title', 'program', 'org', 'location', 'start_date', 'end_date', 'status', 'summary', 'distinction', 'credential_url', 'tags'])),
 	),
-	projects: master.projects.map((i) =>
+	projects: published(master.projects).map((i) =>
 		pick(i, ['id', 'title', 'context', 'start_date', 'end_date', 'status', 'summary', 'bullets', 'tags']),
 	),
-	education: master.education.map((i) =>
+	education: published(master.education).map((i) =>
 		withImage(i, pick(i, ['id', 'degree', 'specialization', 'org', 'location', 'start_date', 'end_date', 'distinction', 'thesis', 'thesis_url'])),
 	),
-	certifications: master.certifications.map((i) =>
+	certifications: published(master.certifications).map((i) =>
 		withImage(i, pick(i, ['id', 'title', 'issuer', 'date', 'expiry_date', 'credential_url'])),
 	),
 	skills: {
@@ -91,14 +97,14 @@ const cv = {
 		soft: master.skills.soft_skills,
 	},
 	languages: master.languages.map((l) => pick(l, ['language', 'level', 'cefr'])),
-	publications: master.publications.map((i) =>
+	publications: published(master.publications).map((i) =>
 		pick(i, ['id', 'type', 'title', 'authors', 'venue', 'institution', 'year', 'volume', 'pages', 'article_number', 'doi', 'url']),
 	),
-	awards: master.awards.map((i) => pick(i, ['id', 'title', 'org', 'date', 'end_date', 'summary'])),
-	activities: master.activities.map((i) =>
+	awards: published(master.awards).map((i) => pick(i, ['id', 'title', 'org', 'date', 'end_date', 'summary'])),
+	activities: published(master.activities).map((i) =>
 		pick(i, ['id', 'title', 'org', 'orgs', 'program', 'event', 'start_date', 'end_date', 'date', 'bullets', 'tags']),
 	),
-	courses: master.courses.map((i) => pick(i, ['id', 'title', 'org', 'year', 'start_date', 'end_date'])),
+	courses: published(master.courses).map((i) => pick(i, ['id', 'title', 'org', 'year', 'start_date', 'end_date'])),
 };
 
 const json = JSON.stringify(cv, null, '\t') + '\n';

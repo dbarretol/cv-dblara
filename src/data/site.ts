@@ -6,7 +6,7 @@ export const site = {
 	headline: 'Ingeniero mecánico-electricista, doctor en Energética y MBA',
 	focus: 'Inteligencia artificial aplicada, energía y gestión de mantenimiento',
 	/** Credentials shown as tags under the summary (only what the headline does not already say). */
-	credentials: ['CIP 330188', 'RENACYT Nivel VII'],
+	credentials: ['CIP 330188'],
 	/** Consulting landing page (sister site). Its Person entity is shared through @id. */
 	landing: {
 		url: 'https://davidbarretolara.pages.dev/',

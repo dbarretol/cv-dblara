@@ -2,10 +2,10 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Public URL in one place (see README). Defaults to GitHub Pages; for another host (e.g. Cloudflare Pages)
-// set SITE_URL=https://<project>.pages.dev and BASE_PATH=/ at build time.
-const SITE_URL = process.env.SITE_URL ?? 'https://dbarretol.github.io';
-const BASE_PATH = process.env.BASE_PATH ?? '/cv-dblara';
+// Public URL in one place (see README). Defaults to Cloudflare Pages at the root of its own domain;
+// for another host or a sub-path set SITE_URL and BASE_PATH at build time.
+const SITE_URL = process.env.SITE_URL ?? 'https://cv-davidbarretolara.pages.dev';
+const BASE_PATH = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
 	site: SITE_URL,
