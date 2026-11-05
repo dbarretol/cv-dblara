@@ -1,6 +1,12 @@
-# Builds the site (Astro + PDF) and deploys it to GitHub Pages.
-# Requires: Settings > Pages > Source = "GitHub Actions".
+# Builds the site (Astro + PDF), deploys it to Cloudflare Pages and replaces the old GitHub Pages address
+# with a redirect to the new one.
 # Pull requests only build (no deploy) so problems show up before merging.
+#
+# Requires:
+# - Cloudflare Pages project "cv-davidbarretolara" (Direct Upload).
+# - Environment "cloudflare-pages" (restricted to main) with secrets CLOUDFLARE_API_TOKEN (permission:
+#   Account > Cloudflare Pages > Edit) and CLOUDFLARE_ACCOUNT_ID.
+# - Settings > Pages > Source = "GitHub Actions" (for the redirect).
 name: Build and deploy
 
 on:
@@ -14,16 +20,17 @@ permissions:
   contents: read
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: deploy-${{ github.ref }}
   cancel-in-progress: true
+
+env:
+  CF_PROJECT: cv-davidbarretolara
+  SITE_URL: https://cv-davidbarretolara.pages.dev
+  BASE_PATH: /
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # Same build works on another host (e.g. Cloudflare Pages) by changing these two values.
-      SITE_URL: https://dbarretol.github.io
-      BASE_PATH: /cv-dblara
     steps:
       - uses: actions/checkout@v7
 
@@ -43,14 +50,44 @@ jobs:
       - name: Audit dependencies
         run: npm audit --audit-level=moderate
 
+      - name: Build the redirect for the old address
+        run: node scripts/build-redirect.mjs
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: dist
+          retention-days: 7
+
       - if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
-          path: dist
+          path: redirect
 
   deploy:
     if: github.event_name != 'pull_request'
     needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: cloudflare-pages
+      url: ${{ env.SITE_URL }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: dist
+
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=${{ env.CF_PROJECT }} --branch=main --commit-dirty=true
+
+  # Runs only after the new site is live, so the old address never points to a missing site.
+  redirect-old-address:
+    if: github.event_name != 'pull_request'
+    needs: deploy
     runs-on: ubuntu-latest
     permissions:
       pages: write
