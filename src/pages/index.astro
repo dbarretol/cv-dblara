@@ -22,7 +22,7 @@ const has: Record<string, boolean> = {
 	'ai-training': cv.aiTraining.length > 0,
 	projects: cv.projects.length > 0,
 	education: cv.education.length > 0,
-	certifications: cv.certifications.length > 0,
+	certifications: cv.certifications.length + cv.previousCertifications.length > 0,
 	skills: cv.skills.technical.length > 0,
 	languages: cv.languages.length > 0,
 	publications: cv.publications.length > 0,
@@ -214,7 +214,13 @@ const jsonLd = {
 				has.certifications && (
 					<section id="certifications" class="cv-section" aria-labelledby="h-certifications">
 						<h2 id="h-certifications">{titleOf('certifications')}</h2>
-						<Certifications />
+						<Certifications items={cv.certifications} />
+						{cv.previousCertifications.length > 0 && (
+							<>
+								<h3 class="subsection-title">Certificaciones anteriores</h3>
+								<Certifications items={cv.previousCertifications} previous />
+							</>
+						)}
 					</section>
 				)
 			}

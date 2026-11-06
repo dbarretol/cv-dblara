@@ -53,13 +53,17 @@ const schema = z.object({
 
 const parsed = schema.parse(raw);
 
-// Expired certifications are left out at build time. A certification is hidden from the month it expires on, so the
-// monthly scheduled build (.github/workflows/deploy.yml, day 1) never shows one that expires before the next build.
-// CV_BUILD_DATE (YYYY-MM-DD) overrides today's date, for testing.
+// Expired certifications are not hidden: they move to "Certificaciones anteriores". A certification moves from the
+// month it expires on, so the monthly scheduled build (.github/workflows/deploy.yml, day 1) never lists as current one
+// that expires before the next build. CV_BUILD_DATE (YYYY-MM-DD) overrides today's date, for testing.
 const buildMonth = (process.env.CV_BUILD_DATE ?? new Date().toISOString()).slice(0, 7);
+const isCurrent = (c: (typeof parsed.certifications)[number]) => !c.expiryDate || c.expiryDate.slice(0, 7) > buildMonth;
 export const cv = {
 	...parsed,
-	certifications: parsed.certifications.filter((c) => !c.expiryDate || c.expiryDate.slice(0, 7) > buildMonth),
+	/** Current certifications, including retired ones that have not expired yet. */
+	certifications: parsed.certifications.filter(isCurrent),
+	/** Expired certifications ("Certificaciones anteriores"). */
+	previousCertifications: parsed.certifications.filter((c) => !isCurrent(c)),
 };
 export type Cv = z.infer<typeof schema>;
 
