@@ -441,7 +441,7 @@
 			"title": "Microsoft Certified: Azure Database Administrator Associate (DP-300)",
 			"issuer": "Microsoft",
 			"date": "2025-03",
-			"expiryDate": "2027-03",
+			"expiryDate": "2027-03-15",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/226da14964821bff",
 			"image": "microsoft_DP300-f1527e.png"
 		},
@@ -450,7 +450,7 @@
 			"title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
 			"issuer": "Microsoft",
 			"date": "2025-03",
-			"expiryDate": "2027-03",
+			"expiryDate": "2027-03-24",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/cdc2ac17de0d1b86",
 			"image": "microsoft_PL300-f3f2ab.png"
 		},
@@ -459,7 +459,7 @@
 			"title": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
 			"issuer": "Microsoft",
 			"date": "2024-12",
-			"expiryDate": "2026-12",
+			"expiryDate": "2026-12-06",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/88368976a482f61d",
 			"retired": true,
 			"image": "microsoft_AI102-d8cf12.png"
@@ -469,7 +469,7 @@
 			"title": "Microsoft Certified: Azure Data Scientist Associate (DP-100)",
 			"issuer": "Microsoft",
 			"date": "2025-03",
-			"expiryDate": "2027-03",
+			"expiryDate": "2027-03-02",
 			"credentialUrl": "https://learn.microsoft.com/en-us/users/dbarretol/credentials/1725ff6ef156bcea",
 			"retired": true,
 			"image": "microsoft_DP100-6ee8b7.png"
@@ -479,7 +479,7 @@
 			"title": "Associate Cloud Engineer",
 			"issuer": "Google Cloud",
 			"date": "2024-12",
-			"expiryDate": "2027-12",
+			"expiryDate": "2027-12-30",
 			"credentialUrl": "https://www.credly.com/badges/c01f62aa-1d2d-4d4b-941c-fa9dbdae53bb/public_url",
 			"image": "ACE_Google-08166b.png"
 		},
@@ -488,7 +488,7 @@
 			"title": "Certified Associate in Project Management (CAPM)",
 			"issuer": "PMI",
 			"date": "2014-09",
-			"expiryDate": "2030-03",
+			"expiryDate": "2030-03-12",
 			"credentialUrl": "https://www.credly.com/badges/1bf3b9cf-2aef-4c2c-b7f1-cdf9f155ec1b",
 			"image": "CAPM_PMI-9d44aa.png"
 		},
@@ -497,7 +497,7 @@
 			"title": "GitHub Foundations",
 			"issuer": "GitHub",
 			"date": "2024-08",
-			"expiryDate": "2027-08",
+			"expiryDate": "2027-08-06",
 			"credentialUrl": "https://www.credly.com/badges/9ffb1187-00c3-4156-9a74-c86941e86510",
 			"image": "GITHUB_GITHUB-6caa71.png"
 		}

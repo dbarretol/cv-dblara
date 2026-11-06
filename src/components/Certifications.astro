@@ -1,15 +1,25 @@
 ---
 // Certification cards; each opens a detail pop-up with the large badge and the verification link.
 // Uses the native Popover API: works without JavaScript, closes with Escape or a click outside,
-// and returns focus to the card.
+// and returns focus to the card. `previous` renders expired certifications in a plainer style, with their period.
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import ExternalIcon from './ExternalIcon.astro';
-import { cv, formatDate } from '../lib/cv';
+import { type Cv, formatDate, formatLongDate } from '../lib/cv';
 import { badgeImage, cvImage } from '../lib/images';
 import { certificationBadges } from '../data/site';
 
-const items = cv.certifications.map((c) => ({
+interface Props {
+	items: Cv['certifications'];
+	previous?: boolean;
+}
+
+const { items: list, previous = false } = Astro.props;
+
+/** "el 6 de diciembre de 2026" for full dates, "dic. 2026" for year-month. */
+const until = (d: string) => (d.length > 7 ? `el ${formatLongDate(d)}` : formatDate(d));
+
+const items = list.map((c) => ({
 	...c,
 	shortTitle: c.title.replace(/^Microsoft Certified:\s*/, ''),
 	badge: (cvImage(c.image) ?? badgeImage(certificationBadges[c.id])) as ImageMetadata | undefined,
@@ -22,7 +32,7 @@ const items = cv.certifications.map((c) => ({
 }));
 ---
 
-<ul class="certs">
+<ul class:list={['certs', { previous }]}>
 	{
 		items.map((c) => (
 			<li>
@@ -37,7 +47,14 @@ const items = cv.certifications.map((c) => ({
 					<span class="cert-text">
 						<span class="cert-title">{c.shortTitle}</span>
 						<span class="cert-meta">
-							{c.issuer}, <time datetime={c.date}>{formatDate(c.date)}</time>
+							{c.issuer},{' '}
+							{previous && c.expiryDate ? (
+								<span>
+									<time datetime={c.date}>{c.date.slice(0, 4)}</time>–<time datetime={c.expiryDate}>{c.expiryDate.slice(0, 4)}</time>
+								</span>
+							) : (
+								<time datetime={c.date}>{formatDate(c.date)}</time>
+							)}
 							{c.retired && <span class="retired"> · retirada</span>}
 						</span>
 					</span>
@@ -57,12 +74,16 @@ const items = cv.certifications.map((c) => ({
 							{c.issuer}, obtenida en <time datetime={c.date}>{formatDate(c.date)}</time>
 							{c.expiryDate && (
 								<>
-									. Vigente hasta <time datetime={c.expiryDate}>{formatDate(c.expiryDate)}</time>
+									. {previous ? 'Válida hasta' : 'Vigente hasta'} <time datetime={c.expiryDate}>{until(c.expiryDate)}</time>
 								</>
 							)}
 							.
 						</p>
-						{c.retired && <p class="note">{c.issuer} retiró esta certificación: no se puede renovar.</p>}
+						{c.retired && (
+							<p class="note">
+								{previous ? `No se renovó porque ${c.issuer} retiró esta certificación.` : `${c.issuer} retiró esta certificación: no se puede renovar.`}
+							</p>
+						)}
 						{!c.credentialUrl && <p class="note">Sin enlace público de verificación.</p>}
 						<div class="dialog-actions">
 							{c.credentialUrl && (
@@ -154,6 +175,26 @@ const items = cv.certifications.map((c) => ({
 
 	.retired {
 		font-style: italic;
+	}
+
+	/* Certificaciones anteriores: plainer than the current ones. */
+	.previous .cert-card {
+		background: transparent;
+		border-style: dashed;
+	}
+
+	.previous .cert-card:hover {
+		transform: none;
+		box-shadow: none;
+	}
+
+	.previous .cert-card img {
+		filter: grayscale(1);
+		opacity: 0.7;
+	}
+
+	.previous .cert-title {
+		color: var(--text);
 	}
 
 	/* Pop-up */
